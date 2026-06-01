@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Music Room Salon UI</title>
+  <link rel="stylesheet" href="./css/music-room.css" />
+</head>
+<body>
+  <main class="music-room">
+    <aside class="music-sidebar">
+      <div class="room-logo">
+        <div class="logo-mark">M</div>
+        <strong>Music Room</strong>
+        <span>Princess Salon Player</span>
+      </div>
+
+      <nav class="side-menu" aria-label="Music Room menu">
+        <button type="button"><span>RH</span>Rose Hall</button>
+        <button type="button" class="active"><span>MR</span>Music Room</button>
+        <button type="button"><span>LB</span>Library</button>
+        <button type="button"><span>PL</span>Playlists</button>
+        <button type="button"><span>FV</span>Favorites</button>
+        <button type="button"><span>IM</span>Import</button>
+        <button type="button"><span>LP</span>Live Practice</button>
+        <button type="button"><span>ST</span>Settings</button>
+      </nav>
+    </aside>
+
+    <section class="music-main">
+      <header class="music-title">
+        <div class="title-line"></div>
+        <div>
+          <h1>Music Room</h1>
+          <p>Melodies for a Princess</p>
+        </div>
+        <div class="title-line"></div>
+      </header>
+
+      <section class="main-stage">
+        <div class="content-column">
+          <section class="player-card">
+            <div class="cover-frame" aria-hidden="true">
+              <div class="cover-art">
+                <span class="cover-window"></span>
+                <span class="cover-piano"></span>
+                <span class="cover-rose r1"></span>
+                <span class="cover-rose r2"></span>
+                <span class="cover-rose r3"></span>
+              </div>
+            </div>
+
+            <div class="player-info">
+              <p class="eyebrow">TODAY'S BGM ✦</p>
+              <h2 id="nowTitle">아직 선택된 곡이 없습니다</h2>
+              <span id="nowMeta">재생목록에서 곡을 선택해주세요</span>
+              <p id="nowDescription" class="now-description">공주님의 살롱에 올릴 음악을 골라주세요.</p>
+
+              <div class="fake-progress">
+                <span id="mainCurrentTime">01:24</span>
+                <div class="bar"><i></i></div>
+                <span id="fakeDuration">--:--</span>
+              </div>
+
+              <div class="controls">
+                <button class="favorite-btn" id="toggleFavorite" type="button" aria-label="즐겨찾기">♡</button>
+                <button type="button" id="prevTrack" aria-label="이전 곡">◁</button>
+                <button type="button" id="playTrack" class="play-main" aria-label="재생">▶</button>
+                <button type="button" id="pauseTrack" aria-label="일시정지">❚❚</button>
+                <button type="button" id="nextTrack" aria-label="다음 곡">▷</button>
+                <button type="button" id="repeatToggle" aria-label="반복">↻</button>
+                <button type="button" id="shuffleToggle" aria-label="랜덤">⇄</button>
+                <button type="button" id="openYoutube" class="open-link" aria-label="원본 링크 열기">↗</button>
+                <button type="button" id="stopTrack" class="ghost-control" aria-label="정지">■</button>
+              </div>
+            </div>
+          </section>
+
+          <nav class="category-filter" id="categoryList" aria-label="뮤직룸 카테고리">
+            <button class="active" data-category="all">전체</button>
+            <button data-category="work">작업 BGM</button>
+            <button data-category="tea">티타임</button>
+            <button data-category="night">나이트</button>
+            <button data-category="kpop">K-pop</button>
+            <button data-category="jpop">J-pop</button>
+            <button data-category="chika">지하돌</button>
+            <button data-category="utaite">우타이테</button>
+            <button data-category="vtuber">버튜버</button>
+            <button data-category="live">라이브 연습</button>
+          </nav>
+
+          <section class="shelf-card playlist-card">
+            <div class="section-head">
+              <div>
+                <p>MY PLAYLIST SHELF</p>
+                <h2 id="listTitle">전체 재생목록</h2>
+              </div>
+              <span id="trackCount">0곡</span>
+            </div>
+            <div class="shelf-rail" aria-label="My Playlist Shelf cards">
+              <button type="button" class="shelf-nav shelf-prev" id="shelfPrev" aria-label="이전 카드">‹</button>
+              <div class="track-list" id="trackList"></div>
+              <button type="button" class="shelf-nav shelf-next" id="shelfNext" aria-label="다음 카드">›</button>
+            </div>
+          </section>
+
+          <section class="lower-grid">
+            <article class="mini-list-card saved-card">
+              <div class="section-head small">
+                <div>
+                  <p>SAVED PLAYLISTS</p>
+                  <h2>Saved Playlists</h2>
+                </div>
+                <button type="button" id="recommendBgm">오늘의 BGM</button>
+              </div>
+              <div class="saved-list" id="savedPlaylistList">
+                <div><span class="tiny-cover rose"></span><div><strong>My Dearest Melodies</strong><small>56 tracks · Favorite · Updated 2 days ago</small></div><button type="button" aria-label="더보기">⋮</button></div>
+                <div><span class="tiny-cover gold"></span><div><strong>Writing Inspiration</strong><small>41 tracks · Work BGM · Updated 5 days ago</small></div><button type="button" aria-label="더보기">⋮</button></div>
+                <div><span class="tiny-cover night"></span><div><strong>Relax & Unwind</strong><small>37 tracks · Night · Updated 1 week ago</small></div><button type="button" aria-label="더보기">⋮</button></div>
+              </div>
+            </article>
+
+            <article class="mini-list-card recommended-card">
+              <div class="section-head small">
+                <div>
+                  <p>RECOMMENDED</p>
+                  <h2>Recommended Tracks</h2>
+                </div>
+                <button type="button" id="randomTrack">랜덤</button>
+              </div>
+              <div class="compact-track-list" id="recommendedTrackList"></div>
+            </article>
+
+            <article class="mini-list-card recent-card">
+              <div class="section-head small">
+                <div>
+                  <p>RECENTLY PLAYED</p>
+                  <h2>Recently Played</h2>
+                </div>
+                <span>View All</span>
+              </div>
+              <div class="compact-track-list" id="recentTrackList"></div>
+            </article>
+          </section>
+        </div>
+
+        <aside class="salon-panel">
+          <section class="salon-card recommendation-card">
+            <div class="side-head with-divider">
+              <h2>살롱 메이드 추천</h2>
+            </div>
+            <div class="maid-recommend-body">
+              <div class="maid-mini" aria-hidden="true">
+                <span>Maid</span>
+              </div>
+              <div class="maid-copy">
+                <p class="recommend-label">공주님께 추천드려요</p>
+                <h2 id="salonRecommendTitle">오늘의 BGM</h2>
+                <span id="salonRecommendArtist">Salon Maid</span>
+                <p id="todayBgmText">작업 상태와 시간대에 맞춰 살롱 메이드가 추천할 자리입니다.</p>
+                <button type="button" id="salonListenNow">지금 듣기</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="salon-card side-playlist-card">
+            <div class="side-head with-divider">
+              <h2>Salon Playlist</h2>
+              <span>View All</span>
+            </div>
+            <div class="side-playlist" id="sidePlaylistList"></div>
+          </section>
+
+          <section class="salon-card import-card">
+            <div>
+              <small>IMPORT</small>
+              <h2>Import Your Music</h2>
+              <p>MP3 또는 유튜브 링크를 살롱에 추가합니다.</p>
+            </div>
+            <button type="button" id="toggleImportPanel" aria-expanded="false" aria-label="음악 추가 패널 열기">&gt;</button>
+          </section>
+        </aside>
+      </section>
+    </section>
+  </main>
+
+  <section class="import-drawer" id="importDrawer" aria-label="음악 추가 패널">
+    <article class="add-card">
+      <div class="section-head">
+        <div>
+          <p>ADD MUSIC</p>
+          <h2>링크 추가</h2>
+        </div>
+        <button type="button" id="clearForm">비우기</button>
+      </div>
+
+      <div class="form-grid">
+        <div>
+          <label>곡 제목</label>
+          <input id="trackTitle" placeholder="예: 새벽 작업 J-pop playlist" />
+        </div>
+        <div>
+          <label>아티스트 / 채널</label>
+          <input id="trackArtist" placeholder="예: YouTube channel / artist" />
+        </div>
+        <div class="wide-field">
+          <label>유튜브 링크</label>
+          <input id="trackUrl" placeholder="https://www.youtube.com/watch?v=..." />
+        </div>
+      </div>
+
+      <div class="form-tools">
+        <button type="button" id="autoFillFromLink">링크 확인</button>
+        <button type="button" id="autoTagTrack">분류 다시 확인</button>
+      </div>
+      <div class="auto-result" id="autoResult">링크를 붙여넣으면 자동으로 감지합니다. J-pop/K-pop은 그룹명이나 일본/한국 힌트를 함께 적으면 더 정확합니다.</div>
+      <div class="auto-hint" id="linkDetectHint">새 링크를 넣으면 이전 입력값과 섞이지 않도록 새 링크 기준으로 정리합니다.</div>
+
+      <div class="form-row">
+        <div>
+          <label>카테고리</label>
+          <select id="trackCategory">
+            <option value="pending">분류 대기</option>
+            <option value="kpop">K-pop</option>
+            <option value="jpop">J-pop</option>
+            <option value="chika">지하돌</option>
+            <option value="utaite">우타이테</option>
+            <option value="vtuber">버튜버</option>
+            <option value="work">작업 BGM</option>
+            <option value="tea">티타임</option>
+            <option value="night">나이트</option>
+            <option value="comfort">우엥 모드</option>
+            <option value="live">라이브 연습</option>
+          </select>
+        </div>
+        <div>
+          <label>출처</label>
+          <select id="trackSource">
+            <option value="youtube">YouTube</option>
+            <option value="local">내 음악 파일 자리</option>
+            <option value="external">외부 링크</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-grid two">
+        <div>
+          <label>태그</label>
+          <input id="trackTags" placeholder="예: 작업, 새벽, 라이브연습, 한곡반복" />
+        </div>
+        <div>
+          <label>메모</label>
+          <textarea id="trackMemo" placeholder="예: 라이브 연출 확인용. 처음부터 끝까지 반복해서 듣는 곡."></textarea>
+        </div>
+      </div>
+
+      <button class="primary" type="button" id="saveTrack">저장하기</button>
+    </article>
+  </section>
+
+  <footer class="bottom-player">
+    <button type="button" id="collapseDock" aria-label="플레이어 접기">⌃</button>
+    <div class="dock-track">
+      <div class="dock-cover" aria-hidden="true"></div>
+      <div>
+        <strong id="dockTitle">아직 선택된 곡이 없습니다</strong>
+        <span id="dockArtist">재생목록에서 곡을 선택해주세요</span>
+      </div>
+    </div>
+    <button type="button" id="dockFavorite" aria-label="즐겨찾기">♡</button>
+    <div class="dock-controls">
+      <button type="button" id="dockShuffle">⇄</button>
+      <button type="button" id="dockPrev">◁</button>
+      <button type="button" id="dockPlay" class="dock-play">▶</button>
+      <button type="button" id="dockNext">▷</button>
+      <button type="button" id="dockRepeat">↻</button>
+    </div>
+    <div class="dock-progress">
+      <span>01:24</span>
+      <div class="bar"><i></i></div>
+      <span id="dockDuration">--:--</span>
+    </div>
+    <div class="dock-volume">
+      <span>VOL</span>
+      <div class="volume-bar"><i></i></div>
+    </div>
+    <button type="button" id="dockList">LIST</button>
+  </footer>
+
+  <div class="toast-stack" id="toastStack"></div>
+
+  <script src="./js/music-room.js"></script>
+</body>
+</html>

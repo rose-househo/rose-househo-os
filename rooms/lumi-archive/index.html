@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMI Archive - 기억 창고</title>
+  <link rel="stylesheet" href="css/lumi-archive.css">
+</head>
+<body>
+  <div class="archive-shell">
+    <aside class="left-nav" aria-label="LUMI Archive menu">
+      <div class="nav-greeting">
+        <div class="profile-slot" aria-hidden="true">L</div>
+        <p>공주님, 오늘의 기준과 기억을 정리해두었습니다.</p>
+        <span class="tiny-flower" aria-hidden="true"></span>
+      </div>
+
+      <nav class="archive-menu">
+        <a class="menu-item active" href="#"><span class="line-icon home-icon"></span><span>홈</span></a>
+        <a class="menu-item" href="#"><span class="line-icon tray-icon"></span><span>일단 넣기</span><span class="count-badge">15</span></a>
+        <a class="menu-item" href="#"><span class="line-icon book-icon"></span><span>현재 기준</span></a>
+        <a class="menu-item" href="#"><span class="line-icon box-icon"></span><span>기억함</span></a>
+        <a class="menu-item" href="#"><span class="line-icon check-icon"></span><span>할 일</span><span class="count-badge small">7</span></a>
+        <a class="menu-item" href="#"><span class="line-icon clip-icon"></span><span>복붙함</span></a>
+        <a class="menu-item" href="#"><span class="line-icon image-icon"></span><span>시안 보관</span></a>
+        <a class="menu-item" href="#"><span class="line-icon doc-icon"></span><span>PDF / 문서</span></a>
+        <a class="menu-item" href="#"><span class="line-icon handoff-icon"></span><span>인수인계</span></a>
+        <a class="menu-item" href="#"><span class="line-icon search-icon"></span><span>검색</span></a>
+        <a class="menu-item" href="#"><span class="line-icon star-icon"></span><span>즐겨찾기</span></a>
+        <a class="menu-item" href="#"><span class="line-icon gear-icon"></span><span>설정</span></a>
+      </nav>
+
+      <div class="nav-note">
+        <div class="crown-line" aria-hidden="true"></div>
+        <p>공주님의 모든 기준과 기억은 이곳에 가장 안전하게 보관되고 있어요.</p>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="top-header">
+        <div class="title-frame">
+          <span class="title-ornament left" aria-hidden="true"></span>
+          <div>
+            <h1>LUMI Archive</h1>
+            <p>기억 창고</p>
+          </div>
+          <span class="title-ornament right" aria-hidden="true"></span>
+        </div>
+
+        <div class="status-row" aria-label="status cards">
+          <button class="status-card js-toast" type="button" data-toast="알림함을 열 준비가 되었습니다.">
+            <span class="status-icon bell-icon"></span>
+            <span>알림</span>
+            <b>7</b>
+          </button>
+          <button class="status-card js-toast" type="button" data-toast="쪽지함은 1차 클린 베이스에서는 미리보기만 가능합니다.">
+            <span class="status-icon mail-icon"></span>
+            <span>쪽지</span>
+            <b>3</b>
+          </button>
+          <button class="status-profile js-toast" type="button" data-toast="프로필 슬롯입니다.">
+            <span class="profile-slot small-slot">L</span>
+            <span>공주님</span>
+          </button>
+          <div class="level-card">
+            <strong>Lv. 24</strong>
+            <div class="level-bar"><span></span></div>
+            <small>86%</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="summary-strip" aria-label="archive summary">
+        <article class="summary-item world">
+          <span class="summary-label">현재 작업 세계</span>
+          <strong>루미 아카이브 프로젝트</strong>
+          <button class="pill-button js-toast" type="button" data-toast="작업 세계 변경은 추후 연결됩니다.">세계 변경</button>
+        </article>
+        <article class="summary-item baseline">
+          <span class="summary-label">현재 기준본</span>
+          <strong>루미폰 프로젝트 기준본</strong>
+          <p>Ver. 3.2</p>
+        </article>
+        <article class="summary-item waiting">
+          <span class="summary-label">정리 대기 자료 수</span>
+          <strong>15건</strong>
+          <button class="pill-button js-toast" type="button" data-toast="일단 넣기 정리 화면은 후속 단계에서 연결됩니다.">바로 정리하기</button>
+        </article>
+        <article class="summary-item today">
+          <span class="summary-label">오늘 할 일</span>
+          <strong>3 / 7</strong>
+          <p>일단 넣기 정리, 기준본 재확인, 복붙 지시서 갱신</p>
+        </article>
+        <article class="summary-item memo">
+          <span class="summary-label">최근 추가된 메모</span>
+          <ul>
+            <li>드레스룸 코디 기준 메모</li>
+            <li>메이드 교육 지시서</li>
+            <li>루미 의상 시안 보관</li>
+          </ul>
+          <button class="mini-link js-toast" type="button" data-toast="최근 메모 전체보기는 후속 단계에서 연결됩니다.">더 보기</button>
+        </article>
+      </section>
+
+      <section class="content-card">
+        <div class="section-heading">
+          <span class="heading-line" aria-hidden="true"></span>
+          <h2>아카이브 폴더</h2>
+          <span class="heading-line" aria-hidden="true"></span>
+          <div class="view-toggle" aria-label="view mode">
+            <button class="active js-toast" type="button" data-toast="카드 보기 상태입니다."><span class="grid-dot"></span><span class="grid-dot"></span><span class="grid-dot"></span><span class="grid-dot"></span></button>
+            <button class="js-toast" type="button" data-toast="리스트 보기는 후속 단계에서 연결됩니다."><span class="list-line"></span><span class="list-line"></span><span class="list-line"></span></button>
+          </div>
+        </div>
+
+        <div class="folder-grid">
+          <article class="folder-card">
+            <div class="object-slot book-object"></div>
+            <div class="folder-body">
+              <h3>현재 기준본</h3>
+              <p>루미폰 프로젝트 기준본 Ver. 3.2</p>
+              <div class="tag-row"><span>기준본</span><span>최신</span><span>고정</span></div>
+              <dl><dt>등록</dt><dd>2024.05.14</dd><dt>수정</dt><dd>2024.05.14</dd></dl>
+            </div>
+            <div class="card-actions">
+              <button class="detail-btn js-toast" type="button" data-toast="현재 기준본 상세는 후속 단계에서 연결됩니다.">자세히 보기</button>
+              <button class="favorite-btn js-toast" type="button" data-toast="즐겨찾기 슬롯입니다." aria-label="현재 기준본 즐겨찾기"></button>
+            </div>
+          </article>
+
+          <article class="folder-card">
+            <div class="object-slot decision-object"></div>
+            <div class="folder-body">
+              <h3>중요 결정사항</h3>
+              <p>드레스룸 코디 결정 모음</p>
+              <div class="tag-row"><span>결정</span><span>중요</span><span>모음</span></div>
+              <dl><dt>등록</dt><dd>2024.05.13</dd><dt>수정</dt><dd>2024.05.14</dd></dl>
+            </div>
+            <div class="card-actions">
+              <button class="detail-btn js-toast" type="button" data-toast="중요 결정사항 상세는 후속 단계에서 연결됩니다.">자세히 보기</button>
+              <button class="favorite-btn active js-toast" type="button" data-toast="즐겨찾기 슬롯입니다." aria-label="중요 결정사항 즐겨찾기"></button>
+            </div>
+          </article>
+
+          <article class="folder-card">
+            <div class="object-slot directive-object"></div>
+            <div class="folder-body">
+              <h3>복붙 지시서</h3>
+              <p>메이드 업무 지시서 / 복붙 템플릿</p>
+              <div class="tag-row"><span>지시서</span><span>복붙</span><span>업무</span></div>
+              <dl><dt>등록</dt><dd>2024.05.14</dd><dt>수정</dt><dd>2024.05.14</dd></dl>
+            </div>
+            <div class="card-actions">
+              <button class="detail-btn js-toast" type="button" data-toast="복붙 지시서 상세는 후속 단계에서 연결됩니다.">자세히 보기</button>
+              <button class="favorite-btn js-toast" type="button" data-toast="즐겨찾기 슬롯입니다." aria-label="복붙 지시서 즐겨찾기"></button>
+            </div>
+          </article>
+
+          <article class="folder-card">
+            <div class="object-slot image-object"></div>
+            <div class="folder-body">
+              <h3>시안 이미지</h3>
+              <p>투어 의상 시안 모음</p>
+              <div class="tag-row"><span>시안</span><span>이미지</span><span>의상</span></div>
+              <dl><dt>등록</dt><dd>2024.05.13</dd><dt>수정</dt><dd>2024.05.14</dd></dl>
+            </div>
+            <div class="card-actions">
+              <button class="detail-btn js-toast" type="button" data-toast="시안 이미지 상세는 후속 단계에서 연결됩니다.">자세히 보기</button>
+              <button class="favorite-btn js-toast" type="button" data-toast="즐겨찾기 슬롯입니다." aria-label="시안 이미지 즐겨찾기"></button>
+            </div>
+          </article>
+
+          <article class="folder-card">
+            <div class="object-slot pdf-object"></div>
+            <div class="folder-body">
+              <h3>PDF 자료</h3>
+              <p>루미폰 프로젝트 자료 PDF 모음</p>
+              <div class="tag-row"><span>PDF</span><span>문서</span><span>자료</span></div>
+              <dl><dt>등록</dt><dd>2024.05.12</dd><dt>수정</dt><dd>2024.05.14</dd></dl>
+            </div>
+            <div class="card-actions">
+              <button class="detail-btn js-toast" type="button" data-toast="PDF 자료 상세는 후속 단계에서 연결됩니다.">자세히 보기</button>
+              <button class="favorite-btn js-toast" type="button" data-toast="즐겨찾기 슬롯입니다." aria-label="PDF 자료 즐겨찾기"></button>
+            </div>
+          </article>
+
+          <article class="folder-card">
+            <div class="object-slot handoff-object"></div>
+            <div class="folder-body">
+              <h3>작업 인수인계</h3>
+              <p>이전 작업 인수인계 및 주의사항</p>
+              <div class="tag-row"><span>인수인계</span><span>주의</span><span>문서</span></div>
+              <dl><dt>등록</dt><dd>2024.05.11</dd><dt>수정</dt><dd>2024.05.14</dd></dl>
+            </div>
+            <div class="card-actions">
+              <button class="detail-btn js-toast" type="button" data-toast="작업 인수인계 상세는 후속 단계에서 연결됩니다.">자세히 보기</button>
+              <button class="favorite-btn active js-toast" type="button" data-toast="즐겨찾기 슬롯입니다." aria-label="작업 인수인계 즐겨찾기"></button>
+            </div>
+          </article>
+
+          <article class="folder-card">
+            <div class="object-slot todo-object"></div>
+            <div class="folder-body">
+              <h3>오늘 할 일</h3>
+              <p>작업 할 일 리스트</p>
+              <div class="tag-row"><span>할 일</span><span>리스트</span><span>오늘</span></div>
+              <dl><dt>등록</dt><dd>2024.05.14</dd><dt>수정</dt><dd>2024.05.14</dd></dl>
+            </div>
+            <div class="card-actions">
+              <button class="detail-btn js-toast" type="button" data-toast="오늘 할 일 상세는 후속 단계에서 연결됩니다.">자세히 보기</button>
+              <button class="favorite-btn js-toast" type="button" data-toast="즐겨찾기 슬롯입니다." aria-label="오늘 할 일 즐겨찾기"></button>
+            </div>
+          </article>
+
+          <article class="folder-card">
+            <div class="object-slot waiting-object">
+              <span>15</span>
+            </div>
+            <div class="folder-body">
+              <h3>정리 대기 자료</h3>
+              <p>새로 들어온 자료 정리 대기함</p>
+              <div class="tag-row"><span>대기</span><span>미분류</span><span>자료</span></div>
+              <dl><dt>등록</dt><dd>2024.05.14</dd><dt>수정</dt><dd>2024.05.14</dd></dl>
+            </div>
+            <div class="card-actions">
+              <button class="detail-btn js-toast" type="button" data-toast="정리 대기 자료 상세는 후속 단계에서 연결됩니다.">자세히 보기</button>
+              <button class="favorite-btn active js-toast" type="button" data-toast="즐겨찾기 슬롯입니다." aria-label="정리 대기 자료 즐겨찾기"></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="favorites-strip">
+          <strong>즐겨찾기 문서</strong>
+          <button class="favorite-chip js-toast" type="button" data-toast="루미폰 기준본 Ver. 3.2">루미폰 기준본 Ver. 3.2</button>
+          <button class="favorite-chip js-toast" type="button" data-toast="메이드 복장 규정">메이드 복장 규정</button>
+          <button class="favorite-chip js-toast" type="button" data-toast="파우더룸 루틴 지침">파우더룸 루틴 지침</button>
+          <button class="favorite-chip js-toast" type="button" data-toast="나이트 체임버 점검표">나이트 체임버 점검표</button>
+          <button class="favorite-chip js-toast" type="button" data-toast="공연 VCR 연출안">공연 VCR 연출안</button>
+        </div>
+      </section>
+    </main>
+
+    <aside class="right-panel" aria-label="archive briefing">
+      <section class="side-card briefing-card">
+        <h2>집사 정리 브리핑</h2>
+        <div class="portrait-placeholder" aria-hidden="true">
+          <span>B</span>
+        </div>
+        <p>공주님, 오늘은 일단 넣기에 새 자료가 5개 쌓였습니다. 기준본은 최신본으로 고정되어 있어요.</p>
+        <button class="panel-btn js-toast" type="button" data-toast="브리핑 더 보기는 후속 단계에서 연결됩니다.">브리핑 더 보기</button>
+      </section>
+
+      <section class="side-card todo-card">
+        <h2>오늘 정리해야 할 자료</h2>
+        <ul class="side-list">
+          <li><span>일단 넣기 정리</span><strong>15건</strong></li>
+          <li><span>기준본 재확인</span><strong>2건</strong></li>
+          <li><span>복붙 지시서 갱신</span><strong>1건</strong></li>
+          <li><span>인수인계 업데이트</span><strong>1건</strong></li>
+        </ul>
+        <button class="panel-btn js-toast" type="button" data-toast="전체 할 일 보기는 후속 단계에서 연결됩니다.">전체 할 일 보기</button>
+      </section>
+
+      <section class="side-card keyword-card">
+        <h2>최근 자주 찾은 키워드</h2>
+        <div class="keyword-row">
+          <span>루미폰</span>
+          <span>드레스룸</span>
+          <span>메이드 교육</span>
+          <span>투어 의상</span>
+          <span>공연 연출</span>
+          <span>파우더룸</span>
+        </div>
+      </section>
+
+      <section class="side-card alert-card">
+        <h2>알림</h2>
+        <div class="alert-mark" aria-hidden="true"></div>
+        <p>기준본이 여러 갈래로 갈라졌습니다. 확인이 필요해요.</p>
+        <button class="panel-btn js-toast" type="button" data-toast="기준본 확인하기는 후속 단계에서 연결됩니다.">기준본 확인하기</button>
+      </section>
+    </aside>
+  </div>
+
+  <footer class="bottom-actionbar" aria-label="archive quick actions">
+    <button class="action-btn js-toast" type="button" data-toast="새 자료 넣기는 후속 단계에서 연결됩니다."><span class="plus-mark"></span>새 자료 넣기</button>
+    <button class="action-btn js-toast" type="button" data-toast="일단 넣기 정리는 후속 단계에서 연결됩니다."><span class="case-mark"></span>일단 넣기 정리</button>
+    <button class="action-btn js-toast" type="button" data-toast="집사에게 분류 맡기기는 후속 단계에서 연결됩니다."><span class="butler-mark"></span>집사에게 분류 맡기기</button>
+    <button class="action-btn primary js-toast" type="button" data-toast="현재 기준으로 저장했습니다."><span class="crown-mark"></span>현재 기준으로 저장</button>
+    <button class="action-btn js-toast" type="button" data-toast="복붙 지시서 만들기는 후속 단계에서 연결됩니다."><span class="quill-mark"></span>복붙 지시서 만들기</button>
+    <button class="action-btn js-toast" type="button" data-toast="인수인계 작성은 후속 단계에서 연결됩니다."><span class="paper-mark"></span>인수인계 작성</button>
+    <button class="action-btn js-toast" type="button" data-toast="집무실로 돌아가기는 후속 단계에서 연결됩니다."><span class="office-mark"></span>집무실로 돌아가기</button>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/lumi-archive.js"></script>
+</body>
+</html>

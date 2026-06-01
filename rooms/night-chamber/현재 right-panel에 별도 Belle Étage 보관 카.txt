@@ -1,0 +1,40 @@
+현재 right-panel에 별도 Belle Étage 보관 카드가 없어도,
+하단 action-bar에 “Belle Étage 보관” 버튼이 있으므로 1차 후보에서는 허용.
+
+다만 후속 UI polish에서 오른쪽 패널에
+“오늘의 메이드 일기 보내기 / Belle Étage 보관”을 분리할지 재검토한다.
+
+Night Chamber / 나이트 체임버
+
+상태:
+1차 후보 조건부 보관 가능.
+UI polish 및 구조 안정화 필요.
+
+기준 파일:
+night-chamber_pc-v1_prelink_candidate.zip
+
+통과:
+- index.html / css/night-chamber.css / js/night-chamber.js / assets/night-chamber-bg.png 구성 정상
+- 배경 이미지 assets 분리
+- CSS/HTML/JS base64 없음
+- 스크롤 구조는 열림
+- 나이트 루틴 / 내일 아침 준비 / 나이트 BGM / 감정 정리 / 메이드 일기 보내기 / 하단 action-bar 존재
+- JS 문법 정상
+- 중복 id 없음
+- !important 없음
+- 인라인 style/script 없음
+- 이모지/사람/마네킹/캐릭터 없음
+
+주의:
+- main-area와 right-panel이 아직 position:absolute 기반이라 구조적으로 완전 안정본은 아님
+- 현재는 Emergency fix의 min-height / padding-bottom / safe space로 버티는 상태
+- 후속 polish에서 flex/grid 기반 in-flow 구조로 정리 필요
+- right-panel에 독립 Belle Étage 보관 카드는 없고, 하단 action-bar 버튼으로 대체된 상태
+- note-ribbon / side-panel::before 원형 blob 장식은 리본은 아니지만 후속 polish 때 제거 검토 가능
+
+후속 polish 후보:
+1. main-area / right-panel absolute 구조 제거
+2. 나이트 루틴 → 내일 아침 준비 → 나이트 BGM 세로 흐름 자연스럽게 정리
+3. 오른쪽 Belle Étage 보관 카드 분리 여부 결정
+4. CSS Emergency fix 중복 선언 정리
+5. action-bar 높이/간격 미세 조정

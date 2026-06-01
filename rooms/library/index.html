@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library | 현실 자료 도서관</title>
+  <link rel="stylesheet" href="css/library.css">
+</head>
+<body>
+  <div class="library-page">
+    <aside class="side-menu">
+      <div class="side-frame">
+        <div class="menu-ornament" aria-hidden="true"></div>
+        <nav class="menu-list" aria-label="도서관 메뉴">
+          <button class="menu-item is-active" type="button" data-menu="전체 자료"><span class="line-icon all"></span>전체 자료</button>
+          <button class="menu-item" type="button" data-menu="PDF 보관"><span class="line-icon file"></span>PDF 보관<i></i></button>
+          <button class="menu-item" type="button" data-menu="기준서"><span class="line-icon book"></span>기준서<i></i></button>
+          <button class="menu-item" type="button" data-menu="레퍼런스"><span class="line-icon ref"></span>레퍼런스<i></i></button>
+          <button class="menu-item" type="button" data-menu="이미지 자료"><span class="line-icon image"></span>이미지 자료<i></i></button>
+          <button class="menu-item" type="button" data-menu="루미벨 문서"><span class="line-icon note"></span>루미벨 문서<i></i></button>
+          <button class="menu-item" type="button" data-menu="작업 지시서"><span class="line-icon task"></span>작업 지시서<i></i></button>
+          <button class="menu-item" type="button" data-menu="영감 자료"><span class="line-icon idea"></span>영감 자료<i></i></button>
+          <button class="menu-item" type="button" data-menu="즐겨찾기"><span class="line-icon mark"></span>즐겨찾기<i></i></button>
+          <button class="menu-item" type="button" data-menu="아카이브"><span class="line-icon box"></span>아카이브<i></i></button>
+        </nav>
+        <div class="side-note">
+          <span class="tiny-crown" aria-hidden="true"></span>
+          <p>공주님의 모든 자료는<br>집사가 정리하고 관리해<br>언제든지 찾아볼 수 있도록<br>준비합니다.</p>
+          <b aria-hidden="true"></b>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="top-area">
+        <div class="title-card"><h1>도서관</h1><p>Library</p></div>
+      </header>
+
+      <section class="library-greeting">
+        <div class="doc-slot" aria-hidden="true"><span></span></div>
+        <div><strong>공주님, 찾으시는 자료를 준비해두었습니다.</strong><p>오늘도 아름다운 창작과 기록이 쌓이고 있어요.</p></div>
+        <div class="rose-seal" aria-hidden="true"></div>
+      </section>
+
+      <section class="summary-strip">
+        <article><span class="summary-art books"></span><h2>오늘 추가된 자료</h2><strong>12건</strong><button type="button">자세히 보기</button></article>
+        <article><span class="summary-art open-book"></span><h2>최근 열어본 문서</h2><strong>18건</strong><button type="button">자세히 보기</button></article>
+        <article><span class="summary-art quill"></span><h2>정리 대기 자료</h2><strong>7건</strong><button type="button">정리하기</button></article>
+        <article><span class="summary-art standard"></span><h2>중요 기준서</h2><strong>5건</strong><button type="button">바로가기</button></article>
+      </section>
+
+      <section class="filter-bar">
+        <button class="filter-select is-active" type="button" data-filter="kind">전체 종류</button>
+        <button class="filter-select" type="button" data-filter="project">전체 프로젝트</button>
+        <label class="search-box"><span>자료 검색</span><input type="search" placeholder="자료명 또는 태그를 검색하세요..."><button type="button" aria-label="검색"></button></label>
+        <button class="filter-select" type="button" data-sort="latest">최신순</button>
+        <button class="view-button is-active" type="button" aria-label="카드 보기"><span></span><span></span><span></span><span></span></button>
+      </section>
+
+      <section class="resource-list-panel">
+        <div class="resource-grid">
+        <article class="resource-card" data-title="루미벨 드레스 디자인 기준서 v2.1" data-tags="드레스 기준서 필수"><button class="favorite is-on" type="button" aria-label="즐겨찾기"></button><em>PDF</em><h3>루미벨 드레스<br>디자인 기준서 v2.1</h3><p>프로젝트<br><b>루미벨 드레스 리뉴얼</b></p><dl><dt>등록일</dt><dd>2024.05.14</dd><dt>확인일</dt><dd>2024.05.15</dd></dl><div><span>드레스</span><span>기준서</span><span>필수</span></div><small class="current">현재 기준</small></article>
+        <article class="resource-card" data-title="로즈 가든 콘셉트 레퍼런스 모음" data-tags="배경 정원 레퍼런스"><button class="favorite is-on" type="button" aria-label="즐겨찾기"></button><em>이미지</em><h3>로즈 가든 콘셉트<br>레퍼런스 모음</h3><p>프로젝트<br><b>로즈 가든 연출</b></p><dl><dt>등록일</dt><dd>2024.05.14</dd><dt>확인일</dt><dd>2024.05.15</dd></dl><div><span>배경</span><span>정원</span><span>레퍼런스</span></div><small>참고 자료</small></article>
+        <article class="resource-card" data-title="나이트 체임버 수면 관리 프로토콜" data-tags="수면 관리 프로토콜"><button class="favorite is-on" type="button" aria-label="즐겨찾기"></button><em>문서</em><h3>나이트 체임버<br>수면 관리 프로토콜</h3><p>프로젝트<br><b>공주님 건강 관리</b></p><dl><dt>등록일</dt><dd>2024.05.13</dd><dt>확인일</dt><dd>2024.05.14</dd></dl><div><span>수면</span><span>관리</span><span>프로토콜</span></div><small class="current">현재 기준</small></article>
+        <article class="resource-card" data-title="19세기 유럽 귀족 의상 레퍼런스" data-tags="의상 역사 고증"><button class="favorite is-on" type="button" aria-label="즐겨찾기"></button><em>레퍼런스</em><h3>19세기 유럽 귀족<br>의상 레퍼런스</h3><p>프로젝트<br><b>역사 고증 자료</b></p><dl><dt>등록일</dt><dd>2024.05.12</dd><dt>확인일</dt><dd>2024.05.14</dd></dl><div><span>의상</span><span>역사</span><span>고증</span></div><small class="current">현재 기준</small></article>
+        <article class="resource-card" data-title="오늘 인수인계 작업 지시서" data-tags="지시서 데일리 운영"><button class="favorite is-on" type="button" aria-label="즐겨찾기"></button><em>지시서</em><h3>오늘 인수인계<br>작업 지시서</h3><p>프로젝트<br><b>데일리 운영</b></p><dl><dt>등록일</dt><dd>2024.05.15</dd><dt>확인일</dt><dd>2024.05.15</dd></dl><div><span>지시서</span><span>데일리</span><span>운영</span></div><small class="pending">정리 중</small></article>
+        <article class="resource-card" data-title="Belle Étage 운영 가이드" data-tags="운영 가이드 관리"><button class="favorite is-on" type="button" aria-label="즐겨찾기"></button><em>문서</em><h3>Belle Étage<br>운영 가이드</h3><p>프로젝트<br><b>Belle Étage 운영</b></p><dl><dt>등록일</dt><dd>2024.05.10</dd><dt>확인일</dt><dd>2024.05.13</dd></dl><div><span>운영</span><span>가이드</span><span>관리</span></div><small class="current">현재 기준</small></article>
+        <article class="resource-card" data-title="티룸 인테리어 무드보드" data-tags="인테리어 무드보드 티룸"><button class="favorite is-on" type="button" aria-label="즐겨찾기"></button><em>이미지</em><h3>티룸 인테리어<br>무드보드</h3><p>프로젝트<br><b>티룸 리뉴얼</b></p><dl><dt>등록일</dt><dd>2024.05.09</dd><dt>확인일</dt><dd>2024.05.13</dd></dl><div><span>인테리어</span><span>무드보드</span><span>티룸</span></div><small>참고 자료</small></article>
+        <article class="resource-card" data-title="공주님 하루 루틴 기록 기준.pdf" data-tags="루틴 기록 기준"><button class="favorite is-on" type="button" aria-label="즐겨찾기"></button><em>PDF</em><h3>공주님 하루 루틴<br>기록 기준.pdf</h3><p>프로젝트<br><b>데일리 루틴 관리</b></p><dl><dt>등록일</dt><dd>2024.05.08</dd><dt>확인일</dt><dd>2024.05.12</dd></dl><div><span>루틴</span><span>기록</span><span>기준</span></div><small class="current">현재 기준</small></article>
+        <article class="resource-card" data-title="위시룸 아이디어 기획 초안" data-tags="아이디어 기획 초안"><button class="favorite is-on" type="button" aria-label="즐겨찾기"></button><em>문서</em><h3>위시룸 아이디어<br>기획 초안</h3><p>프로젝트<br><b>위시룸 프로젝트</b></p><dl><dt>등록일</dt><dd>2024.05.07</dd><dt>확인일</dt><dd>2024.05.11</dd></dl><div><span>아이디어</span><span>기획</span><span>초안</span></div><small class="needs">검토 필요</small></article>
+        <article class="resource-card" data-title="향수 블렌딩 레퍼런스 북" data-tags="향수 블렌딩 레퍼런스"><button class="favorite is-on" type="button" aria-label="즐겨찾기"></button><em>레퍼런스</em><h3>향수 블렌딩<br>레퍼런스 북</h3><p>프로젝트<br><b>향수 컬렉션</b></p><dl><dt>등록일</dt><dd>2024.05.06</dd><dt>확인일</dt><dd>2024.05.10</dd></dl><div><span>향수</span><span>블렌딩</span><span>레퍼런스</span></div><small>참고 자료</small></article>
+        </div>
+        <div class="pagination"><button type="button">‹</button><button class="is-active" type="button">1</button><button type="button">2</button><button type="button">3</button><span>...</span><button type="button">12</button><button type="button">›</button></div>
+      </section>
+    </main>
+
+    <aside class="right-panel">
+      <div class="status-row"><button type="button"><span class="bell"></span><b>3</b><em>알림</em></button><button type="button"><span class="mail"></span><b>2</b><em>우편</em></button><button class="profile" type="button"><span>YR</span><em>공주님</em></button><div class="level"><strong>Lv. 24</strong><p><span></span></p><em>86%</em></div></div>
+      <section class="panel-card recommend"><h2>집사 자료 추천</h2><div class="book-cover"></div><strong>공주님 피부 관리<br>완벽 가이드 PDF</strong><p>피부 관리 프로젝트</p><button type="button">바로 보기</button></section>
+      <section class="panel-card waiting"><h2>정리 대기 자료 <strong>7건</strong></h2><ul><li><span>새로운 향수 테스트 기록</span><button type="button">파우더룸</button></li><li><span>드레스룸 코디 아이디어</span><button type="button">드레스룸</button></li><li><span>수면 관리 팁 보관 모음</span><button type="button">나이트 체임버</button></li></ul><button type="button">정리하러 가기</button></section>
+      <section class="panel-card keywords"><h2>최근 많이 찾은 키워드</h2><div><button type="button">드레스</button><button type="button">향수</button><button type="button">수면</button><button type="button">건강</button><button type="button">인테리어</button><button type="button">루틴</button><button type="button">비용</button><button type="button">장미</button></div></section>
+      <section class="panel-card standard-link"><h2>현재 기준서 바로가기</h2><div class="small-book"></div><strong>루미벨 전체 기준서 v2.1</strong><p>2024.05.10 업데이트</p><button type="button">기준서 열기</button></section>
+      <section class="panel-card memo"><p>이 자료는 루미폰 기준본과<br>연결되어 있습니다.</p></section>
+    </aside>
+
+    <footer class="action-bar"><button class="primary" type="button" data-action="새 자료 보관">새 자료 보관</button><button type="button" data-action="일단 넣기 정리">일단 넣기 정리</button><button type="button" data-action="집사에게 분류 맡기기">집사에게 분류 맡기기</button><button type="button" data-action="현재 기준으로 지정">현재 기준으로 지정</button><button type="button" data-action="Study로 보내기">Study로 보내기</button><button type="button" data-action="LUMI Archive 저장">LUMI Archive 저장</button></footer>
+  </div>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="js/library.js"></script>
+</body>
+</html>

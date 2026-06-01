@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting Room | Rose Household</title>
+  <link rel="stylesheet" href="css/meeting-room.css">
+</head>
+<body>
+  <div class="background-layer" aria-hidden="true"></div>
+  <div class="background-wash" aria-hidden="true"></div>
+
+  <div class="meeting-shell">
+    <aside class="left-rail panel-frame" aria-label="Rose Household navigation">
+      <div class="brand-block">
+        <div class="brand-mark" aria-hidden="true">Rose</div>
+        <p class="brand-name">Rose Household</p>
+        <p class="brand-subtitle">For Her Grace</p>
+      </div>
+
+      <nav class="room-nav" aria-label="회의실 메뉴">
+        <a href="#" class="nav-link simple-link">Rose Hall</a>
+        <a href="#" class="nav-link active-link" aria-current="page">
+          <span>회의실</span>
+          <small>Meeting Room</small>
+        </a>
+        <a href="#" class="nav-link">오늘 안건</a>
+        <a href="#" class="nav-link has-dot">진행 중 회의</a>
+        <a href="#" class="nav-link">결정 완료</a>
+        <a href="#" class="nav-link">보류 안건</a>
+        <a href="#" class="nav-link">폐기 안건</a>
+        <a href="#" class="nav-link">회의 기록</a>
+        <a href="#" class="nav-link">관련 자료</a>
+      </nav>
+
+      <section class="meeting-info-card soft-card" aria-labelledby="todayMeetingTitle">
+        <h2 id="todayMeetingTitle">오늘의 회의 정보</h2>
+        <dl class="info-list">
+          <div>
+            <dt>회의명</dt>
+            <dd>하계 별장 관리 계획 회의</dd>
+          </div>
+          <div>
+            <dt>회의 시간</dt>
+            <dd>10:00 ~ 11:30</dd>
+          </div>
+          <div>
+            <dt>진행 상태</dt>
+            <dd>진행 중</dd>
+          </div>
+        </dl>
+      </section>
+    </aside>
+
+    <main class="main-column" aria-label="회의실 본문">
+      <header class="top-header">
+        <div class="title-plaque panel-frame">
+          <p class="title-kicker">Rose Household</p>
+          <h1>회의실</h1>
+          <p>Meeting Room</p>
+        </div>
+      </header>
+
+      <section class="meeting-board panel-frame" aria-labelledby="meetingLogTitle">
+        <div class="board-head">
+          <div class="meeting-state">진행 중 회의</div>
+          <h2 id="meetingLogTitle">하계 별장 관리 계획 회의</h2>
+          <div class="attendee-count">참석자 4 / 4</div>
+        </div>
+
+        <div class="log-list" aria-label="회의 로그">
+          <article class="log-row">
+            <div class="speaker-cell">
+              <strong>집사</strong>
+              <time datetime="10:03">10:03</time>
+            </div>
+            <div class="message-cell">
+              <p>하계 별장 정원 관리 인력 증원과 외부 업체 계약 연장 건을 보고드립니다.</p>
+              <ul>
+                <li>정원사 1명 증원 필요. 6월부터 9월까지 집중 관리</li>
+                <li>외부 조경 업체 계약 만료일은 6월 30일</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="log-row">
+            <div class="speaker-cell princess-speaker">
+              <strong>공주님</strong>
+              <time datetime="10:06">10:06</time>
+            </div>
+            <div class="message-cell">
+              <p>정원사 증원은 승인합니다. 조경 업체는 서비스 품질과 비용을 비교해 최적의 조건으로 연장 검토해주세요.</p>
+            </div>
+          </article>
+
+          <article class="log-row">
+            <div class="speaker-cell gpt-speaker">
+              <strong>GPT</strong>
+              <time datetime="10:09">10:09</time>
+            </div>
+            <div class="message-cell">
+              <p>현재 업체의 연장 조건은 유지되지만, 타사 견적 대비 8% 높은 편입니다. 동일 서비스 기준으로 B업체가 더 유리한 조건을 제시했습니다.</p>
+              <a href="#" class="text-link">관련 비교 자료 보기</a>
+            </div>
+          </article>
+
+          <article class="log-row">
+            <div class="speaker-cell claude-speaker">
+              <strong>Claude</strong>
+              <time datetime="10:11">10:11</time>
+            </div>
+            <div class="message-cell">
+              <p>B업체 변경 시 초기 인수인계 기간을 2주로 두면 품질 저하 위험을 줄일 수 있습니다. 계약서에는 하자 보수와 일정 변경 조항을 명확히 넣는 편이 안전합니다.</p>
+            </div>
+          </article>
+
+          <article class="log-row summary-row">
+            <div class="speaker-cell summary-speaker">
+              <strong>집사 요약</strong>
+              <time datetime="10:12">10:12</time>
+            </div>
+            <div class="message-cell">
+              <p>정원사 1명 증원은 승인되었으며, 조경 업체는 B업체로 변경 후 연장하는 것이 비용 효율적입니다. 계약 연장 기간은 7월 1일부터 익년 6월 30일까지 진행하겠습니다.</p>
+            </div>
+          </article>
+        </div>
+
+        <section class="final-decision-card" aria-labelledby="finalDecisionTitle">
+          <div class="decision-title-row">
+            <span class="rule-line"></span>
+            <h2 id="finalDecisionTitle">공주님 최종 결정</h2>
+            <span class="rule-line"></span>
+          </div>
+          <p class="decision-copy">정원사 1명 증원 승인 및 B업체와 계약 연장으로 결정합니다.</p>
+          <dl class="decision-meta">
+            <div>
+              <dt>결정일</dt>
+              <dd>2025.05.20 10:15</dd>
+            </div>
+            <div>
+              <dt>결정자</dt>
+              <dd>공주님</dd>
+            </div>
+            <div>
+              <dt>결정 상태</dt>
+              <dd>승인</dd>
+            </div>
+          </dl>
+          <div class="seal-slot" aria-hidden="true">승인</div>
+        </section>
+      </section>
+    </main>
+
+    <aside class="right-rail" aria-label="회의 요약 패널">
+      <section class="status-cluster panel-frame" aria-label="상태 카드">
+        <div class="status-card">
+          <span class="status-number">3</span>
+          <strong>알림</strong>
+        </div>
+        <div class="status-card">
+          <span class="status-number">2</span>
+          <strong>쪽지</strong>
+        </div>
+        <div class="time-card">
+          <span>2025.05.20 화</span>
+          <strong>10:30</strong>
+        </div>
+      </section>
+
+      <section class="summary-card panel-frame" aria-labelledby="decisionSummaryTitle">
+        <div class="summary-head">
+          <h2 id="decisionSummaryTitle">오늘의 결정 요약</h2>
+          <a href="#">자세히 보기</a>
+        </div>
+        <p class="count-line">총 결정 2건</p>
+        <div class="summary-counts" aria-label="결정 현황">
+          <span>승인 2건</span>
+          <span>보류 0건</span>
+          <span>반려 0건</span>
+        </div>
+      </section>
+
+      <section class="summary-card panel-frame">
+        <div class="summary-head">
+          <h2>보류 안건</h2>
+          <span class="mini-badge">1건</span>
+        </div>
+        <p>별장 실내 콘서트 피아노 조율 일정 조정</p>
+        <dl class="mini-dl">
+          <div><dt>사유</dt><dd>일정 조율 필요</dd></div>
+          <div><dt>담당</dt><dd>집사</dd></div>
+        </dl>
+      </section>
+
+      <section class="summary-card panel-frame">
+        <div class="summary-head">
+          <h2>집무실 전달 예정</h2>
+          <span class="mini-badge">1건</span>
+        </div>
+        <p>B업체 계약 연장 승인 건</p>
+        <dl class="mini-dl">
+          <div><dt>예정 시간</dt><dd>5월 20일 11:00</dd></div>
+          <div><dt>전달 대상</dt><dd>집무실</dd></div>
+        </dl>
+      </section>
+
+      <section class="summary-card panel-frame">
+        <div class="summary-head">
+          <h2>기억 창고 보관</h2>
+          <span class="mini-badge">2건</span>
+        </div>
+        <ul class="compact-list">
+          <li>지난해 별장 관리 보고서</li>
+          <li>조경 업체 비교 견적 자료</li>
+        </ul>
+      </section>
+
+      <section class="summary-card panel-frame action-summary">
+        <div class="summary-head">
+          <h2>다음 행동</h2>
+          <span class="mini-badge">3건</span>
+        </div>
+        <ol class="compact-list ordered-list">
+          <li>B업체 계약서 검토 및 서명</li>
+          <li>정원사 채용 공고 등록</li>
+          <li>별장 관리자에게 변경 사항 안내</li>
+        </ol>
+      </section>
+    </aside>
+  </div>
+
+  <footer class="bottom-actionbar" aria-label="회의실 작업 버튼">
+    <button type="button" data-toast="새 안건 등록 화면은 다음 단계에서 연결됩니다.">새 안건 등록</button>
+    <button type="button" data-toast="안건 편집 기능은 구조 확정 후 연결됩니다.">안건 편집</button>
+    <button type="button" data-toast="의견 추가 입력 영역은 다음 패치에서 연결됩니다.">의견 추가</button>
+    <button type="button" data-toast="공주님 최종 결정 카드가 현재 표시되어 있습니다.">결정 등록</button>
+    <button type="button" data-toast="회의록 저장 기능은 DB 연동 단계에서 연결됩니다.">회의록 저장</button>
+    <button type="button" data-toast="PDF 내보내기는 다음 기능 단계에서 연결됩니다.">PDF 내보내기</button>
+    <button type="button" data-toast="회의 종료 상태는 실제 저장 기능 연결 후 반영됩니다.">회의 종료</button>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="js/meeting-room.js"></script>
+</body>
+</html>
