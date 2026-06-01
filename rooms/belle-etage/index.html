@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belle Étage</title>
+  <link rel="stylesheet" href="css/belle-etage.css">
+</head>
+<body>
+  <div class="estate-page">
+    <aside class="side-menu" aria-label="저택 메뉴">
+      <div class="menu-nameplate" aria-hidden="true"></div>
+      <div class="menu-ribbon" aria-hidden="true"></div>
+
+      <nav class="menu-list">
+        <a href="#" class="menu-item"><span class="line-icon crown"></span><span>오늘의 위치</span></a>
+        <a href="#" class="menu-item"><span class="line-icon dress"></span><span>드레스룸</span></a>
+        <a href="#" class="menu-item"><span class="line-icon mirror"></span><span>파우더룸</span></a>
+        <a href="#" class="menu-item"><span class="line-icon bag"></span><span>위시룸</span></a>
+        <a href="#" class="menu-item"><span class="line-icon moon"></span><span>나이트룸</span></a>
+        <a href="#" class="menu-item"><span class="line-icon book"></span><span>메이드 일기장</span></a>
+        <a href="#" class="menu-item active"><span class="line-icon archive"></span><span>Belle Étage</span></a>
+        <a href="#" class="menu-item"><span class="line-icon photo"></span><span>사진첩</span></a>
+        <a href="#" class="menu-item"><span class="line-icon calendar"></span><span>스케줄 / 일정</span></a>
+        <a href="#" class="menu-item"><span class="line-icon anniversary"></span><span>기념일</span></a>
+        <a href="#" class="menu-item"><span class="line-icon setting"></span><span>설정</span></a>
+      </nav>
+
+      <div class="menu-guide">
+        <p>저택의 모든 기록은</p>
+        <p>Belle Étage에 안전하게 보관되어요.</p>
+        <p>공주님의 하루하루를 소중히 기억할게요.</p>
+        <span class="guide-mark" aria-hidden="true"></span>
+      </div>
+    </aside>
+
+    <main class="main-stage">
+      <header class="top-bar">
+        <div class="title-frame">
+          <span class="title-crown" aria-hidden="true"></span>
+          <h1>Belle Étage</h1>
+          <p>메이드 일기 아카이브</p>
+        </div>
+
+        <section class="status-cluster" aria-label="상태 영역">
+          <button class="status-card" type="button" data-toast="알림 목록은 다음 단계에서 연결돼요.">
+            <span class="status-badge">3</span>
+            <span class="status-line bell" aria-hidden="true"></span>
+            <span>알림</span>
+          </button>
+          <button class="status-card" type="button" data-toast="우편함은 다음 단계에서 연결돼요.">
+            <span class="status-badge">2</span>
+            <span class="status-line mail" aria-hidden="true"></span>
+            <span>우편</span>
+          </button>
+          <button class="profile-card" type="button" data-toast="공주님 프로필은 다음 단계에서 연결돼요.">
+            <span class="profile-slot">P</span>
+            <span>공주님</span>
+          </button>
+          <button class="level-card" type="button" data-toast="레벨 기록은 다음 단계에서 연결돼요.">
+            <strong>Lv. 24</strong>
+            <span class="level-meter"><span></span></span>
+            <small>86%</small>
+          </button>
+        </section>
+      </header>
+
+      <section class="summary-card" aria-label="오늘의 종합 기록">
+        <h2>오늘의 종합 기록</h2>
+        <div class="summary-grid">
+          <article class="summary-item">
+            <span class="item-visual rose-visual" aria-hidden="true"></span>
+            <div>
+              <h3>오늘 피부 상태</h3>
+              <p>촉촉함</p>
+              <p>맑음</p>
+              <p>탄력 좋음</p>
+            </div>
+            <button type="button" data-toast="피부 상태 자세히 보기는 다음 단계에서 연결돼요.">자세히 보기</button>
+          </article>
+          <article class="summary-item">
+            <span class="item-visual dress-visual" aria-hidden="true"></span>
+            <div>
+              <h3>오늘 코디</h3>
+              <p>장미 정원 산책 코디</p>
+              <p class="rating-hearts">사랑스러움 가득</p>
+            </div>
+            <button type="button" data-toast="코디 기록은 다음 단계에서 연결돼요.">자세히 보기</button>
+          </article>
+          <article class="summary-item">
+            <span class="item-visual perfume-visual" aria-hidden="true"></span>
+            <div>
+              <h3>오늘 향수</h3>
+              <p>로즈 부케</p>
+              <p>Rose Bouquet</p>
+            </div>
+            <button type="button" data-toast="향수 기록은 다음 단계에서 연결돼요.">자세히 보기</button>
+          </article>
+          <article class="summary-item">
+            <span class="item-visual wish-visual" aria-hidden="true"></span>
+            <div>
+              <h3>오늘 위시룸 알림</h3>
+              <p>재입고 2건</p>
+              <p>가격 내려감 1건</p>
+            </div>
+            <button type="button" data-toast="위시룸 알림은 다음 단계에서 연결돼요.">확인하기</button>
+          </article>
+          <article class="summary-item maid-summary">
+            <span class="maid-slot">M</span>
+            <div>
+              <h3>오늘 메이드 한 줄 종합</h3>
+              <blockquote>오늘은 장미빛 아이템과 은은한 향기로 인해 정말 잘 어울렸어요. 하루가 참 아름다웠어요.</blockquote>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="date-bridge" aria-label="날짜 선택">
+        <button type="button" data-toast="이전 날짜 이동은 다음 단계에서 연결돼요.">‹</button>
+        <strong>2024.05.14 (화)</strong>
+        <button type="button" data-toast="다음 날짜 이동은 다음 단계에서 연결돼요.">›</button>
+      </div>
+
+      <section class="diary-grid" aria-label="방별 메이드 일기">
+        <article class="diary-card">
+          <h3><span class="tiny-symbol powder"></span>파우더룸 일기</h3>
+          <span class="maid-avatar">R</span>
+          <strong>메이드 로제</strong>
+          <p>공주님의 피부가 오늘은 유난히 맑고 촉촉했어요. 로즈 부케 향수가 피부 향과 정말 잘 어울렸어요.</p>
+          <div class="tag-row"><span>#피부케어</span><span>#보습</span><span>#향수</span></div>
+          <p class="ribbon-state">리본 보관 <span></span> 보관됨</p>
+          <button type="button" data-toast="파우더룸 일기를 열 준비 중이에요.">자세히 보기</button>
+        </article>
+        <article class="diary-card">
+          <h3><span class="tiny-symbol dress"></span>드레스룸 일기</h3>
+          <span class="maid-avatar">C</span>
+          <strong>메이드 샤를로트</strong>
+          <p>장미 정원 산책 코디를 정말 마음에 들어하셨어요. 핑크톤 드레스가 공주님의 분위기를 더 빛나게 해줍니다.</p>
+          <div class="tag-row"><span>#장미코디</span><span>#핑크</span><span>#산책</span></div>
+          <p class="ribbon-state">리본 보관 <span></span> 보관됨</p>
+          <button type="button" data-toast="드레스룸 일기를 열 준비 중이에요.">자세히 보기</button>
+        </article>
+        <article class="diary-card">
+          <h3><span class="tiny-symbol wish"></span>위시룸 일기</h3>
+          <span class="maid-avatar">L</span>
+          <strong>메이드 루나</strong>
+          <p>벨라 컬렉 체인백이 재입고 되었어요. 라벤 핀 스톤의 가격이 내려가서 알려드렸답니다.</p>
+          <div class="tag-row"><span>#재입고</span><span>#가격변동</span><span>#가방</span></div>
+          <p class="ribbon-state">리본 보관 <span></span> 보관됨</p>
+          <button type="button" data-toast="위시룸 일기를 열 준비 중이에요.">자세히 보기</button>
+        </article>
+        <article class="diary-card">
+          <h3><span class="tiny-symbol night"></span>나이트룸 일기</h3>
+          <span class="maid-avatar">F</span>
+          <strong>메이드 플레어</strong>
+          <p>오늘 밤 공주님께서는 라벤더 티를 드시며 책을 읽으셨어요. 마음이 편안해 보였어요.</p>
+          <div class="tag-row"><span>#라벤더티</span><span>#독서</span><span>#휴식</span></div>
+          <p class="ribbon-state">리본 보관 <span></span> 보관됨</p>
+          <button type="button" data-toast="나이트룸 일기를 열 준비 중이에요.">자세히 보기</button>
+        </article>
+        <article class="diary-card">
+          <h3><span class="tiny-symbol total"></span>총괄 메이드 종합 일기</h3>
+          <span class="maid-avatar">E</span>
+          <strong>메이드 엘리제</strong>
+          <p>오늘은 전체적으로 장미 계열과 핑크 톤이 하루를 물들였어요. 공주님의 미소가 특히 아름다웠던 하루였습니다.</p>
+          <div class="tag-row"><span>#전체요약</span><span>#장미</span><span>#핑크무드</span></div>
+          <p class="ribbon-state">리본 보관 <span></span> 보관됨</p>
+          <button type="button" data-toast="종합 일기를 열 준비 중이에요.">자세히 보기</button>
+        </article>
+      </section>
+    </main>
+
+    <aside class="filter-panel" aria-label="기록 필터">
+      <h2>기록 필터</h2>
+      <section class="filter-section">
+        <h3>기록 날짜</h3>
+        <button class="select-like" type="button" data-toast="날짜 선택은 다음 단계에서 연결돼요.">2024.05.14 (화)</button>
+      </section>
+      <section class="filter-section">
+        <h3>방별</h3>
+        <div class="pill-row">
+          <button class="pill active" type="button">전체</button>
+          <button class="pill" type="button">파우더룸</button>
+          <button class="pill" type="button">드레스룸</button>
+          <button class="pill" type="button">위시룸</button>
+          <button class="pill" type="button">나이트룸</button>
+          <button class="pill" type="button">종합 일기</button>
+        </div>
+      </section>
+      <section class="filter-section">
+        <h3>태그</h3>
+        <div class="tag-cloud">
+          <button type="button">#장미</button>
+          <button type="button">#핑크</button>
+          <button type="button">#데이트</button>
+          <button type="button">#향수</button>
+          <button type="button">#재입고</button>
+          <button type="button">#가격변동</button>
+          <button type="button">#독서</button>
+          <button type="button">#휴식</button>
+        </div>
+      </section>
+      <section class="filter-section option-section">
+        <label><input type="checkbox"> <span>리본 보관 기록만 보기</span></label>
+        <label><input type="checkbox"> <span>즐겨찾기만 보기</span></label>
+        <label><input type="checkbox"> <span>최근 기록 우선</span></label>
+      </section>
+      <button class="search-button" type="button" data-toast="기록 검색은 다음 단계에서 연결돼요.">기록 검색하기</button>
+    </aside>
+
+    <footer class="action-bar" aria-label="하단 액션바">
+      <button type="button" data-toast="오늘 종합 일기는 다음 단계에서 열려요.">오늘 종합 일기 보기</button>
+      <button type="button" data-toast="방별 기록 보기는 다음 단계에서 열려요.">방별 기록 보기</button>
+      <button type="button" data-toast="리본 보관함은 다음 단계에서 열려요.">리본 보관함 열기</button>
+      <button type="button" data-toast="총괄 메이드 정리는 다음 단계에서 연결돼요.">총괄 메이드에게 하루 정리 받기</button>
+      <button type="button" data-toast="월별 아카이브는 다음 단계에서 열려요.">월별 아카이브 보기</button>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+  </div>
+  <script src="js/belle-etage.js"></script>
+</body>
+</html>

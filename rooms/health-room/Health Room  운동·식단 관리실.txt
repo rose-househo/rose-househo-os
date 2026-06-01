@@ -1,0 +1,30 @@
+Health Room / 운동·식단 관리실
+
+상태:
+1차 기준본 잠금 가능.
+
+기준 파일:
+health-room_pc-v1_prelink_stable.zip
+
+역할:
+공주님의 운동, 식단, 수분, 스트레칭, 수면, 피로도, 스트레스 상태를 부드럽게 정리하는 생활 리듬 관리 방.
+
+통과:
+- index.html / css/health-room.css / js/health-room.js / assets/health-room-bg.png 구성 정상
+- 운동·식단·수분·컨디션 기록방 역할 명확
+- 의료 진단 / 치료 / 처방 표현 없음
+- Night Chamber / Bath Chamber / Powder Room과 역할 혼동 없음
+- 사람/메이드/공주님/운동 캐릭터 이미지 없음
+- 이니셜 슬롯과 CSS placeholder만 사용
+- 1920 / 3820 레이아웃 구조 안정
+- 하단 action-bar 본문 덮힘 없음
+- 스크롤 정상
+- base64 없음
+- 외부 CDN 없음
+- !important / 인라인 style/script 없음
+- JS 문법 및 코드 품질 정상
+
+후속 polish 후보:
+1. 미디어쿼리 중복 정리
+2. 4열 카드 높이 편차 미세 조정
+3. 오른쪽 수면 상태 카드 안의 피로도/스트레스 밀도 조정

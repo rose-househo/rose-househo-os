@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>집사 집무실 | Butler's Office</title>
+  <link rel="stylesheet" href="css/butler-office.css" />
+</head>
+<body>
+  <div class="office-shell" data-work-state="idle">
+    <aside class="room-menu" aria-label="방 이동 메뉴">
+      <div class="menu-title">
+        <span class="menu-kicker">Room Move</span>
+        <strong>방 이동 메뉴</strong>
+      </div>
+      <nav class="room-list">
+        <a class="room-link" href="#"><span class="line-icon rosehall"></span><span>Rose Hall</span></a>
+        <a class="room-link" href="#"><span class="line-icon archive"></span><span>LUMI Archive</span></a>
+        <a class="room-link" href="#"><span class="line-icon estate"></span><span>Maid Estate</span></a>
+        <a class="room-link" href="#"><span class="line-icon etage"></span><span>Belle Étage</span></a>
+        <a class="room-link" href="#"><span class="line-icon wish"></span><span>Wish Room</span></a>
+        <a class="room-link" href="#"><span class="line-icon powder"></span><span>Powder Room</span></a>
+        <a class="room-link" href="#"><span class="line-icon dress"></span><span>Dress Room</span></a>
+        <a class="room-link" href="#"><span class="line-icon library"></span><span>Library</span></a>
+        <a class="room-link active" href="#"><span class="line-icon office"></span><span>Butler's Office</span></a>
+      </nav>
+      <div class="menu-note">
+        <span class="quote-line"></span>
+        <p>집무실은 오늘의 작업과 기준본을 정리하고, 다음 작업으로 넘겨줄 기록을 준비하는 공간입니다.</p>
+      </div>
+    </aside>
+
+    <main class="office-main">
+      <header class="office-header">
+        <div class="title-plaque">
+          <span class="plaque-line"></span>
+          <h1>집사 집무실</h1>
+          <p>Butler's Office</p>
+        </div>
+        <div class="header-tools" aria-label="상단 도구">
+          <button type="button" class="mini-tool"><span>알림</span><b>3</b></button>
+          <button type="button" class="mini-tool"><span>우편</span><b>2</b></button>
+          <div class="level-card"><span>Lv. 24</span><i><em></em></i><small>86%</small></div>
+        </div>
+      </header>
+
+      <section class="office-layout">
+        <div class="center-column">
+          <section class="briefing-card panel-card">
+            <div class="briefing-slot" aria-hidden="true">
+              <div class="paper-stack">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="stamp-mark"></div>
+            </div>
+            <div class="briefing-copy">
+              <div class="section-label">총괄집사 브리핑</div>
+              <p>오늘은 현재 작업본을 먼저 확인하고, 기준본 잠금 여부와 남은 TODO를 정리하면 좋겠습니다.</p>
+              <div class="keyword-row" aria-label="오늘의 키워드">
+                <span>오늘의 키워드</span>
+                <b>기준본 확인</b>
+                <b>검사 기록</b>
+                <b>인수인계</b>
+              </div>
+            </div>
+          </section>
+
+          <section class="desk-card panel-card">
+            <div class="card-head">
+              <div>
+                <span class="section-label">작업 데스크</span>
+                <h2>오늘의 작업 지휘판</h2>
+              </div>
+              <span class="desk-status" id="deskStatus">대기 중</span>
+            </div>
+
+            <div class="desk-grid">
+              <article class="task-card session-card">
+                <span class="mini-label">현재 작업 세션</span>
+                <strong>Butler's Office 클린 베이스</strong>
+                <p>배경 분위기를 유지하고, 오늘 작업 관리용 PC 대시보드로 정리합니다.</p>
+                <button type="button" class="soft-button">작업 세션 변경</button>
+              </article>
+
+              <article class="task-card timer-card">
+                <span class="mini-label">작업 타이머</span>
+                <strong id="timerText">00:00:00</strong>
+                <p id="timerHint">시작 전입니다.</p>
+                <button type="button" class="soft-button" id="pauseTimerButton">일시 정지</button>
+              </article>
+
+              <article class="task-card memo-card">
+                <span class="mini-label">긴급 메모</span>
+                <strong>기준본 잠금 전 화면 검사 필요</strong>
+                <p>하단 액션바 겹침, 글자 세로 깨짐, 오른쪽 패널 줄바꿈을 우선 확인합니다.</p>
+                <button type="button" class="soft-button">메모 자세히 보기</button>
+              </article>
+
+              <article class="task-card continue-card">
+                <span class="mini-label">어제 이어서 할 작업</span>
+                <strong>위시룸 시안 후보 검토</strong>
+                <p>3종 후보 중 유지할 구조와 버릴 구조를 분리합니다.</p>
+                <button type="button" class="soft-button">이어서 작업하기</button>
+              </article>
+
+              <article class="task-card todo-card wide-card">
+                <div class="todo-title-row">
+                  <div>
+                    <span class="mini-label">오늘 할 일</span>
+                    <strong>진행률 4 / 7</strong>
+                  </div>
+                  <span class="progress-pill">57%</span>
+                </div>
+                <ul class="check-list">
+                  <li class="done"><span></span>현재 기준본 확인</li>
+                  <li class="done"><span></span>브리핑 카드 아바타 제거</li>
+                  <li class="done"><span></span>하단 액션바 safe space 확인</li>
+                  <li class="done"><span></span>오른쪽 패널 줄바꿈 검사</li>
+                  <li><span></span>패치 기록 정리</li>
+                  <li><span></span>검사 결과 작성</li>
+                  <li><span></span>다음 작업 인수인계</li>
+                </ul>
+              </article>
+
+              <article class="task-card handoff-card wide-card">
+                <span class="mini-label">내일 인수인계</span>
+                <strong>남겨야 할 내용</strong>
+                <p>현재 기준본, 오늘 수정 범위, 검사 통과 여부, 다음 작업 후보를 한 묶음으로 정리합니다.</p>
+                <button type="button" class="soft-button">인수인계 작성하기</button>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <aside class="right-column">
+          <section class="side-card panel-card">
+            <span class="section-label">오늘의 요약</span>
+            <h2>작업 상태</h2>
+            <div class="summary-list">
+              <p><span>기준본 보유 수</span><b>1,248</b></p>
+              <p><span>위단 넣기 개수</span><b>327</b></p>
+              <p><span>검토 대기</span><b>56</b></p>
+            </div>
+            <button type="button" class="soft-button fill">요약 열기</button>
+          </section>
+
+          <section class="side-card panel-card baseline-card">
+            <span class="section-label">현재 기준본</span>
+            <div class="baseline-row">
+              <div class="baseline-thumb" aria-hidden="true"><span></span></div>
+              <div>
+                <strong>집사 집무실 클린 베이스</strong>
+                <p>Butler Office v1</p>
+              </div>
+            </div>
+            <button type="button" class="soft-button">기준본 자세히 보기</button>
+          </section>
+
+          <section class="side-card panel-card todo-summary-card">
+            <span class="section-label">오늘 TODO 요약</span>
+            <div class="small-progress"><span class="progress-fill progress-57"></span></div>
+            <p class="progress-text">진행률 <b>4 / 7</b></p>
+            <div class="compact-list">
+              <button type="button"><span>위시룸 확인 대기</span><small>신규 시안 2건</small></button>
+              <button type="button"><span>파우더룸 오늘 루틴</span><small>완료 3 / 5</small></button>
+              <button type="button"><span>검사 결과 기록</span><small>대기 1건</small></button>
+            </div>
+          </section>
+
+          <section class="side-card panel-card caution-card">
+            <span class="section-label">주의 메모</span>
+            <ul>
+              <li>새 일러스트와 캐릭터는 추가하지 않습니다.</li>
+              <li>기존 역할을 LUMI Archive처럼 바꾸지 않습니다.</li>
+              <li>하단바는 본문을 덮지 않게 유지합니다.</li>
+            </ul>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <nav class="quick-bar" aria-label="빠른 액션바">
+      <button type="button" id="startWorkButton"><span class="quick-icon play"></span>작업 시작</button>
+      <button type="button" id="endWorkButton"><span class="quick-icon stop"></span>작업 종료</button>
+      <button type="button"><span class="quick-icon lock"></span>기준본 잠금</button>
+      <button type="button"><span class="quick-icon record"></span>검사 결과 기록</button>
+      <button type="button"><span class="quick-icon handoff"></span>인수인계 작성</button>
+      <button type="button"><span class="quick-icon memo"></span>긴급 메모</button>
+    </nav>
+  </div>
+
+  <script src="js/butler-office.js"></script>
+</body>
+</html>

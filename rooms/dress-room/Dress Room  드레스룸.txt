@@ -1,0 +1,39 @@
+Dress Room / 드레스룸
+PC 1차 클린 베이스 조건부 잠금 가능
+
+기준 파일:
+dress-room_pc-v1_prelink_stable.zip
+
+구성:
+index.html
+css/dress-room.css
+js/dress-room.js
+assets/dress-room-bg.png
+
+통과:
+- 배경 이미지 assets 분리 완료
+- CSS/HTML/JS base64 없음
+- 1920 레이아웃 정상
+- 3820 구조 파손 없음
+- 하단 액션바 본문 덮힘 없음
+- 상단 타이틀 / 왼쪽 추천 패널 / 중앙 현재 코디 카드 / 오른쪽 추천·기록 패널 / 하단 액션바 유지
+- CSS 리본 장식 없음
+- 사람/마네킹/캐릭터 없음
+- 새 드레스 이미지 없음
+- 이모지 없음
+- JS 문법 정상
+- 중복 id 없음
+- !important 없음
+- 인라인 style/script 없음
+- 후속 참고 자료 화면 혼합 없음
+
+확인된 조건:
+- 왼쪽 메뉴에 신상/재입고/가격/살까 말까/구매 관련 항목이 있으나,
+  현재는 Dress Room 안의 의상·코디 상태 메뉴로 취급.
+- 실제 쇼핑 감시/가격 추적/재입고 관리 본기능은 Wish Room에서 별도 담당.
+- 따라서 현재 화면 혼합 문제는 아님.
+
+후속 polish 후보:
+1. title-frame translateX(86px) 정렬감 재검토
+2. action-bar 높이 미세 축소 가능
+3. Dress Room 메뉴 중 쇼핑성 항목은 Wish Room 제작 후 명칭/역할 재정리 가능

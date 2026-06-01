@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dress Room | 공주님의 드레스룸</title>
+  <link rel="stylesheet" href="css/dress-room.css">
+</head>
+<body>
+  <div class="dress-room-shell">
+    <header class="top-bar" aria-label="드레스룸 상단 상태 영역">
+      <div class="title-frame">
+        <h1>공주님의 드레스룸</h1>
+        <span class="title-kicker">DRESS ROOM</span>
+      </div>
+      <div class="status-cluster" aria-label="상태 카드">
+        <button class="status-card" type="button" data-toast="새 알림은 아직 연결 전이에요.">
+          <span class="line-icon bell" aria-hidden="true"></span>
+          <strong>알림</strong>
+          <small>3</small>
+        </button>
+        <button class="status-card" type="button" data-toast="우편함은 후속 단계에서 연결돼요.">
+          <span class="line-icon mail" aria-hidden="true"></span>
+          <strong>우편</strong>
+          <small>2</small>
+        </button>
+        <button class="profile-card" type="button" data-toast="프로필 슬롯은 임시 상태예요.">
+          <span class="profile-orb">P</span>
+          <strong>공주님</strong>
+        </button>
+        <div class="level-card" aria-label="레벨 24 진행도 86퍼센트">
+          <strong>Lv. 24</strong>
+          <span class="level-track"><span></span></span>
+          <small>86%</small>
+        </div>
+      </div>
+    </header>
+
+    <main class="room-grid">
+      <aside class="side-menu panel" aria-label="드레스룸 메뉴">
+        <nav>
+          <button class="menu-item active" type="button"><span class="menu-mark crown"></span>오늘의 위치</button>
+          <button class="menu-item" type="button"><span class="menu-mark new"></span>신상</button>
+          <button class="menu-item" type="button"><span class="menu-mark reload"></span>재입고 감시중</button>
+          <button class="menu-item" type="button"><span class="menu-mark price"></span>가격 내려감</button>
+          <button class="menu-item" type="button"><span class="menu-mark question"></span>살까 말까</button>
+          <button class="menu-item" type="button"><span class="menu-mark calendar"></span>구매 예정</button>
+          <button class="menu-item" type="button"><span class="menu-mark basket"></span>오늘의 구매 바구니</button>
+          <button class="menu-item" type="button"><span class="menu-mark gift"></span>구매 완료</button>
+          <button class="menu-item" type="button"><span class="menu-mark dress"></span>드레스 기록부</button>
+          <button class="menu-item" type="button"><span class="menu-mark book"></span>코디북 / 아카이브</button>
+          <button class="menu-item" type="button"><span class="menu-mark setting"></span>설정</button>
+        </nav>
+        <div class="maid-note">
+          <b>오늘의 안내</b>
+          <p>오늘의 코디와 착장 기록은 드레스룸에서 함께 정리해드릴게요.</p>
+        </div>
+      </aside>
+
+      <section class="prep-panel panel" aria-label="오늘의 준비 패널">
+        <h2>메이드 추천 코디</h2>
+        <div class="prep-grid mixed">
+          <article class="prep-card compact">
+            <span class="prep-label">오늘 날씨</span>
+            <b>맑음</b>
+            <small>22℃ / 12℃</small>
+          </article>
+          <article class="prep-card compact">
+            <span class="prep-label">오늘 일정</span>
+            <b>오후 티타임</b>
+            <small>장미 정원 산책</small>
+          </article>
+          <article class="prep-card media-row accent-card">
+            <span class="hair-shape" aria-hidden="true"></span>
+            <div>
+              <span class="prep-label">추천 헤어</span>
+              <b>반묶음 웨이브</b>
+              <small>로즈 코디와 어울리는 부드러운 결</small>
+              <span class="tag-line"><i>러블리</i><i>우아함</i></span>
+            </div>
+          </article>
+          <article class="prep-card media-row accent-card">
+            <span class="bottle-shape" aria-hidden="true"></span>
+            <div>
+              <span class="prep-label">추천 향수</span>
+              <b>로즈 부케</b>
+              <small>Rose Bouquet</small>
+              <span class="tag-line"><i>로즈향</i><i>우아함</i></span>
+            </div>
+          </article>
+          <article class="prep-card media-row accent-card">
+            <span class="mirror-shape" aria-hidden="true"></span>
+            <div>
+              <span class="prep-label">추천 메이크업</span>
+              <b>로즈 글로우</b>
+              <small>밝은 피부와 핑크빛 분위기</small>
+              <span class="tag-line"><i>맑은피부</i><i>핑크빛</i></span>
+            </div>
+          </article>
+        </div>
+        <div class="quote-card">
+          <b>메이드의 한마디</b>
+          <p>오늘은 로즈 컬러와 부드러운 아이보리 톤을 함께 맞추면 외출 준비가 더 우아해져요.</p>
+        </div>
+      </section>
+
+      <section class="main-look panel" aria-label="오늘의 코디 메인 카드">
+        <div class="look-header">
+          <span>현재 착장 중</span>
+          <h2>로즈 티타임 코디</h2>
+          <p>로즈 핑크와 샴페인 골드 포인트로 부드럽게 준비했어요.</p>
+        </div>
+        <div class="look-layout">
+          <div class="slot-column">
+            <button class="wardrobe-slot" type="button" data-toast="상의 슬롯은 후속 단계에서 옷장과 연결돼요."><span class="slot-thumb top-thumb" aria-hidden="true"></span><span class="slot-label">상의</span><b>블라우스</b></button>
+            <button class="wardrobe-slot" type="button" data-toast="하의 슬롯은 후속 단계에서 옷장과 연결돼요."><span class="slot-thumb skirt-thumb" aria-hidden="true"></span><span class="slot-label">하의</span><b>스커트</b></button>
+            <button class="wardrobe-slot" type="button" data-toast="원피스 슬롯은 후속 단계에서 옷장과 연결돼요."><span class="slot-thumb dress-thumb" aria-hidden="true"></span><span class="slot-label">원피스</span><b>로즈 드레스</b></button>
+          </div>
+          <div class="dress-slot" aria-label="현재 착장 중인 오늘의 대표 코디 슬롯">
+            <div class="main-photo-slot" aria-hidden="true">
+              <span class="photo-glow"></span>
+              <span class="photo-frame-line"></span>
+            </div>
+            <span class="current-badge">현재 착장 중</span>
+            <strong>로즈 티타임 코디</strong>
+            <small>로즈 핑크 드레스와 부드러운 액세서리로 준비했어요.</small>
+            <button type="button" data-toast="상세 보기는 후속 화면에서 연결돼요.">상세 보기</button>
+          </div>
+          <div class="slot-column">
+            <button class="wardrobe-slot" type="button" data-toast="액세서리 슬롯은 후속 단계에서 연결돼요."><span class="slot-thumb accessory-thumb" aria-hidden="true"></span><span class="slot-label">액세서리</span><b>로즈 목걸이</b></button>
+            <button class="wardrobe-slot" type="button" data-toast="가방 슬롯은 후속 단계에서 연결돼요."><span class="slot-thumb bag-thumb" aria-hidden="true"></span><span class="slot-label">가방</span><b>리본 백</b></button>
+            <button class="wardrobe-slot" type="button" data-toast="신발 슬롯은 후속 단계에서 연결돼요."><span class="slot-thumb shoes-thumb" aria-hidden="true"></span><span class="slot-label">신발</span><b>리본 힐</b></button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="right-panel" aria-label="추천 코디와 최근 기록">
+        <section class="panel recommendation-panel">
+          <div class="section-title-row">
+            <h2>오늘 추천 코디</h2>
+            <button type="button" data-toast="추천 목록 확장은 후속 단계에서 연결돼요.">더 보기</button>
+          </div>
+          <div class="recommend-list">
+            <article class="mini-look-card"><span></span><b>로즈 티타임 코디</b><small>우아한 로맨틱</small></article>
+            <article class="mini-look-card"><span></span><b>화이트 가든 코디</b><small>청순한 아이보리</small></article>
+            <article class="mini-look-card"><span></span><b>샴페인 리본 코디</b><small>부드러운 외출룩</small></article>
+          </div>
+        </section>
+        <section class="panel favorite-panel">
+          <div class="section-title-row">
+            <h2>즐겨찾기 코디</h2>
+            <button type="button" data-toast="즐겨찾기 전체 보기는 후속 단계에서 연결돼요.">더 보기</button>
+          </div>
+          <div class="favorite-strip">
+            <button type="button" data-toast="즐겨찾기 코디 미리보기예요."><span></span><small>핑크</small></button>
+            <button type="button" data-toast="즐겨찾기 코디 미리보기예요."><span></span><small>화이트</small></button>
+            <button type="button" data-toast="즐겨찾기 코디 미리보기예요."><span></span><small>로즈</small></button>
+            <button type="button" data-toast="즐겨찾기 코디 미리보기예요."><span></span><small>베이지</small></button>
+          </div>
+        </section>
+        <section class="panel recent-panel">
+          <div class="section-title-row">
+            <h2>최근 입은 코디</h2>
+            <button type="button" data-toast="최근 기록 전체 보기는 후속 단계에서 연결돼요.">더 보기</button>
+          </div>
+          <ul class="recent-list">
+            <li><span>05.15 (수)</span><b>로즈 티타임</b></li>
+            <li><span>05.14 (화)</span><b>브라운 리본</b></li>
+            <li><span>05.13 (월)</span><b>화이트 가든</b></li>
+            <li><span>05.12 (일)</span><b>베이지 산책</b></li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="action-bar" aria-label="드레스룸 하단 액션바">
+      <button type="button" data-toast="새 코디 저장은 아직 정적 버튼이에요.">새 코디 저장</button>
+      <button type="button" data-toast="오늘 코디 기록하기는 후속 단계에서 연결돼요.">오늘 코디 기록하기</button>
+      <button type="button" data-toast="드레스룸 메이드 추천은 후속 단계에서 연결돼요.">드레스룸 메이드에게 추천 받기</button>
+      <button type="button" data-toast="파우더룸 연결은 후속 단계에서 연결돼요.">파우더룸 향수/메이크업 연결하기</button>
+      <button type="button" data-toast="Belle Étage 보관은 후속 단계에서 연결돼요.">Belle Étage에 보관</button>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+  </div>
+  <script src="js/dress-room.js"></script>
+</body>
+</html>

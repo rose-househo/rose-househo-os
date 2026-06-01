@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Health Room | 운동 · 식단 관리실</title>
+  <link rel="stylesheet" href="css/health-room.css">
+</head>
+<body>
+  <div class="health-room-page">
+    <aside class="side-menu" aria-label="Health Room menu">
+      <div class="side-panel">
+        <div class="side-knot" aria-hidden="true"></div>
+        <nav class="menu-list" aria-label="운동 식단 관리실 하위 메뉴">
+          <button class="menu-item active" type="button" data-menu="오늘 컨디션">
+            <span class="line-icon pulse" aria-hidden="true"></span>
+            <span>오늘 컨디션</span>
+          </button>
+          <button class="menu-item" type="button" data-menu="운동 기록">
+            <span class="line-icon dumbbell" aria-hidden="true"></span>
+            <span>운동 기록</span>
+          </button>
+          <button class="menu-item" type="button" data-menu="PT 기록">
+            <span class="line-icon square" aria-hidden="true"></span>
+            <span>PT 기록</span>
+          </button>
+          <button class="menu-item" type="button" data-menu="런닝">
+            <span class="line-icon steps" aria-hidden="true"></span>
+            <span>런닝</span>
+          </button>
+          <button class="menu-item" type="button" data-menu="스트레칭">
+            <span class="line-icon stretch" aria-hidden="true"></span>
+            <span>스트레칭</span>
+          </button>
+          <button class="menu-item" type="button" data-menu="식단">
+            <span class="line-icon bowl" aria-hidden="true"></span>
+            <span>식단</span>
+          </button>
+          <button class="menu-item" type="button" data-menu="수분 관리">
+            <span class="line-icon bottle" aria-hidden="true"></span>
+            <span>수분 관리</span>
+          </button>
+          <button class="menu-item" type="button" data-menu="수면 상태">
+            <span class="line-icon moon" aria-hidden="true"></span>
+            <span>수면 상태</span>
+          </button>
+          <button class="menu-item" type="button" data-menu="나이트 체임버 연결">
+            <span class="line-icon bed" aria-hidden="true"></span>
+            <span>나이트 체임버 연결</span>
+          </button>
+        </nav>
+        <div class="side-note">
+          <p>공주님의 건강한 하루가</p>
+          <p>가장 빛나는 아름다움을</p>
+          <p>완성해줘요.</p>
+          <span class="small-rose" aria-hidden="true"></span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="health-main">
+      <header class="top-area">
+        <div class="title-card">
+          <span class="title-line" aria-hidden="true"></span>
+          <p class="eyebrow">Health Room</p>
+          <h1>운동 · 식단 관리실</h1>
+          <p>공주님의 건강과 생활 리듬을 관리해요</p>
+        </div>
+      </header>
+
+      <section class="greeting-card" aria-label="오늘 안내">
+        <div class="maid-slot" aria-hidden="true">HR</div>
+        <div class="greeting-text">
+          <p>공주님, 오늘은 오래 앉아계신 시간이 많았어요.</p>
+          <p>가벼운 스트레칭과 물 섭취를 추천드릴게요.</p>
+        </div>
+        <span class="rose-mark" aria-hidden="true"></span>
+      </section>
+
+      <section class="health-grid" aria-label="오늘 컨디션과 기록 카드">
+        <article class="record-card">
+          <h2>오늘 운동 기록</h2>
+          <div class="card-visual dumbbell-visual" aria-hidden="true"></div>
+          <p>가벼운 스트레칭</p>
+          <strong>20분</strong>
+          <p>전신</p>
+          <div class="thin-divider"></div>
+          <p>칼로리 소모</p>
+          <strong>98 kcal</strong>
+          <button type="button" data-toast="운동 기록 상세는 이후 연결 예정입니다.">기록 자세히 보기</button>
+        </article>
+
+        <article class="record-card">
+          <h2>식단 기록</h2>
+          <div class="meal-row"><span>아침</span><strong>든든한 식사</strong></div>
+          <div class="meal-row"><span>점심</span><strong>가벼운 식사</strong></div>
+          <div class="meal-row"><span>저녁</span><strong>샐러드 위주</strong></div>
+          <div class="meal-row"><span>간식</span><strong>과일, 견과류</strong></div>
+          <button type="button" data-toast="식단 기록 상세는 이후 연결 예정입니다.">식단 자세히 보기</button>
+        </article>
+
+        <article class="record-card water-card">
+          <h2>물 마시기 체크</h2>
+          <p>오늘 목표 1,500 ml</p>
+          <div class="water-glass" aria-hidden="true"><span></span></div>
+          <strong class="water-value">1,100 ml</strong>
+          <p class="water-percent">73%</p>
+          <div class="drop-row" aria-hidden="true">
+            <span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span>
+          </div>
+          <button type="button" class="water-check">상세 기록 보기</button>
+        </article>
+
+        <article class="record-card">
+          <h2>스트레칭 루틴</h2>
+          <div class="card-visual stretch-visual" aria-hidden="true"></div>
+          <p>추천 루틴</p>
+          <strong>목, 어깨 풀기 10분</strong>
+          <p>마지막 수행</p>
+          <strong>오후 3:20</strong>
+          <button type="button" data-toast="스트레칭 루틴을 준비하고 있습니다.">스트레칭 시작</button>
+        </article>
+
+        <article class="record-card">
+          <h2>오래 앉아있음 경고</h2>
+          <div class="card-visual chair-visual" aria-hidden="true"></div>
+          <p>앉아있는 시간</p>
+          <strong>2시간 45분</strong>
+          <p>알림 기준 1시간 초과</p>
+          <button type="button" data-toast="앉아있음 기록 상세는 이후 연결 예정입니다.">자세히 보기</button>
+        </article>
+
+        <article class="record-card condition-card">
+          <h2>오늘 컨디션 상태</h2>
+          <div class="heart-meter" aria-hidden="true">82</div>
+          <p>컨디션 지수</p>
+          <strong>82 / 100</strong>
+          <p>좋아요</p>
+          <button type="button" data-toast="컨디션 기록은 이후 연결 예정입니다.">컨디션 기록 보기</button>
+        </article>
+
+        <article class="record-card summary-card">
+          <h2>활동 요약</h2>
+          <dl>
+            <div><dt>걸음 수</dt><dd>5,210 걸음</dd></div>
+            <div><dt>활동 시간</dt><dd>1시간 10분</dd></div>
+            <div><dt>칼로리 소모</dt><dd>186 kcal</dd></div>
+          </dl>
+          <button type="button" data-toast="활동 요약 상세는 이후 연결 예정입니다.">상세 기록 보기</button>
+        </article>
+
+        <article class="record-card memo-card">
+          <h2>메모 &amp; 다짐</h2>
+          <div class="quill-placeholder" aria-hidden="true"></div>
+          <p>오늘은 물을 조금 더 챙겨 마시기.</p>
+          <p>자기 전 가벼운 스트레칭 하기.</p>
+          <button type="button" data-toast="메모 작성 기능은 이후 연결 예정입니다.">메모 작성하기</button>
+        </article>
+      </section>
+    </main>
+
+    <aside class="right-panel" aria-label="메이드 컨디션 브리핑 패널">
+      <div class="status-cards" aria-label="공통 상태 카드">
+        <button class="status-card" type="button" data-toast="알림은 이후 연결 예정입니다.">
+          <span class="status-icon bell" aria-hidden="true"></span>
+          <span class="status-count">3</span>
+          <strong>알림</strong>
+        </button>
+        <button class="status-card" type="button" data-toast="쪽지는 이후 연결 예정입니다.">
+          <span class="status-icon letter" aria-hidden="true"></span>
+          <span class="status-count">2</span>
+          <strong>쪽지</strong>
+        </button>
+        <button class="profile-slot" type="button" data-toast="공주님 프로필은 이후 연결 예정입니다." aria-label="공주님 프로필">
+          <span>PR</span>
+          <strong>공주님</strong>
+        </button>
+        <div class="level-card" aria-label="레벨 상태">
+          <strong>Lv. 24</strong>
+          <span class="level-track"><span></span></span>
+          <em>86%</em>
+        </div>
+      </div>
+
+      <div class="panel-stack" aria-label="오늘 컨디션 요약">
+        <section class="panel-card briefing-card">
+          <h2>메이드 컨디션 브리핑</h2>
+          <p>공주님, 오늘은 컨디션이 전반적으로 안정적이지만 오래 앉아계신 시간이 길었어요.</p>
+          <p>수분 섭취와 가벼운 움직임으로 몸을 환기시켜 주세요.</p>
+        </section>
+
+        <section class="panel-card sleep-card">
+          <h2>수면 상태</h2>
+          <div class="sleep-inner-box">
+            <div class="sleep-main">
+              <span class="line-moon" aria-hidden="true"></span>
+              <div>
+                <p>수면 시간</p>
+                <strong>7시간 20분</strong>
+              </div>
+              <div class="sleep-quality">
+                <span>수면의 질</span>
+                <strong>좋음</strong>
+              </div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div><span>피로도</span><strong>보통</strong><em>45%</em></div>
+            <span class="progress-track"><span class="fatigue-fill"></span></span>
+          </div>
+          <div class="progress-item">
+            <div><span>스트레스</span><strong>낮음</strong><em>28%</em></div>
+            <span class="progress-track"><span class="stress-fill"></span></span>
+          </div>
+        </section>
+
+        <section class="panel-card routine-card">
+          <h2>오늘 추천 루틴</h2>
+          <ul>
+            <li><span>가벼운 전신 스트레칭</span><strong>15분</strong></li>
+            <li><span>수분 섭취</span><strong>1.5L</strong></li>
+            <li><span>저녁 릴렉스 요가</span><strong>20분</strong></li>
+          </ul>
+          <button type="button" data-toast="추천 루틴 상세는 이후 연결 예정입니다.">자세히 보기</button>
+        </section>
+      </div>
+    </aside>
+
+    <footer class="action-bar" aria-label="빠른 실행 메뉴">
+      <button type="button" data-toast="운동 기록 입력은 이후 연결 예정입니다."><span class="bar-icon dumbbell" aria-hidden="true"></span>오늘 운동 기록</button>
+      <button type="button" data-toast="물 마시기 체크가 기록되었습니다."><span class="bar-icon glass" aria-hidden="true"></span>물 마시기 체크</button>
+      <button type="button" data-toast="스트레칭 루틴을 준비하고 있습니다."><span class="bar-icon mat" aria-hidden="true"></span>스트레칭 시작</button>
+      <button type="button" data-toast="나이트 체임버로 이동 예정입니다."><span class="bar-icon bed" aria-hidden="true"></span>나이트 체임버 이동</button>
+      <button type="button" data-toast="메이드 컨디션 상담은 이후 연결 예정입니다."><span class="bar-icon maid" aria-hidden="true"></span>메이드 컨디션 상담</button>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+  </div>
+  <script src="js/health-room.js"></script>
+</body>
+</html>

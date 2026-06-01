@@ -1,0 +1,30 @@
+Belle Étage / 벨 에타주
+PC 1차 클린 베이스 조건부 잠금 가능
+
+기준 파일:
+belle-etage_pc-v1_prelink_stable.zip
+
+구성:
+index.html
+css/belle-etage.css
+js/belle-etage.js
+assets/belle-etage-bg.png
+
+통과:
+- 배경 이미지 assets 분리 완료
+- CSS/HTML/JS base64 없음
+- 1920 레이아웃 정상
+- 3820 구조 파손 없음
+- 하단 액션바 본문 덮힘 없음
+- 스크롤 시 일기 카드 하단 확인 가능
+- 왼쪽 메뉴 / 오늘의 종합 기록 / 날짜 바 / 방별 일기 카드 / 오른쪽 필터 / 하단 액션바 유지
+- R/C/L/F/E 이니셜 슬롯 허용
+- 사람/마네킹/캐릭터 없음
+- 이모지 없음
+- JS 문법 정상
+- 중복 id 없음
+- !important 없음
+- 인라인 style/script 없음
+
+후속 polish 후보:
+1. action-bar 너비가 실제 콘텐츠 폭과 미세하게 다를 수 있으므로, 나중에 정렬감 조정 가능
