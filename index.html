@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rose Hall</title>
+  <link rel="stylesheet" href="css/rose-hall.css">
+</head>
+<body>
+  <div class="background-layer" aria-hidden="true"></div>
+  <div class="estate-shell">
+    <aside class="side-menu" aria-label="Rose Household rooms">
+      <div class="brand-card">
+        <div class="brand-crest" aria-hidden="true">
+          <span class="crest-line"></span>
+          <span class="crest-center"></span>
+          <span class="crest-line"></span>
+        </div>
+        <h1>Rose Hall</h1>
+        <p>로즈 가문의 메인 홀</p>
+      </div>
+
+      <nav class="room-nav">
+        <a class="nav-item active" href="#" data-action="Rose Hall 열기"><span class="nav-mark">RH</span><span>Rose Hall</span></a>
+        <a class="nav-item" href="#" data-action="집사 집무실 이동"><span class="nav-mark">BO</span><span>집사 집무실</span></a>
+        <a class="nav-item" href="#" data-action="오늘의 브리핑 열기"><span class="nav-mark">BR</span><span>오늘의 브리핑</span></a>
+        <a class="nav-item" href="#" data-action="Belle Étage 이동"><span class="nav-mark">BE</span><span>Belle Étage</span></a>
+        <a class="nav-item" href="#" data-action="파우더룸 이동"><span class="nav-mark">PR</span><span>파우더룸</span></a>
+        <a class="nav-item" href="#" data-action="드레스룸 이동"><span class="nav-mark">DR</span><span>드레스룸</span></a>
+        <a class="nav-item" href="#" data-action="위시룸 이동"><span class="nav-mark">WR</span><span>위시룸</span></a>
+        <a class="nav-item" href="#" data-action="나이트 체임버 이동"><span class="nav-mark">NC</span><span>나이트 체임버</span></a>
+        <a class="nav-item" href="#" data-action="입욕 · 회복실 이동"><span class="nav-mark">BA</span><span>입욕 · 회복실</span></a>
+        <a class="nav-item" href="#" data-action="운동 · 식단 관리실 이동"><span class="nav-mark">FT</span><span>운동 · 식단 관리실</span></a>
+        <a class="nav-item" href="#" data-action="영감 보관실 이동"><span class="nav-mark">IN</span><span>영감 보관실</span></a>
+        <a class="nav-item" href="#" data-action="뮤직룸 이동"><span class="nav-mark">MU</span><span>뮤직룸</span></a>
+        <a class="nav-item" href="#" data-action="티룸 이동"><span class="nav-mark">TR</span><span>티룸</span></a>
+        <a class="nav-item separated" href="#" data-action="Library 이동"><span class="nav-mark">LB</span><span>Library</span></a>
+        <a class="nav-item" href="#" data-action="Study 이동"><span class="nav-mark">ST</span><span>Study</span></a>
+      </nav>
+
+      <div class="side-note">
+        <p>이곳은 공주님의 하루가 시작되는 저택의 중심입니다.</p>
+        <p>원하시는 방으로 이동해 보세요.</p>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="top-header">
+        <section class="title-frame" aria-label="Rose Hall title">
+          <div class="title-rule"></div>
+          <div>
+            <h2>Rose Hall</h2>
+            <p>공주님의 하루가 시작되는 메인 홀</p>
+          </div>
+          <div class="title-rule"></div>
+        </section>
+
+        <section class="status-cards" aria-label="Current status">
+          <button class="status-card" type="button" data-action="알림센터 열기">
+            <span class="badge">7</span>
+            <span class="status-icon">AL</span>
+            <span>알림</span>
+          </button>
+          <button class="status-card" type="button" data-action="우편함 열기">
+            <span class="badge">2</span>
+            <span class="status-icon">ML</span>
+            <span>우편</span>
+          </button>
+          <button class="status-card profile-card" type="button" data-action="프로필 열기">
+            <span class="profile-slot">P</span>
+            <span>공주님</span>
+          </button>
+          <button class="status-card level-card" type="button" data-action="레벨 정보 보기">
+            <strong>Lv. 24</strong>
+            <span class="level-meter"><span></span></span>
+            <small>86%</small>
+          </button>
+        </section>
+      </header>
+
+      <div class="content-layout">
+        <section class="center-column">
+          <section class="hero-panel">
+            <div class="hero-banner" aria-label="Rose Hall hero image"></div>
+            <div class="daily-summary">
+              <article class="summary-card line-card">
+                <h3>오늘의 한 줄 안내</h3>
+                <p>오늘은 브리핑 확인 후 집무실에서 작업을 시작하시면 좋겠습니다.</p>
+              </article>
+              <div class="summary-row">
+                <article class="summary-card number-card">
+                  <h3>오늘의 알림</h3>
+                  <strong>7</strong>
+                </article>
+                <article class="summary-card mood-card">
+                  <h3>오늘의 컨디션</h3>
+                  <strong>좋음</strong>
+                  <span class="condition-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="rooms-section" aria-labelledby="rooms-title">
+            <div class="section-title">
+              <span></span>
+              <h3 id="rooms-title">저택 주요 공간</h3>
+              <span></span>
+            </div>
+
+            <div class="room-grid">
+              <button class="room-card" type="button" data-action="집사 집무실 이동"><span class="object-slot desk"></span><strong>집사 집무실</strong><small>오늘 작업 4건</small></button>
+              <button class="room-card" type="button" data-action="오늘의 브리핑 열기"><span class="object-slot briefing"></span><strong>오늘의 브리핑</strong><small>브리핑 도착</small></button>
+              <button class="room-card" type="button" data-action="Belle Étage 이동"><span class="object-slot etage"></span><strong>Belle Étage</strong><small>기록 및 아카이브</small></button>
+              <button class="room-card" type="button" data-action="파우더룸 이동"><span class="object-slot powder"></span><strong>파우더룸</strong><small>오늘 피부 루틴 준비됨</small></button>
+              <button class="room-card" type="button" data-action="드레스룸 이동"><span class="object-slot dress"></span><strong>드레스룸</strong><small>오늘 추천 코디 있음</small></button>
+              <button class="room-card" type="button" data-action="위시룸 이동"><span class="object-slot wish"></span><strong>위시룸</strong><small>제안 · 알림 2건</small></button>
+              <button class="room-card" type="button" data-action="나이트 체임버 이동"><span class="object-slot night"></span><strong>나이트 체임버</strong><small>수면 준비 대기</small></button>
+              <button class="room-card" type="button" data-action="입욕 · 회복실 이동"><span class="object-slot bath"></span><strong>입욕 · 회복실</strong><small>따뜻한 회복이 필요해요</small></button>
+              <button class="room-card" type="button" data-action="운동 · 식단 관리실 이동"><span class="object-slot fitness"></span><strong>운동 · 식단 관리실</strong><small>오늘 루틴 남음</small></button>
+              <button class="room-card" type="button" data-action="영감 보관실 이동"><span class="object-slot archive"></span><strong>영감 보관실</strong><small>새로운 메모 3건</small></button>
+              <button class="room-card" type="button" data-action="뮤직룸 이동"><span class="object-slot music"></span><strong>뮤직룸</strong><small>새로운 곡 추천</small></button>
+              <button class="room-card" type="button" data-action="티룸 이동"><span class="object-slot tea"></span><strong>티룸</strong><small>티타임 준비 완료</small></button>
+              <button class="room-card" type="button" data-action="Library 이동"><span class="object-slot library"></span><strong>Library</strong><small>읽을 책 추천</small></button>
+              <button class="room-card" type="button" data-action="Study 이동"><span class="object-slot study"></span><strong>Study</strong><small>집중 모드 준비</small></button>
+              <button class="room-card" type="button" data-action="회의실 이동"><span class="object-slot meeting"></span><strong>회의실</strong><small>오늘 안건 3건</small></button>
+            </div>
+          </section>
+        </section>
+
+        <aside class="right-panel" aria-label="Rose Hall guide panel">
+          <section class="guide-card butler-guide">
+            <div class="panel-title">
+              <span></span>
+              <h3>총괄집사 안내</h3>
+              <span></span>
+            </div>
+            <div class="butler-content">
+              <div class="portrait-slot" aria-hidden="true">B</div>
+              <p>공주님, 오늘은 브리핑을 확인하신 뒤 집무실에서 작업을 시작하시면 좋겠습니다.</p>
+            </div>
+            <button class="soft-button" type="button" data-action="집무실로 이동">집무실로 이동</button>
+          </section>
+
+          <section class="guide-card route-card">
+            <div class="panel-title">
+              <span></span>
+              <h3>추천 이동 경로</h3>
+              <span></span>
+            </div>
+            <div class="route-line">
+              <span>브리핑 확인</span>
+              <b></b>
+              <span>집무실 작업</span>
+              <b></b>
+              <span>드레스룸</span>
+            </div>
+          </section>
+
+          <section class="guide-card todo-card">
+            <div class="panel-title">
+              <span></span>
+              <h3>가장 먼저 해야 할 일</h3>
+              <span></span>
+            </div>
+            <ul>
+              <li class="done">오늘 브리핑 확인하기</li>
+              <li>집무실에서 작업 시작하기</li>
+              <li>수분 섭취 체크하기</li>
+              <li>가벼운 스트레칭 15분</li>
+            </ul>
+          </section>
+
+          <section class="guide-card notice-card">
+            <div class="panel-title">
+              <span></span>
+              <h3>현재 알림 요약</h3>
+              <span></span>
+            </div>
+            <dl>
+              <div><dt>새로운 우편</dt><dd>2</dd></div>
+              <div><dt>작업 완료 보고</dt><dd>3</dd></div>
+              <div><dt>게임고 알림</dt><dd>2</dd></div>
+            </dl>
+          </section>
+        </aside>
+      </div>
+    </main>
+  </div>
+
+  <nav class="bottom-actions" aria-label="Quick actions">
+    <button type="button" class="primary-action" data-action="오늘 브리핑 보기">오늘 브리핑 보기</button>
+    <button type="button" data-action="집사 집무실로 이동">집사 집무실로 이동</button>
+    <button type="button" data-action="일정 캘린더 열기">일정 캘린더 열기</button>
+    <button type="button" data-action="메이드 상담 열기">메이드 상담 열기</button>
+    <button type="button" data-action="알림센터 열기">알림센터 열기</button>
+    <button type="button" data-action="Belle Étage 기록 보기">Belle Étage 기록 보기</button>
+  </nav>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="js/rose-hall.js"></script>
+</body>
+</html>
