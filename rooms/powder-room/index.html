@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Powder Room</title>
+  <link rel="stylesheet" href="css/powder-room.css">
+</head>
+<body>
+  <main class="powder-shell" aria-label="공주님 전용 파우더룸">
+    <div class="room-bg" aria-hidden="true"></div>
+    <div class="room-glow" aria-hidden="true"></div>
+
+    <header class="top-board" aria-label="파우더룸 상단 영역">
+      <section class="title-plaque" aria-label="파우더룸 타이틀">
+        <span class="plaque-crown" aria-hidden="true"></span>
+        <h1>공주님 전용 파우더룸</h1>
+        <p>오늘의 피부와 기분을 메이드와 함께 준비해요</p>
+      </section>
+
+      <section class="status-row" aria-label="상태 영역">
+        <button class="mini-status" type="button" data-action="open-alerts">
+          <span class="status-icon-slot status-bell" aria-hidden="true"></span>
+          <span>알림</span>
+        </button>
+        <button class="mini-status" type="button" data-action="open-mail">
+          <span class="status-icon-slot status-mail" aria-hidden="true"></span>
+          <span>우편</span>
+        </button>
+        <button class="profile-medallion" type="button" data-action="open-profile" aria-label="프로필 열기">
+          <span class="profile-portrait-slot" aria-hidden="true"></span>
+        </button>
+        <article class="level-card" aria-label="공주님 레벨">
+          <strong>Lv. 24</strong>
+          <span>공주님</span>
+          <div class="level-track" aria-hidden="true"><i></i></div>
+          <small>72%</small>
+        </article>
+      </section>
+    </header>
+
+    <aside class="left-menu" aria-label="파우더룸 내부 메뉴">
+      <nav class="powder-nav">
+        <button class="nav-item is-active" type="button" data-section="home">
+          <span class="nav-icon-slot" aria-hidden="true"></span>
+          <span>Powder Room</span>
+        </button>
+        <button class="nav-item" type="button" data-section="routine"><span class="nav-icon-slot" aria-hidden="true"></span><span>오늘 루틴</span></button>
+        <button class="nav-item" type="button" data-section="maid-chat"><span class="nav-icon-slot" aria-hidden="true"></span><span>메이드 상담</span></button>
+        <button class="nav-item" type="button" data-section="skincare"><span class="nav-icon-slot" aria-hidden="true"></span><span>스킨케어</span></button>
+        <button class="nav-item" type="button" data-section="makeup"><span class="nav-icon-slot" aria-hidden="true"></span><span>메이크업</span></button>
+        <button class="nav-item" type="button" data-section="haircare"><span class="nav-icon-slot" aria-hidden="true"></span><span>헤어케어</span></button>
+        <button class="nav-item" type="button" data-section="bodycare"><span class="nav-icon-slot" aria-hidden="true"></span><span>바디케어</span></button>
+        <button class="nav-item" type="button" data-section="perfume"><span class="nav-icon-slot" aria-hidden="true"></span><span>향수</span></button>
+        <button class="nav-item" type="button" data-section="candidates"><span class="nav-icon-slot" aria-hidden="true"></span><span>추천후보</span></button>
+        <button class="nav-item" type="button" data-section="storage"><span class="nav-icon-slot" aria-hidden="true"></span><span>파우더룸 보관함</span></button>
+        <button class="nav-item" type="button" data-section="maid-diary"><span class="nav-icon-slot" aria-hidden="true"></span><span>메이드 일기</span></button>
+      </nav>
+    </aside>
+
+    <aside class="left-note" aria-label="메이드 안내 문구">
+      <p>오늘의 피부와 향기,<br>그리고 공주님의 기분까지<br>부드럽게 정리해드릴게요.</p>
+      <span class="note-roses" aria-hidden="true"></span>
+    </aside>
+
+    <section class="center-space" aria-label="파우더룸 중앙 공간"></section>
+
+
+    <section class="routine-screen" aria-label="오늘 루틴 화면" aria-hidden="true">
+      <article class="care-note-book" aria-label="오늘 루틴 케어 노트">
+        <section class="care-note-section routine-summary-section" aria-label="오늘 루틴 요약">
+          <header class="section-divider">
+            <span aria-hidden="true"></span>
+            <h2>오늘 루틴 요약</h2>
+            <span aria-hidden="true"></span>
+          </header>
+          <div class="routine-summary-grid">
+            <article class="routine-summary-item routine-summary-item--skin">
+              <h3>오늘 피부 상태</h3>
+              <span class="summary-img-slot" aria-hidden="true"></span>
+              <div class="summary-chip-list summary-chip-list--vertical">
+                <span>수분 부족</span>
+                <span>장벽 약간 약화</span>
+                <span>민감도 보통</span>
+              </div>
+            </article>
+            <article class="routine-summary-item">
+              <h3>오늘 루틴 타입</h3>
+              <span class="summary-img-slot" aria-hidden="true"></span>
+              <strong>진정 &amp; 수분 케어</strong>
+              <p class="routine-type-note">피부 장벽을 보호하며<br>수분을 채워주는 루틴</p>
+            </article>
+            <article class="routine-summary-item routine-summary-item--focus">
+              <h3>오늘 중점 케어</h3>
+              <span class="summary-img-slot" aria-hidden="true"></span>
+              <ul class="summary-text-list">
+                <li>수분 충전</li>
+                <li>장벽 강화</li>
+                <li>진정 케어</li>
+              </ul>
+            </article>
+            <article class="routine-summary-item routine-summary-item--rest-summary">
+              <h3>오늘 쉬어야 할 제품</h3>
+              <span class="summary-img-slot" aria-hidden="true"></span>
+              <div class="summary-chip-list summary-chip-list--vertical">
+                <span>레티놀</span>
+                <span>스크럽</span>
+                <span>고농축 비타민C</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="care-note-section routine-steps-section" aria-label="아침 루틴">
+          <header class="routine-section-head">
+            <div class="routine-inline-title">
+              <h2>아침 루틴</h2>
+              <span aria-hidden="true">｜</span>
+              <p>촉촉하게 채우고, 하루 종일 피부를 보호해요.</p>
+            </div>
+            <label class="routine-check-visual"><span aria-hidden="true"></span>루틴 완료 체크</label>
+          </header>
+          <div class="routine-step-box">
+            <div class="routine-step-list">
+              <article class="routine-step-card">
+              <small>STEP 1</small>
+              <strong>클렌저</strong>
+              <figure><img src="assets/products/product-placeholder.png" alt="클렌저 제품 사진 자리" loading="lazy"></figure>
+              <b>로즈 클렌징 젤</b>
+              <em>약산성 클렌저</em>
+              <p>자극 없이 노폐물을 부드럽게 제거해요.</p>
+              <label><span aria-hidden="true"></span>사용 완료</label>
+            </article>
+              <article class="routine-flow-mark" aria-hidden="true">›</article>
+              <article class="routine-step-card">
+              <small>STEP 2</small>
+              <strong>진정 토너</strong>
+              <figure><img src="assets/products/product-placeholder.png" alt="진정 토너 제품 사진 자리" loading="lazy"></figure>
+              <b>로즈 카밍 토너</b>
+              <em>진정 토너</em>
+              <p>피부를 진정시키고 결을 정돈해요.</p>
+              <label><span aria-hidden="true"></span>사용 완료</label>
+            </article>
+              <article class="routine-flow-mark" aria-hidden="true">›</article>
+              <article class="routine-step-card">
+              <small>STEP 3</small>
+              <strong>수분 앰플</strong>
+              <figure><img src="assets/products/product-placeholder.png" alt="수분 앰플 제품 사진 자리" loading="lazy"></figure>
+              <b>히알루론 앰플</b>
+              <em>수분 앰플</em>
+              <p>수분을 깊이 채워 촉촉함을 유지해요.</p>
+              <label><span aria-hidden="true"></span>사용 완료</label>
+            </article>
+              <article class="routine-flow-mark" aria-hidden="true">›</article>
+              <article class="routine-step-card">
+              <small>STEP 4</small>
+              <strong>크림</strong>
+              <figure><img src="assets/products/product-placeholder.png" alt="보습 크림 제품 사진 자리" loading="lazy"></figure>
+              <b>블룸 수분 크림</b>
+              <em>수분 크림</em>
+              <p>수분을 잠그고 장벽을 강화해요.</p>
+              <label><span aria-hidden="true"></span>사용 완료</label>
+            </article>
+              <article class="routine-flow-mark" aria-hidden="true">›</article>
+              <article class="routine-step-card">
+              <small>STEP 5</small>
+              <strong>선크림</strong>
+              <figure><img src="assets/products/product-placeholder.png" alt="선크림 제품 사진 자리" loading="lazy"></figure>
+              <b>로즈 톤업 선크림</b>
+              <em>자외선 차단</em>
+              <p>자외선으로부터 피부를 보호해요.</p>
+              <label><span aria-hidden="true"></span>사용 완료</label>
+              </article>
+            </div>
+            <button class="routine-order-button" type="button" data-action="change-routine-order">루틴 순서 변경 ↺</button>
+          </div>
+        </section>
+
+        <section class="care-note-section routine-rest-section" aria-label="오늘 쉬어야 할 제품">
+          <header class="plain-section-head">
+            <h2>오늘 쉬어야 할 제품</h2>
+          </header>
+          <p class="routine-note-text">피부가 예민한 날은 자극이 될 수 있는 제품은 쉬어가는 것이 좋아요.</p>
+          <div class="rest-product-list">
+            <article>
+              <figure><img src="assets/products/product-placeholder.png" alt="레티놀 세럼 제품 사진 자리" loading="lazy"></figure>
+              <div><strong>레티놀 세럼</strong><span>고농축 레티놀은 피부 자극이 될 수 있어요.</span><em>오늘은 쉬기</em></div>
+            </article>
+            <article>
+              <figure><img src="assets/products/product-placeholder.png" alt="강한 필링 제품 사진 자리" loading="lazy"></figure>
+              <div><strong>강한 필링 제품</strong><span>각질 케어는 오늘보다 내일이 더 좋아요.</span><em>자극 주의</em></div>
+            </article>
+            <article>
+              <figure><img src="assets/products/product-placeholder.png" alt="향이 강한 제품 사진 자리" loading="lazy"></figure>
+              <div><strong>향이 강한 제품</strong><span>두통이나 답답함이 느껴질 수 있어 가볍게 사용해주세요.</span><em>가볍게 사용</em></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="care-note-section routine-maid-note" aria-label="메이드 코멘트">
+          <div class="routine-maid-profile">
+            <span class="routine-maid-avatar"><img src="assets/maids/rose-maid.png" alt="로즈 메이드 사진 자리" loading="lazy"></span>
+            <div><span>메이드</span><strong>코멘트</strong></div>
+          </div>
+          <div class="routine-maid-letter">
+            <p>오늘은 피부 장벽이 조금 예민해 보여요.<br>무리한 각질 케어는 쉬어가고,<br>수분 진정 위주로 준비했어요.</p>
+            <span class="routine-deco-slot" aria-hidden="true"></span>
+          </div>
+        </section>
+
+        <section class="care-note-section routine-history-section" aria-label="지난 루틴 기록">
+          <header class="section-divider">
+            <span aria-hidden="true"></span>
+            <h2>지난 루틴 기록</h2>
+            <span aria-hidden="true"></span>
+          </header>
+          <div class="routine-history-list">
+            <article>
+              <span class="history-icon-slot" aria-hidden="true"></span>
+              <div><strong>아침 루틴</strong><time>05.15 (수)</time></div>
+              <p>산뜻하게 수분을 채워준 루틴</p>
+              <div class="history-thumb-list" aria-hidden="true"><img src="assets/products/product-placeholder.png" alt=""><img src="assets/products/product-placeholder.png" alt=""><img src="assets/products/product-placeholder.png" alt=""><img src="assets/products/product-placeholder.png" alt=""></div>
+              <button type="button" data-action="view-routine-history">기록 보기</button>
+            </article>
+            <article>
+              <span class="history-icon-slot" aria-hidden="true"></span>
+              <div><strong>밤 루틴</strong><time>05.14 (화)</time></div>
+              <p>진정과 재생에 집중한 루틴</p>
+              <div class="history-thumb-list" aria-hidden="true"><img src="assets/products/product-placeholder.png" alt=""><img src="assets/products/product-placeholder.png" alt=""><img src="assets/products/product-placeholder.png" alt=""><img src="assets/products/product-placeholder.png" alt=""></div>
+              <button type="button" data-action="view-routine-history">기록 보기</button>
+            </article>
+            <article>
+              <span class="history-icon-slot" aria-hidden="true"></span>
+              <div><strong>외출 전 루틴</strong><time>05.13 (월)</time></div>
+              <p>메이크업이 잘 먹는 준비 루틴</p>
+              <div class="history-thumb-list" aria-hidden="true"><img src="assets/products/product-placeholder.png" alt=""><img src="assets/products/product-placeholder.png" alt=""><img src="assets/products/product-placeholder.png" alt=""><img src="assets/products/product-placeholder.png" alt=""></div>
+              <button type="button" data-action="view-routine-history">기록 보기</button>
+            </article>
+            <article>
+              <span class="history-icon-slot" aria-hidden="true"></span>
+              <div><strong>피부 예민한 날 루틴</strong><time>05.12 (일)</time></div>
+              <p>장벽 보호에 집중한 루틴</p>
+              <div class="history-thumb-list" aria-hidden="true"><img src="assets/products/product-placeholder.png" alt=""><img src="assets/products/product-placeholder.png" alt=""><img src="assets/products/product-placeholder.png" alt=""><img src="assets/products/product-placeholder.png" alt=""></div>
+              <button type="button" data-action="view-routine-history">기록 보기</button>
+            </article>
+          </div>
+          <button class="routine-more-button" type="button" data-action="view-routine-history" data-target="routine-history">더 많은 기록 보기 &gt;</button>
+        </section>
+      </article>
+    </section>
+
+    <aside class="right-panel" aria-label="오늘의 파우더룸 요약">
+      <article class="info-section skin-card">
+        <span class="card-ornament" aria-hidden="true"></span>
+        <h2>오늘 피부 상태</h2>
+        <div class="info-body skin-layout">
+          <span class="image-slot rose-slot" aria-hidden="true"></span>
+          <div class="skin-meter-list" aria-label="피부 상태 수치">
+            <div class="meter-row">
+              <span>수분</span>
+              <i aria-hidden="true"><b class="meter-fill meter-fill-75"></b></i>
+              <em>75%</em>
+            </div>
+            <div class="meter-row">
+              <span>탄력</span>
+              <i aria-hidden="true"><b class="meter-fill meter-fill-68"></b></i>
+              <em>68%</em>
+            </div>
+            <div class="meter-row">
+              <span>톤</span>
+              <i aria-hidden="true"><b class="meter-fill meter-fill-82"></b></i>
+              <em>82%</em>
+            </div>
+            <div class="meter-row">
+              <span>진정</span>
+              <i aria-hidden="true"><b class="meter-fill meter-fill-90"></b></i>
+              <em>90%</em>
+            </div>
+          </div>
+        </div>
+        <p class="section-comment">피부 컨디션이 평소보다 건조한 편이에요. 보습 케어를 중심으로 루틴을 준비해볼까요?</p>
+        <button type="button" data-action="view-skin-state">맞춤 루틴 보기</button>
+      </article>
+
+      <article class="info-section perfume-card">
+        <span class="card-ornament" aria-hidden="true"></span>
+        <h2>오늘의 향수 기록</h2>
+        <div class="info-body perfume-layout">
+          <span class="image-slot bottle-slot" aria-hidden="true"></span>
+          <div class="perfume-info">
+            <strong>로즈 드 샤를로트</strong>
+            <div class="chip-row" aria-label="향수 태그">
+              <span>플로럴</span><span>우아함</span><span>사랑스러움</span>
+            </div>
+            <dl class="perfume-details">
+              <div><dt>지속력</dt><dd>6시간 이상</dd></div>
+              <div><dt>기분</dt><dd>행복해요</dd></div>
+              <div><dt>반응</dt><dd>사랑스러움이 좋다고 했어요.</dd></div>
+            </dl>
+            <button type="button" data-action="view-perfume-log">기록 보기</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="info-section memo-card">
+        <span class="card-ornament" aria-hidden="true"></span>
+        <h2>메이드 시중 메모</h2>
+        <div class="info-body two-col">
+          <span class="image-slot quill-slot" aria-hidden="true"></span>
+          <div>
+            <p>공주님께 어울리는 향과 메이크업을 준비해두었어요.</p>
+            <button type="button" data-action="view-maid-memo">메모 자세히 보기</button>
+          </div>
+        </div>
+      </article>
+    </aside>
+
+    <section class="action-tray" aria-label="추천 기능 트레이">
+      <button class="tray-item" type="button" data-action="view-routine">
+        <span class="tray-icon-slot" aria-hidden="true"></span>
+        <strong>루틴 추천</strong>
+      </button>
+      <button class="tray-item" type="button" data-action="view-makeup">
+        <span class="tray-icon-slot" aria-hidden="true"></span>
+        <strong>메이크업 추천</strong>
+      </button>
+      <button class="tray-item" type="button" data-action="view-perfume">
+        <span class="tray-icon-slot" aria-hidden="true"></span>
+        <strong>향수 추천</strong>
+      </button>
+      <button class="tray-item" type="button" data-action="open-dressroom">
+        <span class="tray-icon-slot" aria-hidden="true"></span>
+        <strong>드레스룸</strong>
+      </button>
+      <button class="tray-item" type="button" data-action="view-manual">
+        <span class="tray-icon-slot" aria-hidden="true"></span>
+        <strong>시중 매뉴얼</strong>
+      </button>
+    </section>
+
+
+    <section class="maid-chat-modal" aria-label="메이드 상담 모달" aria-hidden="true">
+      <div class="maid-chat-backdrop" data-action="close-maid-chat" aria-hidden="true"></div>
+      <article class="maid-chat-window" role="dialog" aria-modal="true" aria-label="메이드 상담">
+        <button class="maid-chat-close" type="button" data-action="close-maid-chat" aria-label="메이드 상담 닫기"><span aria-hidden="true">×</span></button>
+        <header class="maid-chat-header">
+          <span class="modal-bow" aria-hidden="true"></span>
+          <h2>메이드 상담</h2>
+        </header>
+
+        <div class="maid-chat-layout">
+          <aside class="maid-profile-card" aria-label="메이드 초상화 영역">
+            <figure class="maid-portrait-frame">
+              <img src="assets/maids/rose-maid.png" alt="로즈 메이드 초상화" loading="lazy">
+            </figure>
+            <strong>로즈 메이드</strong>
+            <p>공주님, 무엇을 도와드릴까요? 언제나 공주님의 하루가 더 빛날 수 있도록 최선을 다하겠습니다.</p>
+          </aside>
+
+          <section class="maid-chat-main" aria-label="메이드 상담 대화 영역">
+            <div class="chat-lines" aria-label="상담 대화 예시">
+              <div class="chat-row maid-row">
+                <span class="chat-avatar"><img src="assets/maids/rose-maid.png" alt="" loading="lazy"></span>
+                <p>안녕하세요, 공주님.<br>오늘도 이렇게 만나뵙게 되어 영광이에요.<br>무엇을 도와드릴까요?</p>
+              </div>
+              <div class="chat-row princess-row">
+                <p>오늘 향수 추천해 주세요.</p>
+                <span class="chat-avatar princess-avatar" aria-hidden="true"></span>
+              </div>
+              <div class="chat-row maid-row">
+                <span class="chat-avatar"><img src="assets/maids/rose-maid.png" alt="" loading="lazy"></span>
+                <p>네, 공주님 취향에 맞는 향수를 추천해드릴게요.<br>잠시만 기다려주세요.</p>
+              </div>
+            </div>
+
+            <div class="maid-recommend-area" aria-label="메이드 추천 제품 카드">
+              <h3>메이드 추천</h3>
+              <div class="product-card-row">
+                <article class="product-card">
+                  <figure class="product-image-frame">
+                    <img src="assets/products/perfume-rose-bouquet.png" alt="로즈 부케 제품 사진" loading="lazy">
+                  </figure>
+                  <strong>로즈 부케</strong>
+                  <span>Rose Bouquet</span>
+                  <div class="product-tags" aria-label="제품 태그"><em>플로럴</em><em>우아함</em></div>
+                  <div class="product-rating" aria-label="별점과 하트">★★★★★</div>
+                  <p>우아한 장미 향이 하루 종일 기분을 높여주는 향수예요.</p>
+                </article>
+                <article class="product-card">
+                  <figure class="product-image-frame">
+                    <img src="assets/products/perfume-pure-blush.png" alt="퓨어 블러쉬 제품 사진" loading="lazy">
+                  </figure>
+                  <strong>퓨어 블러쉬</strong>
+                  <span>Pure Blush</span>
+                  <div class="product-tags" aria-label="제품 태그"><em>파우더리</em><em>러블리</em></div>
+                  <div class="product-rating" aria-label="별점과 하트">★★★★☆</div>
+                  <p>은은한 플로럴 향이 사랑스러운 분위기를 연출해요.</p>
+                </article>
+                <article class="product-card">
+                  <figure class="product-image-frame">
+                    <img src="assets/products/perfume-white-lily.png" alt="화이트 릴리 제품 사진" loading="lazy">
+                  </figure>
+                  <strong>화이트 릴리</strong>
+                  <span>White Lily</span>
+                  <div class="product-tags" aria-label="제품 태그"><em>맑음</em><em>은은함</em></div>
+                  <div class="product-rating" aria-label="별점과 하트">★★★★☆</div>
+                  <p>깨끗하고 순수한 느낌의 향으로 맑은 하루를 선물해요.</p>
+                </article>
+              </div>
+            </div>
+
+            <form class="maid-chat-input" aria-label="메이드 상담 입력창">
+              <input type="text" placeholder="메시지를 입력해주세요..." aria-label="메시지 입력" disabled>
+              <button type="button" data-action="maid-chat-placeholder" aria-label="메시지 보내기"><span aria-hidden="true"></span></button>
+            </form>
+          </section>
+        </div>
+      </article>
+    </section>
+
+    <div class="room-toast" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="js/powder-room.js"></script>
+</body>
+</html>

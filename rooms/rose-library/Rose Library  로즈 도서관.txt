@@ -1,0 +1,35 @@
+Rose Library / 로즈 도서관
+
+상태:
+1차 기준본 잠금 가능.
+
+기준 파일:
+rose-library_pc-v1_prelink_stable.zip
+
+역할:
+AU 사교계 명부 / 가문록 / 관계도 / 사건 기록 / 비밀 서가 메인 화면.
+현실 Library와 분리된 AU 기록 도서관.
+
+통과:
+- index.html / css/rose-library.css / js/rose-library.js 구성 정상
+- CSS 그라디언트 배경 사용, base64 없음
+- 현실 Library와 혼동 없음
+- AU Letter Room / Rose Garden / Study / LUMI Archive와 혼동 없음
+- 왼쪽 Rose Library 메뉴 정상
+- Social Register / 사교계 명부 구조 정상
+- 중앙 가문 카드 목록 정상
+- 오른쪽 Selected Record 패널 정상
+- Secret Locked / 해금형 정보 구조 정상
+- 세비안×룬 비밀관계 미노출
+- 1920 / 3820 구조 파손 없음
+- 스크롤 정상
+- 사람/캐릭터/마네킹 없음
+- 이모지 없음
+- CSS 리본 장식 실질 문제 없음
+- JS 문법 / 중복 id / !important / 인라인 style/script / 외부 CDN 문제 없음
+
+후속 polish 후보:
+1. selected-ribbon 위치 미세 조정
+2. 관계도 CSS 노드/라인 좌표 정밀화
+3. record-grid 마지막 줄 정렬감 확인
+4. 필터 버튼 종류 확장 여부 검토

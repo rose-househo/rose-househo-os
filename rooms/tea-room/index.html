@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tea Room</title>
+  <link rel="stylesheet" href="css/tea-room.css">
+</head>
+<body>
+  <div class="tea-room-page">
+    <aside class="side-menu" aria-label="Tea Room menu">
+      <div class="menu-shell">
+        <div class="menu-top-mark" aria-hidden="true"></div>
+        <nav class="menu-list">
+          <button class="menu-item active" type="button" data-menu="오늘의 티타임">
+            <span class="line-icon cup" aria-hidden="true"></span>
+            <span>오늘의 티타임</span>
+          </button>
+          <button class="menu-item" type="button" data-menu="집사 브리핑">
+            <span class="line-icon board" aria-hidden="true"></span>
+            <span>집사 브리핑</span>
+          </button>
+          <button class="menu-item" type="button" data-menu="오늘의 방문객">
+            <span class="line-icon visitor" aria-hidden="true"></span>
+            <span>오늘의 방문객</span>
+          </button>
+          <button class="menu-item" type="button" data-menu="응접 요청">
+            <span class="line-icon letter" aria-hidden="true"></span>
+            <span>응접 요청</span>
+          </button>
+          <button class="menu-item" type="button" data-menu="사교계 소문">
+            <span class="line-icon whisper" aria-hidden="true"></span>
+            <span>사교계 소문</span>
+          </button>
+          <button class="menu-item" type="button" data-menu="마음 정리">
+            <span class="line-icon heartline" aria-hidden="true"></span>
+            <span>마음 정리</span>
+          </button>
+          <button class="menu-item" type="button" data-menu="휴식 상담">
+            <span class="line-icon rest" aria-hidden="true"></span>
+            <span>휴식 상담</span>
+          </button>
+          <button class="menu-item" type="button" data-menu="티타임 기록">
+            <span class="line-icon book" aria-hidden="true"></span>
+            <span>티타임 기록</span>
+          </button>
+          <button class="menu-item" type="button" data-menu="집사 확인 대기">
+            <span class="line-icon tray" aria-hidden="true"></span>
+            <span>집사 확인 대기</span>
+          </button>
+        </nav>
+        <div class="side-note">
+          <div class="note-line"></div>
+          <p>공주님의 말씀을<br>정리하는 시간은<br>저에게도 가장 소중한<br>티타임입니다.</p>
+          <div class="note-seal" aria-hidden="true"></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="top-area">
+        <div class="title-card" aria-label="Tea Room title">
+          <span class="title-ornament" aria-hidden="true"></span>
+          <h1>티룸</h1>
+          <p>Tea Room</p>
+        </div>
+        <div class="status-cards" aria-label="status cards">
+          <button class="status-card compact" type="button" data-toast="알림을 확인합니다.">
+            <span class="status-mark bell" aria-hidden="true"></span>
+            <span>알림</span>
+            <b>3</b>
+          </button>
+          <button class="status-card compact" type="button" data-toast="쪽지를 확인합니다.">
+            <span class="status-mark mail" aria-hidden="true"></span>
+            <span>쪽지</span>
+            <b>2</b>
+          </button>
+          <div class="status-card profile-card">
+            <div class="initial-slot">P</div>
+            <span>공주님</span>
+          </div>
+          <div class="status-card level-card">
+            <strong>Lv. 24</strong>
+            <div class="level-track"><span></span></div>
+            <small>86%</small>
+          </div>
+        </div>
+      </header>
+
+      <section class="tea-greeting glass-card">
+        <div class="tea-symbol" aria-hidden="true">
+          <span></span>
+        </div>
+        <div>
+          <h2>공주님, 차를 준비해두었습니다.</h2>
+          <p>오늘 들어온 소식과 방문 요청을 정리해두었습니다. 차를 드시며 천천히 확인해보실까요?</p>
+        </div>
+        <div class="mood-pair">
+          <div>
+            <span>현재 작업 상태</span>
+            <strong>집무실 정리 중</strong>
+            <em>응접 요청 확인</em>
+          </div>
+          <div>
+            <span>현재 컨디션</span>
+            <strong>숨 고르기 필요</strong>
+            <em class="condition-text">휴식 권장</em>
+          </div>
+        </div>
+      </section>
+
+      <div class="center-layout">
+        <section class="tea-conversation glass-card" aria-label="tea briefing conversation">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Tea Briefing</span>
+              <h2>오늘 응접 브리핑</h2>
+            </div>
+            <button class="soft-button" type="button" data-toast="오늘 응접 판단을 다시 정리합니다.">응접 판단 보기</button>
+          </div>
+
+          <div class="chat-flow">
+            <article class="bubble butler">
+              <div class="avatar-slot">B</div>
+              <div class="bubble-body">
+                <p>공주님, 오늘 도착한 방문 요청은 세 가지입니다. 하나는 바깥에서 온 연락, 하나는 사교계에서 도착한 초대장, 하나는 집사가 먼저 확인 중인 요청입니다.</p>
+                <small>오전 10:24</small>
+              </div>
+            </article>
+            <article class="bubble princess">
+              <div class="bubble-body">
+                <p>지금 바로 응접해야 하는 요청이 있을까?</p>
+                <small>오전 10:25</small>
+              </div>
+              <div class="avatar-slot">P</div>
+            </article>
+            <article class="bubble butler">
+              <div class="avatar-slot">B</div>
+              <div class="bubble-body">
+                <p>급한 요청은 없습니다. 다만 하워드 후작가의 초대장은 오늘 안에 참석 여부를 정하시는 편이 좋겠습니다.</p>
+                <small>오전 10:25</small>
+              </div>
+            </article>
+            <article class="decision-card">
+              <span class="decision-label">오늘 응접 여부 판단</span>
+              <p>바깥 소식은 집무실에 정리 요청하고, 초대장은 로즈 서신함에서 확인하며, 문장 다듬기는 서재로 보내는 흐름이 적합합니다.</p>
+            </article>
+          </div>
+
+          <div class="input-guide" role="button" tabindex="0" data-toast="1차 클린 베이스에서는 실제 채팅 기능을 연결하지 않습니다.">
+            <span>공주님의 말씀을 입력해주세요...</span>
+            <button type="button" data-toast="말씀을 티타임 메모로 임시 보관했습니다.">정리</button>
+          </div>
+        </section>
+
+        <section class="briefing-stack">
+          <article class="briefing-card glass-card">
+            <div class="section-head slim">
+              <div>
+                <span class="eyebrow">Today</span>
+                <h2>오늘 브리핑 요약</h2>
+              </div>
+              <button class="soft-button small" type="button" data-toast="브리핑 상세는 다음 단계에서 연결합니다.">자세히 보기</button>
+            </div>
+            <ul class="brief-list">
+              <li><span class="list-icon calendar"></span><b>오늘 일정</b><em>3건 예정</em></li>
+              <li><span class="list-icon drop"></span><b>피부 상태</b><em>수분 부족</em></li>
+              <li><span class="list-icon restline"></span><b>휴식 추천</b><em>가벼운 스트레칭</em></li>
+              <li><span class="list-icon moon"></span><b>수면 전 준비</b><em>차 한 잔과 나이트 루틴</em></li>
+              <li><span class="list-icon keyword"></span><b>오늘의 키워드</b><em>정리, 기록, 휴식</em></li>
+            </ul>
+          </article>
+
+          <article class="memo-card glass-card">
+            <div class="section-head slim">
+              <div>
+                <span class="eyebrow">Tea Memo</span>
+                <h2>집사가 정리한 메모</h2>
+              </div>
+              <span class="count-pill">4건</span>
+            </div>
+            <div class="memo-list">
+              <button class="memo-item active" type="button" data-filter="outside">
+                <span class="paper-icon"></span>
+                <strong>새로운 바깥 소식 1건</strong>
+                <em>바깥 소식</em>
+              </button>
+              <button class="memo-item" type="button" data-filter="society">
+                <span class="paper-icon"></span>
+                <strong>하워드 후작가 초대장 1건</strong>
+                <em>사교계 소식</em>
+              </button>
+              <button class="memo-item" type="button" data-filter="check">
+                <span class="paper-icon"></span>
+                <strong>마르시아 공작가 방문 요청 검토 중</strong>
+                <em>집사 확인</em>
+              </button>
+              <button class="memo-item" type="button" data-filter="tea">
+                <span class="paper-icon"></span>
+                <strong>다음 티타임 15:00 예정</strong>
+                <em>티타임</em>
+              </button>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <aside class="right-panel" aria-label="visitor and rumor panel">
+      <section class="panel-card summary-card">
+        <div class="panel-title">
+          <span class="spark-line" aria-hidden="true"></span>
+          <h2>오늘의 티타임 요약</h2>
+        </div>
+        <p>오늘은 주로 기록 정리, 피부 관리, 수면 준비에 대해 이야기했습니다.</p>
+        <button class="panel-button" type="button" data-toast="오늘의 요약을 다시 들려드립니다.">요약 다시 듣기</button>
+      </section>
+
+      <section class="panel-card visitor-card">
+        <div class="panel-title with-count">
+          <div>
+            <span class="spark-line" aria-hidden="true"></span>
+            <h2>오늘의 방문객</h2>
+          </div>
+          <span class="count-pill">3건</span>
+        </div>
+        <div class="visitor-tabs" aria-label="visitor filters">
+          <button class="active" type="button" data-visitor="all">전체</button>
+          <button type="button" data-visitor="outside">바깥 소식</button>
+          <button type="button" data-visitor="society">사교계 소식</button>
+          <button type="button" data-visitor="check">집사 확인</button>
+        </div>
+        <div class="visitor-list">
+          <article class="visitor-item active" data-kind="outside">
+            <span class="badge outside">바깥 소식</span>
+            <p>응접 대기 중인 연락이 있습니다.</p>
+            <small>상태: 답신 대기</small>
+          </article>
+          <article class="visitor-item" data-kind="society">
+            <span class="badge society">사교계 소식</span>
+            <p>하워드 후작가의 초대장이 도착했습니다. 음악회 이야기도 함께 전해지고 있습니다.</p>
+            <small>상태: 참석 여부 미정</small>
+          </article>
+          <article class="visitor-item" data-kind="check">
+            <span class="badge check">집사 확인</span>
+            <p>마르시아 공작가의 방문 요청은 집사가 확인 중입니다.</p>
+            <small>시향 기록, 코디 기록, 수면 요청도 함께 정리 중</small>
+          </article>
+        </div>
+        <div class="panel-actions">
+          <button type="button" data-toast="방문객 확인 화면으로 이동 예정입니다.">방문객 확인하기</button>
+          <button type="button" data-toast="로즈 서신함으로 이동 예정입니다.">서신으로 답장하기</button>
+          <button type="button" data-toast="집무실에 맡길 준비를 합니다.">집사에게 맡기기</button>
+        </div>
+      </section>
+
+      <section class="panel-card next-card">
+        <div class="panel-title">
+          <span class="spark-line" aria-hidden="true"></span>
+          <h2>집사의 추천 다음 행동</h2>
+        </div>
+        <ul>
+          <li>수분 케어 루틴 진행</li>
+          <li>가벼운 스트레칭 15분</li>
+          <li>나이트 체임버 수면 준비</li>
+        </ul>
+      </section>
+    </aside>
+
+    <footer class="action-bar" aria-label="Tea Room actions">
+      <button class="action-button primary" type="button" data-action="start">티타임 시작</button>
+      <button class="action-button" type="button" data-toast="방문객 확인 화면으로 이동 예정입니다.">방문객 확인</button>
+      <button class="action-button" type="button" data-toast="로즈 서신함으로 이동 예정입니다.">서신으로 답장하기</button>
+      <button class="action-button" type="button" data-toast="집무실로 이동 예정입니다.">집사에게 맡기기</button>
+      <button class="action-button" type="button" data-toast="서재로 이동 예정입니다.">서재로 보내기</button>
+      <button class="action-button" type="button" data-toast="티타임 기록을 정리하고 마무리합니다.">티타임 마무리</button>
+    </footer>
+  </div>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="js/tea-room.js"></script>
+</body>
+</html>

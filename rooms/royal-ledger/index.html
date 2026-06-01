@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Ledger Room / 지출함</title>
+  <link rel="stylesheet" href="css/royal-ledger.css">
+</head>
+<body>
+  <div class="royal-ledger-page">
+
+    <div class="top-status" aria-label="상단 상태 정보">
+      <button class="status-card mini-status" type="button" data-toast="알림함은 준비 중입니다.">
+        <span class="status-icon bell-status" aria-hidden="true"></span>
+        <span class="status-label">알림</span>
+        <span class="status-badge-num">3</span>
+      </button>
+      <button class="status-card mini-status" type="button" data-toast="우편함은 준비 중입니다.">
+        <span class="status-icon mail-status" aria-hidden="true"></span>
+        <span class="status-label">우편</span>
+        <span class="status-badge-num">2</span>
+      </button>
+      <button class="profile-status" type="button" data-toast="공주님 프로필은 준비 중입니다.">
+        <span class="profile-cameo" aria-hidden="true"><span>P</span></span>
+        <span class="profile-name">공주님</span>
+      </button>
+      <div class="level-status" aria-label="레벨 24, 진행률 86퍼센트">
+        <strong>Lv. 24</strong>
+        <span class="level-track"><span></span></span>
+        <small>86%</small>
+      </div>
+    </div>
+    <aside class="side-menu" aria-label="Royal Ledger Room menu">
+      <div class="side-frame">
+        <div class="room-label">
+          <span class="room-label-ko">왕실 장부실</span>
+          <span class="room-label-en">Royal Ledger Room</span>
+        </div>
+
+        <nav class="ledger-nav" aria-label="지출함 카테고리">
+          <button class="nav-item is-active" type="button" data-menu="오늘 소비">
+            <span class="line-icon crown-icon" aria-hidden="true"></span>
+            <span>오늘 소비</span>
+          </button>
+          <button class="nav-item" type="button" data-menu="카드 장부">
+            <span class="line-icon card-icon" aria-hidden="true"></span>
+            <span>카드 장부</span>
+          </button>
+          <button class="nav-item" type="button" data-menu="해외결제">
+            <span class="line-icon globe-icon" aria-hidden="true"></span>
+            <span>해외결제</span>
+          </button>
+          <button class="nav-item" type="button" data-menu="관세 체크">
+            <span class="line-icon shield-icon" aria-hidden="true"></span>
+            <span>관세 체크</span>
+          </button>
+          <button class="nav-item" type="button" data-menu="배송 대기">
+            <span class="line-icon truck-icon" aria-hidden="true"></span>
+            <span>배송 대기</span>
+          </button>
+          <button class="nav-item" type="button" data-menu="위시룸 연동">
+            <span class="line-icon bag-icon" aria-hidden="true"></span>
+            <span>위시룸 연동</span>
+          </button>
+          <button class="nav-item" type="button" data-menu="영수증 보관">
+            <span class="line-icon book-icon" aria-hidden="true"></span>
+            <span>영수증 보관</span>
+          </button>
+          <button class="nav-item" type="button" data-menu="아카이브">
+            <span class="line-icon archive-icon" aria-hidden="true"></span>
+            <span>아카이브</span>
+          </button>
+        </nav>
+
+        <div class="side-note">
+          <div class="note-crown" aria-hidden="true"></div>
+          <p>공주님의 소비는<br>메이드가 정성껏 기록하고,<br>현명한 선택을 도와드려요.</p>
+          <span class="note-mark" aria-hidden="true"></span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="ledger-main">
+      <header class="top-area">
+        <div class="title-card">
+          <span class="title-mini">Royal Ledger Room</span>
+          <h1>지출함</h1>
+          <p>공주님의 소비 기록부</p>
+        </div>
+      </header>
+
+      <section class="summary-panel" aria-label="지출 요약">
+        <article class="summary-card amount-card">
+          <div class="summary-art purse-art" aria-hidden="true"></div>
+          <div class="summary-content">
+            <p class="summary-label">오늘 사용 금액</p>
+            <strong>₩ 59,230</strong>
+            <span>오늘 기준 영수증 3건</span>
+            <button type="button" class="soft-button" data-toast="오늘 영수증 보관함을 준비 중입니다.">오늘 영수증 보기</button>
+          </div>
+        </article>
+
+        <article class="summary-card month-card">
+          <div class="summary-art rose-art" aria-hidden="true"></div>
+          <div class="summary-content">
+            <p class="summary-label">이번 달 소비</p>
+            <strong>₩ 1,588,820</strong>
+            <span>예산 대비 <b>78%</b></span>
+            <div class="progress-track" aria-label="예산 대비 78%">
+              <span class="progress-fill"></span>
+            </div>
+            <button type="button" class="soft-button" data-toast="월간 리포트는 다음 단계에서 연결됩니다.">월간 리포트 보기</button>
+          </div>
+        </article>
+
+        <article class="summary-card card-usage-card">
+          <div class="donut-wrap" aria-label="카드별 사용량 placeholder">
+            <div class="donut-chart"><span>₩1,588,820</span></div>
+          </div>
+          <div class="usage-list">
+            <p class="summary-label">카드별 사용량</p>
+            <div><span class="legend rose"></span>로즈 카드 <b>56%</b></div>
+            <div><span class="legend premium"></span>프리미엄 카드 <b>28%</b></div>
+            <div><span class="legend overseas"></span>해외 전용 카드 <b>12%</b></div>
+            <div><span class="legend gift"></span>기프트 카드 <b>4%</b></div>
+            <button type="button" class="soft-button" data-toast="카드 사용 내역 화면은 준비 중입니다.">카드 사용 내역 보기</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="spending-list" aria-label="소비 카드 리스트">
+        <div class="list-header">
+          <div>
+            <span class="section-kicker">Ledger List</span>
+            <h2>소비 카드 리스트</h2>
+          </div>
+          <div class="list-tools">
+            <button type="button" class="sort-button" data-toast="최신순으로 정렬했습니다.">최신순</button>
+            <button type="button" class="view-button" data-toast="장부형 보기 기준을 유지합니다.">보기 방식</button>
+          </div>
+        </div>
+
+        <div class="filter-tabs" aria-label="소비 필터">
+          <button type="button" class="filter-tab is-active" data-filter="전체">전체</button>
+          <button type="button" class="filter-tab" data-filter="국내">국내</button>
+          <button type="button" class="filter-tab" data-filter="해외">해외</button>
+          <button type="button" class="filter-tab" data-filter="배송 중">배송 중</button>
+          <button type="button" class="filter-tab" data-filter="배송 완료">배송 완료</button>
+          <button type="button" class="filter-tab" data-filter="취소/환불">취소/환불</button>
+        </div>
+
+        <div class="ledger-table" role="table" aria-label="구매 내역">
+          <div class="ledger-row table-head" role="row">
+            <div role="columnheader">상품 정보</div>
+            <div role="columnheader">브랜드</div>
+            <div role="columnheader">결제 금액</div>
+            <div role="columnheader">통화</div>
+            <div role="columnheader">예상 원화</div>
+            <div role="columnheader">배송 상태</div>
+            <div role="columnheader">기록</div>
+          </div>
+
+          <div class="ledger-row" role="row" data-category="해외 배송 중">
+            <div class="product-cell" role="cell"><span class="thumb dress-thumb"></span><span><b>로즈 티아라 드레스</b><small>컬러: 로즈 핑크 / 사이즈: S</small></span></div>
+            <div role="cell">Lace Whispers <em>드레스</em></div>
+            <div role="cell">$ 142.00</div>
+            <div role="cell">USD</div>
+            <div role="cell">약 191,700 KRW</div>
+            <div role="cell"><span class="status-badge delivery">배송 중</span><small>05.18 도착 예정</small></div>
+            <div role="cell"><button type="button" class="mark-button" data-toast="중요 기록으로 표시했습니다.">중요</button></div>
+          </div>
+
+          <div class="ledger-row" role="row" data-category="해외 배송 중">
+            <div class="product-cell" role="cell"><span class="thumb bag-thumb"></span><span><b>엘레체 체인 미니백</b><small>컬러: 피치 베이지</small></span></div>
+            <div role="cell">Petite Étoile <em>가방</em></div>
+            <div role="cell">$ 198.00</div>
+            <div role="cell">USD</div>
+            <div role="cell">약 267,300 KRW</div>
+            <div role="cell"><span class="status-badge ready">배송 준비 중</span><small>05.20 발송 예정</small></div>
+            <div role="cell"><button type="button" class="mark-button" data-toast="영수증 메모를 열 준비 중입니다.">메모</button></div>
+          </div>
+
+          <div class="ledger-row" role="row" data-category="해외 배송 완료">
+            <div class="product-cell" role="cell"><span class="thumb jewelry-thumb"></span><span><b>로즈 크리스탈 주얼리 세트</b><small>구성: 목걸이, 귀걸이, 팔찌</small></span></div>
+            <div role="cell">Maison de Rose <em>액세서리</em></div>
+            <div role="cell">€ 92.00</div>
+            <div role="cell">EUR</div>
+            <div role="cell">약 138,270 KRW</div>
+            <div role="cell"><span class="status-badge done">배송 완료</span><small>05.10 수령 완료</small></div>
+            <div role="cell"><button type="button" class="mark-button is-filled" data-toast="관세 확인 항목으로 보관했습니다.">관세</button></div>
+          </div>
+
+          <div class="ledger-row" role="row" data-category="해외 배송 중">
+            <div class="product-cell" role="cell"><span class="thumb shoes-thumb"></span><span><b>샤르망 리본 힐</b><small>컬러: 누드 핑크 / 사이즈: 230</small></span></div>
+            <div role="cell">Sweet Crown <em>신발</em></div>
+            <div role="cell">$ 178.00</div>
+            <div role="cell">USD</div>
+            <div role="cell">약 240,300 KRW</div>
+            <div role="cell"><span class="status-badge delivery">배송 중</span><small>05.17 도착 예정</small></div>
+            <div role="cell"><button type="button" class="mark-button" data-toast="배송 기록을 확인합니다.">배송</button></div>
+          </div>
+
+          <div class="ledger-row" role="row" data-category="해외 배송 완료">
+            <div class="product-cell" role="cell"><span class="thumb perfume-thumb"></span><span><b>로즈 부케 오 드 퍼퓸</b><small>용량: 50ml</small></span></div>
+            <div role="cell">Rose Bouquet <em>향수</em></div>
+            <div role="cell">$ 89.00</div>
+            <div role="cell">USD</div>
+            <div role="cell">약 120,060 KRW</div>
+            <div role="cell"><span class="status-badge done">배송 완료</span><small>05.09 수령 완료</small></div>
+            <div role="cell"><button type="button" class="mark-button" data-toast="아카이브 후보에 담았습니다.">보관</button></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="right-panel" aria-label="소비 판단 패널">
+      <section class="advisor-card maid-card">
+        <div class="advisor-head">
+          <span class="initial-slot">M</span>
+          <div>
+            <span class="section-kicker">Maid Note</span>
+            <h2>메이드 소비 판단</h2>
+          </div>
+        </div>
+        <p>공주님,<br>이번 달은 드레스 구매가 조금 많았어요. 예산 대비 <b>78%</b> 사용 중입니다.</p>
+        <button type="button" class="soft-button" data-toast="메이드 소비 상담은 다음 단계에서 연결됩니다.">상세 상담 보기</button>
+      </section>
+
+      <section class="advisor-card customs-card">
+        <span class="section-kicker">Customs Check</span>
+        <h2>관세 위험 체크</h2>
+        <p>관세 부과 가능성이 있는 상품이 <b>1건</b> 있어요.</p>
+        <div class="mini-ledger-box">
+          <strong>Maison de Rose 주얼리 세트</strong>
+          <span>예상 관세: 약 27,600 KRW</span>
+        </div>
+        <button type="button" class="soft-button" data-toast="관세 위험 상세 화면은 준비 중입니다.">자세히 보기</button>
+      </section>
+
+      <section class="advisor-card extra-card">
+        <span class="section-kicker">Extra Cost</span>
+        <h2>추가 비용 안내</h2>
+        <dl class="cost-list">
+          <div><dt>해외 배송비</dt><dd>$ 24.50</dd></div>
+          <div><dt>카드 수수료</dt><dd>$ 38.12</dd></div>
+          <div class="total"><dt>이번 달 추가 비용 합계</dt><dd>약 84,525 KRW</dd></div>
+        </dl>
+      </section>
+
+      <section class="advisor-card saving-card">
+        <span class="section-kicker">Saving Guide</span>
+        <h2>절약 추천</h2>
+        <p>위시룸에서 세일 알림을 설정하면 원하는 상품을 더 합리적인 가격에 만날 수 있어요.</p>
+        <button type="button" class="soft-button" data-toast="위시룸 알림 설정으로 이동 예정입니다.">위시룸 알림 설정</button>
+      </section>
+    </aside>
+
+    <footer class="action-bar" aria-label="지출함 빠른 실행">
+      <button type="button" data-toast="영수증 보관함을 엽니다."><span class="bar-icon receipt-icon" aria-hidden="true"></span>영수증 보관</button>
+      <button type="button" data-toast="메이드 소비 상담은 준비 중입니다."><span class="bar-icon maid-icon" aria-hidden="true"></span>메이드 소비 상담</button>
+      <button type="button" data-toast="위시룸으로 이동 예정입니다."><span class="bar-icon wish-icon" aria-hidden="true"></span>위시룸 이동</button>
+      <button type="button" data-toast="오늘 소비 기록을 아카이브 후보로 저장했습니다."><span class="bar-icon archive-bar-icon" aria-hidden="true"></span>아카이브 저장</button>
+    </footer>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="js/royal-ledger.js"></script>
+</body>
+</html>

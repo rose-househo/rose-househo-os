@@ -1,0 +1,32 @@
+Rose Hall / 로즈 홀
+PC 1차 클린 베이스 잠금 가능
+
+기준 파일:
+rose-hall_pc-v1_prelink_stable.zip
+
+구성:
+index.html
+css/rose-hall.css
+js/rose-hall.js
+assets/rose-hall-bg.png
+assets/rose-hall-banner.png
+
+통과:
+- 1번 이미지 = 히어로 배너 정상
+- 3번 이미지 = 전체 배경 정상
+- base64 없음
+- 1920 레이아웃 정상
+- 3820 구조 파손 없음
+- 하단 액션바 wrapper 제거 완료
+- 하단 액션바 본문 덮힘 없음
+- 왼쪽 메뉴 / 중앙 카드 그리드 / 오른쪽 패널 / 하단 액션바 유지
+- 사람/마네킹/캐릭터 없음
+- 이모지 없음
+- JS 문법 정상
+- 중복 id 없음
+- !important 없음
+- 인라인 style/script 없음
+
+후속 polish 후보:
+1. 액션바 safe space 여유 4~8px 상향 검토
+2. .portrait-slot의 “B” 텍스트를 추후 크레스트/SVG/고급 도형으로 교체 가능

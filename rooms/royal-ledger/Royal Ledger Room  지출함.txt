@@ -1,0 +1,32 @@
+Royal Ledger Room / 지출함
+
+상태:
+1차 기준본 잠금 가능.
+
+기준 파일:
+royal-ledger_pc-v1_prelink_stable.zip
+
+역할:
+공주님의 소비 기록부.
+구매 기록, 카드 장부, 해외결제, 관세/배송비 체크, 배송 상태, 영수증 보관, 위시룸 구매 전환 기록 담당.
+
+통과:
+- index.html / css/royal-ledger.css / js/royal-ledger.js / assets/royal-ledger-bg.png 구성 정상
+- 지출함 / 소비 기록부 역할 명확
+- Wish Room과 역할 분리 정상
+- 민감한 카드번호/CVC/계좌번호 입력 UI 없음
+- 실제 결제/API 연동 없음
+- 상단 요약 카드 3개 정상
+- 중앙 소비 리스트 정상
+- 오른쪽 소비 판단/관세/추가 비용/절약 추천 정상
+- 1920 / 3820 레이아웃 구조 안정
+- 하단 action-bar 본문 덮힘 없음
+- base64 없음
+- !important / 인라인 style/script 없음
+- side-bow CSS 리본 장식 제거 완료
+- ribbon/bow 계열 클래스 신규 추가 없음
+
+후속 polish 후보:
+1. 미디어쿼리 중복 정리
+2. 1500px 이하 테이블 가로폭 확인
+3. top-status 절대 배치 겹침 조건 점검

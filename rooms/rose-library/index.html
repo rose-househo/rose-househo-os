@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>로즈 도서관 - 사교계 명부</title>
+  <link rel="stylesheet" href="css/rose-library.css">
+</head>
+<body>
+  <div class="rose-library-page">
+    <aside class="library-sidebar" aria-label="로즈 도서관 메뉴">
+      <div class="sidebar-brand">
+        <div class="brand-crest" aria-hidden="true"><span>록</span></div>
+        <p class="eyebrow">로즈 도서관</p>
+        <h1>로즈 도서관</h1>
+        <p class="brand-subtitle">로즈 저택 사교계 기록 보관소</p>
+      </div>
+
+      <nav class="library-menu" aria-label="도서관 서가 메뉴">
+        <button class="menu-item active" type="button" data-section="Society Register">
+          <span class="menu-mark book-mark" aria-hidden="true"></span>
+          <span><strong>사교계 명부</strong><small>귀족 사회 기록</small></span>
+        </button>
+        <button class="menu-item" type="button" data-section="House Archive">
+          <span class="menu-mark shield-mark" aria-hidden="true"></span>
+          <span><strong>가문록</strong><small>가문 기록</small></span>
+        </button>
+        <button class="menu-item" type="button" data-section="Visiting Nobility">
+          <span class="menu-mark crown-mark" aria-hidden="true"></span>
+          <span><strong>방문 귀족</strong><small>방문자 기록</small></span>
+        </button>
+        <button class="menu-item" type="button" data-section="Correspondence">
+          <span class="menu-mark letter-mark" aria-hidden="true"></span>
+          <span><strong>관련 서신</strong><small>서신 연결</small></span>
+        </button>
+        <button class="menu-item" type="button" data-section="Invitations">
+          <span class="menu-mark seal-mark" aria-hidden="true"></span>
+          <span><strong>초대장 기록</strong><small>초대 이력</small></span>
+        </button>
+        <button class="menu-item" type="button" data-section="Events Ledger">
+          <span class="menu-mark ledger-mark" aria-hidden="true"></span>
+          <span><strong>사건 기록</strong><small>사건 장부</small></span>
+        </button>
+        <button class="menu-item" type="button" data-section="Rumors & Reports">
+          <span class="menu-mark quill-mark" aria-hidden="true"></span>
+          <span><strong>소문과 보고서</strong><small>소문 보고</small></span>
+        </button>
+        <button class="menu-item" type="button" data-section="Reference Index">
+          <span class="menu-mark index-mark" aria-hidden="true"></span>
+          <span><strong>색인</strong><small>자료 색인</small></span>
+        </button>
+        <button class="menu-item locked" type="button" data-section="Secret Shelf">
+          <span class="menu-mark secret-mark" aria-hidden="true"></span>
+          <span><strong>비밀 서가</strong><small>잠긴 기록</small></span>
+        </button>
+      </nav>
+
+      <section class="archivist-note" aria-label="기록관 메모">
+        <p class="note-title">기록관 메모</p>
+        <p>사교계 명부는 공주님께 도착한 서신, 방문 기록, 초대장, 조사 보고서를 바탕으로 조용히 갱신됩니다.</p>
+      </section>
+    </aside>
+
+    <main class="register-main">
+      <header class="register-header">
+        <p class="eyebrow">로즈 도서관</p>
+        <h2>사교계 명부</h2>
+        <p>귀족 가문과 주요 인물의 사교 기록을 열람하는 로즈 도서관 명부입니다.</p>
+      </header>
+
+      <section class="register-tabs" aria-label="명부 탭">
+        <button class="register-tab active" type="button" data-tab="House Archive">가문록<span>귀족 가문 기록</span></button>
+        <button class="register-tab" type="button" data-tab="Individuals">인물록<span>주요 인물 기록</span></button>
+        <button class="register-tab" type="button" data-tab="Recently Updated">최근 갱신<span>새로 갱신된 기록</span></button>
+        <button class="register-tab" type="button" data-tab="Hidden Records">잠긴 기록<span>해금 전 기록</span></button>
+      </section>
+
+      <section class="register-search" aria-label="검색 및 필터">
+        <label class="search-field">
+          <span class="search-icon" aria-hidden="true"></span>
+          <input id="recordSearch" type="search" placeholder="가문명, 작위, 관계, 소문, 키워드로 검색..." autocomplete="off">
+        </label>
+        <div class="filter-group" aria-label="기록 필터">
+          <button class="filter-button active" type="button" data-filter="all">전체</button>
+          <button class="filter-button" type="button" data-filter="초대장">초대장</button>
+          <button class="filter-button" type="button" data-filter="서신 교환">서신</button>
+          <button class="filter-button" type="button" data-filter="신뢰 동맹">동맹</button>
+          <button class="filter-button" type="button" data-filter="비밀 잠김">비밀</button>
+        </div>
+        <label class="select-control">
+          <span>정렬</span>
+          <select id="sortSelect">
+            <option value="rank">가문 서열</option>
+            <option value="updated">최근 갱신순</option>
+            <option value="relationship">관계 상태순</option>
+            <option value="secret">비밀 해금순</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="record-grid" aria-label="가문 기록 목록">
+        <article class="record-card active" tabindex="0" data-record="valmont" data-tags="초대장 신뢰 동맹 방문 중">
+          <div class="mini-crest rose"><span>V</span></div>
+          <div class="card-body">
+            <p class="record-rank">공작가</p>
+            <h3>발몽 가문</h3>
+            <p class="lineage">계보: 에버미어의 발몽</p>
+            <p class="activity"><b>최근 활동:</b> 에버미어 저택에서 겨울 사교회를 주최 중입니다.</p>
+            <div class="badges"><span>초대장</span><span>신뢰 동맹</span><span>방문 중</span></div>
+          </div>
+          <button class="open-record" type="button" data-record="valmont">기록 보기</button>
+        </article>
+
+        <article class="record-card" tabindex="0" data-record="arcourt" data-tags="서신 교환 신뢰 동맹">
+          <div class="mini-crest navy"><span>A</span></div>
+          <div class="card-body">
+            <p class="record-rank">후작가</p>
+            <h3>다르쿠르 가문</h3>
+            <p class="lineage">계보: 루미노르의 다르쿠르</p>
+            <p class="activity"><b>최근 활동:</b> 남부 순방을 마치고 귀환했습니다.</p>
+            <div class="badges"><span>서신 교환</span><span>신뢰 동맹</span></div>
+          </div>
+          <button class="open-record" type="button" data-record="arcourt">기록 보기</button>
+        </article>
+
+        <article class="record-card" tabindex="0" data-record="belrose" data-tags="초대장 서신 교환">
+          <div class="mini-crest ivory"><span>B</span></div>
+          <div class="card-body">
+            <p class="record-rank">백작가</p>
+            <h3>벨로즈 가문</h3>
+            <p class="lineage">계보: 그레이클리프의 벨로즈</p>
+            <p class="activity"><b>최근 활동:</b> 벨로즈 경이 가을 사냥회에 참석했습니다.</p>
+            <div class="badges"><span>초대장</span><span>서신 교환</span></div>
+          </div>
+          <button class="open-record" type="button" data-record="belrose">기록 보기</button>
+        </article>
+
+        <article class="record-card" tabindex="0" data-record="ashford" data-tags="방문 중 중립">
+          <div class="mini-crest green"><span>AS</span></div>
+          <div class="card-body">
+            <p class="record-rank">백작가</p>
+            <h3>애쉬포드 가문</h3>
+            <p class="lineage">계보: 노스미어의 애쉬포드</p>
+            <p class="activity"><b>최근 활동:</b> 노스미어 영지 업무를 관리 중입니다.</p>
+            <div class="badges"><span>방문 중</span><span>중립</span></div>
+          </div>
+          <button class="open-record" type="button" data-record="ashford">기록 보기</button>
+        </article>
+
+        <article class="record-card" tabindex="0" data-record="lorien" data-tags="서신 교환 초대장 비밀 잠김">
+          <div class="mini-crest violet"><span>L</span></div>
+          <div class="card-body">
+            <p class="record-rank">자작가</p>
+            <h3>로리엔 가문</h3>
+            <p class="lineage">계보: 레이븐셰이드의 로리엔</p>
+            <p class="activity"><b>최근 활동:</b> 봄 축제 관련 초대장을 보냈습니다.</p>
+            <div class="badges"><span>서신 교환</span><span>초대장</span><span>비밀 잠김</span></div>
+          </div>
+          <button class="open-record" type="button" data-record="lorien">기록 보기</button>
+        </article>
+
+        <article class="record-card" tabindex="0" data-record="montclair" data-tags="중립 서신 교환">
+          <div class="mini-crest blue"><span>M</span></div>
+          <div class="card-body">
+            <p class="record-rank">준남작가</p>
+            <h3>몽클레어 가문</h3>
+            <p class="lineage">계보: 하이브룩의 몽클레어</p>
+            <p class="activity"><b>최근 활동:</b> 젊은 후계자가 궁정에 첫 인사를 올렸습니다.</p>
+            <div class="badges"><span>중립</span><span>서신 교환</span></div>
+          </div>
+          <button class="open-record" type="button" data-record="montclair">기록 보기</button>
+        </article>
+
+        <article class="record-card" tabindex="0" data-record="delacy" data-tags="서신 교환 중립">
+          <div class="mini-crest parchment"><span>DL</span></div>
+          <div class="card-body">
+            <p class="record-rank">자작가</p>
+            <h3>드 레이시 가문</h3>
+            <p class="lineage">계보: 사우스게이트의 드 레이시</p>
+            <p class="activity"><b>최근 활동:</b> 통상 허가 관련 서신을 주고받았습니다.</p>
+            <div class="badges"><span>서신 교환</span><span>중립</span></div>
+          </div>
+          <button class="open-record" type="button" data-record="delacy">기록 보기</button>
+        </article>
+
+        <article class="record-card" tabindex="0" data-record="vauclain" data-tags="초대장 신뢰 동맹 비밀 잠김">
+          <div class="mini-crest crimson"><span>VC</span></div>
+          <div class="card-body">
+            <p class="record-rank">백작가</p>
+            <h3>보클랭 가문</h3>
+            <p class="lineage">계보: 돈스파이어의 보클랭</p>
+            <p class="activity"><b>최근 활동:</b> 자선 무도회의 후원자로 이름을 올렸습니다.</p>
+            <div class="badges"><span>초대장</span><span>신뢰 동맹</span><span>비밀 잠김</span></div>
+          </div>
+          <button class="open-record" type="button" data-record="vauclain">기록 보기</button>
+        </article>
+
+        <article class="record-card" tabindex="0" data-record="lafaye" data-tags="중립">
+          <div class="mini-crest gold"><span>LF</span></div>
+          <div class="card-body">
+            <p class="record-rank">준남작가</p>
+            <h3>라파예 가문</h3>
+            <p class="lineage">계보: 브룩할로우의 라파예</p>
+            <p class="activity"><b>최근 활동:</b> 영지 관련 사안을 조정 중입니다.</p>
+            <div class="badges"><span>중립</span></div>
+          </div>
+          <button class="open-record" type="button" data-record="lafaye">기록 보기</button>
+        </article>
+      </section>
+
+      <section class="register-pagination" aria-label="페이지 및 보기 방식">
+        <p id="resultCount">총 142개 가문 중 1-9 표시</p>
+        <div class="pagination-buttons" aria-label="페이지네이션">
+          <button type="button" aria-label="이전 페이지">‹</button>
+          <button class="current" type="button">1</button>
+          <button type="button">2</button>
+          <button type="button">3</button>
+          <button type="button">4</button>
+          <button type="button">5</button>
+          <button type="button" aria-label="다음 페이지">›</button>
+        </div>
+        <div class="view-toggle" aria-label="보기 방식">
+          <span>보기</span>
+          <button class="active" type="button" data-view="grid">카드</button>
+          <button type="button" data-view="list">목록</button>
+        </div>
+      </section>
+    </main>
+
+    <aside class="selected-record-panel" aria-label="선택한 기록 미리보기">
+      <div class="selected-ribbon">선택한 기록</div>
+      <section class="selected-hero">
+        <div id="selectedCrest" class="large-crest rose"><span>V</span></div>
+        <div>
+          <p id="selectedRank" class="record-rank">공작가</p>
+          <h2 id="selectedName">발몽 가문</h2>
+          <p id="selectedMotto" class="motto">섬김 속의 명예, 품격 속의 아름다움.</p>
+          <dl class="quick-meta">
+            <div><dt>거점</dt><dd id="selectedSeat">에버미어 성</dd></div>
+            <div><dt>지역</dt><dd id="selectedRegion">서부 지방</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="lineage-preview panel-box">
+        <h3>계보 미리보기</h3>
+        <div class="family-tree" aria-label="계보 미리보기">
+          <div class="tree-row"><span>아우렐리안 발몽 공작</span><span>세라핀 발몽 공작부인</span></div>
+          <div class="tree-line"></div>
+          <div class="tree-row small"><span>알라릭 경</span><span>에멀린 영애</span><span>세드릭 경</span></div>
+        </div>
+      </section>
+
+      <section class="record-details-grid">
+        <div class="panel-box">
+          <h3>주요 인물</h3>
+          <ul id="keyMembers" class="soft-list">
+            <li>아우렐리안 발몽 공작</li>
+            <li>알라릭 발몽 경</li>
+            <li>에멀린 발몽 영애</li>
+          </ul>
+        </div>
+        <div class="panel-box standing-box">
+          <h3>사교계 위상</h3>
+          <div class="standing-emblem">상류 핵심</div>
+          <p id="selectedStanding">궁정과 귀족 사회 전반에서 높은 존중을 받습니다.</p>
+        </div>
+        <div class="panel-box">
+          <h3>관련 가문</h3>
+          <ul id="relatedHouses" class="soft-list compact">
+            <li>다르쿠르 가문: 신뢰 동맹</li>
+            <li>보클랭 가문: 동맹</li>
+            <li>벨로즈 가문: 우호</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="panel-box caution-box">
+        <h3>예법 주의</h3>
+        <p id="selectedCaution">발몽 가문은 엄격한 전통을 중시합니다. 정식 소개 없이 친근하게 다가가면 무례하게 여겨질 수 있습니다.</p>
+      </section>
+
+      <section class="panel-box secret-box">
+        <h3>비밀 기록</h3>
+        <p id="selectedSecret">잠김. 메이드 조사 보고서 2건과 관련 서신 1건이 더 필요합니다.</p>
+      </section>
+
+      <section class="panel-box history-box">
+        <h3>초대장 이력</h3>
+        <ul id="invitationHistory" class="history-list">
+          <li><b>태양절 12일</b><span>에버미어 겨울 사교회</span><em>수락</em></li>
+          <li><b>첫꽃절 3일</b><span>자선 무도회</span><em>참석</em></li>
+          <li><b>서리절 21일</b><span>비공개 만찬</span><em>거절</em></li>
+        </ul>
+      </section>
+
+      <section class="panel-box relation-map-box">
+        <h3>관계도</h3>
+        <div class="relation-map" aria-label="관계도 미리보기">
+          <span class="node center">V</span>
+          <span class="node n1">A</span>
+          <span class="node n2">B</span>
+          <span class="node n3">VC</span>
+          <span class="node n4">L</span>
+          <span class="line l1"></span>
+          <span class="line l2"></span>
+          <span class="line l3"></span>
+          <span class="line l4"></span>
+        </div>
+        <div class="relation-legend"><span>동맹</span><span>우호</span><span>중립</span><span>긴장</span></div>
+      </section>
+
+      <button class="full-record-button" type="button">전체 기록 보기</button>
+    </aside>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="js/rose-library.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+Tea Room / 티룸
+
+상태:
+1차 기준본 잠금 가능.
+
+기준 파일:
+tea-room_pc-v1_prelink_stable.zip
+
+역할:
+응접 여부를 판단하는 티타임 브리핑 방.
+손님 맞이, 방문객 확인, 바깥 소식/사교계 소식 확인, 집사 확인 요청, 다음 처리 방으로 보내기 담당.
+
+통과:
+- index.html / css/tea-room.css / js/tea-room.js / assets/tea-room-bg.png 구성 정상
+- Tea Room 역할 명확
+- 별도 Reception Room 없이 응접 기능 일부 흡수
+- Study / Butler’s Office / 로즈 서신함 역할과 혼동 없음
+- “현실”, “AU”, “AU Letter Room”, “Butler’s Office”, “Study” 메타 라벨 미노출
+- 바깥 소식 / 사교계 소식 / 집사 확인 표현 정상
+- 오른쪽 패널 3카드 중심으로 정리 완료
+- 중앙 대화 카드 과확장 없음
+- 1920 / 3820 레이아웃 구조 안정
+- 하단 action-bar 본문 덮힘 없음
+- base64 없음
+- 사람/캐릭터/마네킹 없음
+- 이모지 없음
+- CSS 리본 장식 없음
+- JS 문법 / 중복 id / !important / 인라인 style/script / 외부 CDN 문제 없음
+
+후속 polish 후보:
+1. input-guide 접근성 설명 보완
+2. 하단 action-bar 6버튼 폭 미세 조정
+3. summary-card 짧은 텍스트 보완

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study | Rose Household</title>
+  <link rel="stylesheet" href="css/study.css">
+</head>
+<body>
+  <div class="study-page">
+    <aside class="side-menu" aria-label="Study menu">
+      <section class="welcome-card">
+        <div class="mini-profile" aria-hidden="true">PR</div>
+        <div>
+          <p class="eyebrow">오늘의 서재</p>
+          <strong>공주님, 오늘 작성하실 문서를 준비해두었습니다.</strong>
+        </div>
+      </section>
+
+      <nav class="menu-list">
+        <button class="menu-item active" type="button" data-menu="새 문서 작성"><span class="line-icon pen"></span>새 문서 작성</button>
+        <button class="menu-item" type="button" data-menu="지시서 초안"><span class="line-icon stamp"></span>지시서 초안</button>
+        <button class="menu-item" type="button" data-menu="기획서"><span class="line-icon doc"></span>기획서</button>
+        <button class="menu-item" type="button" data-menu="작사 초안"><span class="line-icon note"></span>작사 초안</button>
+        <button class="menu-item" type="button" data-menu="복붙 문장"><span class="line-icon mail"></span>복붙 문장</button>
+        <button class="menu-item" type="button" data-menu="세계관 정리"><span class="line-icon book"></span>세계관 정리</button>
+        <button class="menu-item" type="button" data-menu="인수인계 초안"><span class="line-icon flag"></span>인수인계 초안</button>
+        <button class="menu-item has-badge" type="button" data-menu="검토 대기"><span class="line-icon check"></span>검토 대기<span class="badge">2</span></button>
+        <button class="menu-item has-badge" type="button" data-menu="완성 문서"><span class="line-icon archive"></span>완성 문서<span class="badge">12</span></button>
+        <button class="menu-item" type="button" data-menu="LUMI Archive 연결"><span class="line-icon link"></span>LUMI Archive 연결</button>
+      </nav>
+
+      <section class="side-note">
+        <span class="tiny-crown" aria-hidden="true"></span>
+        <p>좋은 문장은 공주님의 생각을<br>더 아름답게 전달해줘요.</p>
+        <p>천천히, 당신의 언어로<br>기록해보세요.</p>
+      </section>
+    </aside>
+
+    <main class="main-area">
+      <header class="top-area">
+        <div class="title-card" aria-label="Study title">
+          <span class="title-line"></span>
+          <h1>Study</h1>
+          <p>서재</p>
+          <span class="title-line"></span>
+        </div>
+
+        <section class="status-cards" aria-label="Status cards">
+          <button type="button" class="status-card"><span class="status-icon bell"></span><span>알림</span><b>7</b></button>
+          <button type="button" class="status-card"><span class="status-icon letter"></span><span>우편</span><b>3</b></button>
+          <button type="button" class="profile-slot"><span>PR</span><small>공주님</small></button>
+          <div class="level-card"><strong>Lv. 24</strong><div class="meter"><span></span></div><small>86%</small></div>
+        </section>
+      </header>
+
+      <section class="summary-strip" aria-label="Writing summary">
+        <article class="summary-item">
+          <span class="summary-icon doc"></span>
+          <div>
+            <p>현재 작성 중인 문서</p>
+            <strong>신곡 프로젝트 콘셉트 기획서 초안</strong>
+            <em>작성 중</em>
+          </div>
+        </article>
+        <article class="summary-item">
+          <span class="summary-icon feather"></span>
+          <div>
+            <p>최근 수정한 초안</p>
+            <strong>루미 신곡 작사 초안 “Moonlit Rose”</strong>
+            <small>오늘 15:32</small>
+          </div>
+        </article>
+        <article class="summary-item">
+          <span class="summary-icon envelope"></span>
+          <div>
+            <p>검토 대기 문서</p>
+            <strong>인수인계 초안 v1.0</strong>
+            <small>메이드 린</small>
+            <em>2건 대기</em>
+          </div>
+        </article>
+        <article class="summary-item goals">
+          <div>
+            <p>오늘 작성 목표</p>
+            <ul>
+              <li>기획서 초안 1건 정리</li>
+              <li>작사 초안 1개 정리</li>
+              <li>인수인계 초안 작성</li>
+            </ul>
+          </div>
+          <div class="progress-ring"><span>2 / 3</span></div>
+        </article>
+      </section>
+
+      <section class="editor-card" aria-label="Document editor">
+        <div class="editor-meta">
+          <label>문서 제목 <input type="text" value="신곡 프로젝트 콘셉트 기획서 초안" aria-label="문서 제목"></label>
+          <label>문서 종류 <select aria-label="문서 종류"><option>기획서</option><option>지시서</option><option>작사 초안</option><option>세계관 정리</option><option>인수인계</option><option>복붙 문장</option></select></label>
+          <label>프로젝트 <select aria-label="프로젝트"><option>루미 신곡 프로젝트</option><option>Rose Household</option><option>Lumibelle</option><option>개인 기록</option></select></label>
+          <span class="save-state">저장됨 15:42</span>
+        </div>
+
+        <div class="toolbar" aria-label="Editor toolbar">
+          <button type="button">Noto Serif KR</button>
+          <button type="button">14</button>
+          <button type="button">B</button>
+          <button type="button">I</button>
+          <button type="button">U</button>
+          <button type="button">S</button>
+          <button type="button">왼쪽</button>
+          <button type="button">가운데</button>
+          <button type="button">오른쪽</button>
+          <button type="button">목록</button>
+          <button type="button">인용</button>
+          <button type="button">이미지</button>
+          <button type="button">표</button>
+          <button type="button">링크</button>
+        </div>
+
+        <div class="paper-area" contenteditable="true" aria-label="본문 작성 영역">
+          <p><strong>1. 프로젝트 개요</strong></p>
+          <p>- 프로젝트명: Moonlit Rose<br>- 콘셉트 키워드: 달빛, 장미, 비밀, 고백, 성장<br>- 장르: 발라드 팝<br>- 타깃 이미지: 우아함 속의 강인함, 밤의 고백</p>
+          <p><strong>2. 곡 정서 의도</strong></p>
+          <p>이 곡은 공주님의 내면에 숨겨진 진심을 달빛 아래 장미에 빗대어 표현합니다. 조용하지만 단단한 감정을 중심으로 구성된 발라드 팝입니다.</p>
+          <p><strong>3. 음악적 방향</strong></p>
+          <p>도입부는 피아노와 스트링으로 감정의 문을 엽니다.<br>후렴은 장미가 피어나는 순간을 표현한 풍성한 사운드로 전달합니다.<br>마지막은 달빛 아래 속삭이는 고백으로 마무리됩니다.</p>
+          <div class="watermark-pen" aria-hidden="true"></div>
+        </div>
+
+        <div class="tag-row" aria-label="Tags">
+          <span>태그</span>
+          <button type="button">기획</button>
+          <button type="button">신곡</button>
+          <button type="button">발라드</button>
+          <button type="button">Moonlit Rose</button>
+          <button type="button">컨셉 정리</button>
+          <button type="button">추가</button>
+        </div>
+
+        <section class="butler-comment" aria-label="Butler comment">
+          <div class="comment-avatar">BT</div>
+          <div>
+            <strong>집사 코멘트</strong>
+            <p>공주님의 컨셉 의도가 매우 잘 드러나고 있어요. 2절의 감정 흐름을 조금 더 구체적으로 적어주시면 작곡 방향 잡기에 더 좋겠습니다.</p>
+          </div>
+          <time>오늘 15:41</time>
+        </section>
+      </section>
+    </main>
+
+    <aside class="right-panel" aria-label="Writing assistant panel">
+      <section class="assist-card hero-assist">
+        <div class="assistant-slot">BT</div>
+        <div>
+          <h2>집사 작성 보조</h2>
+          <p>공주님, 문장을 더 아련하게 다듬어드릴까요? 필요한 항목도 함께 체크해드릴게요.</p>
+          <button type="button" class="soft-button">도움 요청하기</button>
+        </div>
+      </section>
+
+      <section class="assist-card">
+        <div class="card-title"><h2>문장 다듬기 후보</h2><span>3건</span></div>
+        <button type="button" class="suggestion">감정이 잘 드러나도록 표현 수정</button>
+        <button type="button" class="suggestion">불필요한 반복 표현 정리</button>
+        <button type="button" class="suggestion">더 우아한 어휘 제안</button>
+      </section>
+
+      <section class="assist-card check-card">
+        <div class="card-title"><h2>누락된 항목 체크</h2><span>2건</span></div>
+        <label><input type="checkbox"> 타깃 리스너 구체화</label>
+        <label><input type="checkbox" checked> 레퍼런스 곡 추가</label>
+        <label><input type="checkbox"> 곡 길이 분량 기재</label>
+        <label><input type="checkbox" checked> 발매 시기 목표</label>
+      </section>
+
+      <section class="assist-card compact-card">
+        <div class="card-title"><h2>복붙용 요약 생성</h2><button type="button">새로 만들기</button></div>
+        <p>이 문서를 복붙 지시서로 정리해드릴까요?</p>
+      </section>
+
+      <section class="assist-card compact-card">
+        <h2>집사의 한 줄 제안</h2>
+        <p>이 문서는 인수인계용으로 정리하면 좋겠습니다.</p>
+      </section>
+    </aside>
+
+    <footer class="action-bar" aria-label="Main actions">
+      <button type="button" class="primary-action">새 문서 저장</button>
+      <button type="button">집사에게 다듬기 맡기기</button>
+      <button type="button">복붙 지시서로 만들기</button>
+      <button type="button">LUMI Archive 저장</button>
+      <button type="button">Library 자료 연결</button>
+      <button type="button">집무실로 돌아가기</button>
+    </footer>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="js/study.js"></script>
+</body>
+</html>

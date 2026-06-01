@@ -1,0 +1,31 @@
+Study / 서재
+
+상태:
+1차 기준본 잠금 가능.
+
+기준 파일:
+study_pc-v1_prelink_stable.zip
+
+역할:
+문서 작성 / 지시서 초안 / 기획서 / 작사 초안 / 복붙 문장 / 세계관 정리 / 인수인계 초안 / 검토 대기 문서를 작성하는 방.
+
+통과:
+- index.html / css/study.css / js/study.js / assets/study-bg.png 구성 정상
+- Study 역할 명확
+- Butler’s Office / LUMI Archive / Library / Meeting Room과 역할 혼동 없음
+- 중앙 문서 작성 에디터 존재
+- 오른쪽 집사 작성 보조 패널 존재
+- 하단 action-bar 정상
+- 스크롤 구조 정상
+- 1920 / 3820 레이아웃 파손 없음
+- base64 없음
+- 사람/캐릭터/마네킹 없음
+- 이모지 없음
+- CSS 리본 장식 없음
+- JS 문법 / 중복 id / !important / 인라인 style/script 문제 없음
+
+후속 polish 후보:
+- zip 루트 구조 정리
+- paper-area overflow 검토
+- 툴바 텍스트 버튼을 나중에 아이콘형으로 보정
+- action-bar 높이 미세 조정
