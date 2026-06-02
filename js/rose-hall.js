@@ -10,7 +10,6 @@
     "회의실 이동": "meeting-room",
     "Belle Étage 이동": "belle-etage",
     "Belle Étage 기록 보기": "belle-etage",
-    "오늘의 브리핑 열기": "belle-etage",
     "파우더룸 이동": "powder-room",
     "드레스룸 이동": "dress-room",
     "위시룸 이동": "wish-room",
