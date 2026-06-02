@@ -341,18 +341,16 @@ button {
 }
 
 .profile-slot {
-  width: 52px;
-  height: 52px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  border: 1px solid rgba(201,143,84,0.55);
-  background:
-    radial-gradient(circle at center, #fffaf3 0 44%, transparent 45%),
-    linear-gradient(135deg, rgba(247,221,211,0.75), rgba(255,250,242,0.95));
+  border: 1px solid rgba(201,143,84,0.58);
+  background: linear-gradient(135deg, rgba(255, 239, 229, 0.88), rgba(251, 233, 221, 0.88));
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #b86f4e;
-  font-size: 25px;
+  color: transparent;
+  font-size: 0;
 }
 
 .level-card strong {

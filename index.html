@@ -10,6 +10,7 @@
   <div class="background-layer" aria-hidden="true"></div>
   <div class="estate-shell">
     <aside class="side-menu" aria-label="Rose Household rooms">
+      <img class="side-menu-frame" src="assets/rose-hall/frames/rose-hall-side-menu-frame.webp" alt="" aria-hidden="true">
       <div class="brand-card">
         <div class="brand-crest" aria-hidden="true">
           <span class="crest-line"></span>
@@ -18,6 +19,7 @@
         </div>
         <h1>Rose Hall</h1>
         <p>로즈 가문의 메인 홀</p>
+        <div class="ornate-rule" aria-hidden="true"><span>✦</span><i></i><span>✦</span></div>
       </div>
 
       <nav class="room-nav">
@@ -34,12 +36,15 @@
         <a class="nav-item" href="#" data-action="영감 보관실 이동"><span class="nav-mark">IN</span><span>영감 보관실</span></a>
         <a class="nav-item" href="#" data-action="뮤직룸 이동"><span class="nav-mark">MU</span><span>뮤직룸</span></a>
         <a class="nav-item" href="#" data-action="티룸 이동"><span class="nav-mark">TR</span><span>티룸</span></a>
+        <div class="ornate-rule nav-rule" aria-hidden="true"><span>✦</span><i></i><span>✦</span></div>
         <a class="nav-item separated" href="#" data-action="Library 이동"><span class="nav-mark">LB</span><span>Library</span></a>
         <a class="nav-item" href="#" data-action="Study 이동"><span class="nav-mark">ST</span><span>Study</span></a>
+        <div class="ornate-rule nav-rule nav-rule-bottom" aria-hidden="true"><span>✦</span><i></i><span>✦</span></div>
       </nav>
 
       <div class="side-note">
-        <p>이곳은 공주님의 하루가 시작되는 저택의 중심입니다.</p>
+        <p>이곳은 공주님의 하루가</p>
+        <p>시작되는 저택의 중심입니다.</p>
         <p>원하시는 방으로 이동해 보세요.</p>
       </div>
     </aside>
@@ -47,6 +52,7 @@
     <main class="main-area">
       <header class="top-header">
         <section class="title-frame" aria-label="Rose Hall title">
+          <img class="hall-title-frame" src="assets/rose-hall/title/rose-hall-title-frame.webp" alt="" aria-hidden="true">
           <div class="title-rule"></div>
           <div>
             <h2>Rose Hall</h2>
@@ -56,14 +62,14 @@
         </section>
 
         <section class="status-cards" aria-label="Current status">
-          <button class="status-card" type="button" data-action="알림센터 열기">
+          <button class="status-card notification-card" type="button" data-action="알림센터 열기">
             <span class="badge">7</span>
-            <span class="status-icon">AL</span>
+            <span class="status-icon"><img src="assets/rose-hall/top-icons/notification-icon.webp" alt=""></span>
             <span>알림</span>
           </button>
-          <button class="status-card" type="button" data-action="우편함 열기">
+          <button class="status-card mail-card" type="button" data-action="우편함 열기">
             <span class="badge">2</span>
-            <span class="status-icon">ML</span>
+            <span class="status-icon"><img src="assets/rose-hall/top-icons/mail-icon.webp" alt=""></span>
             <span>우편</span>
           </button>
           <button class="status-card profile-card" type="button" data-action="프로필 열기">
@@ -85,7 +91,7 @@
             <div class="daily-summary">
               <article class="summary-card line-card">
                 <h3>오늘의 한 줄 안내</h3>
-                <p>오늘은 브리핑 확인 후 집무실에서 작업을 시작하시면 좋겠습니다.</p>
+                <p>오늘은 브리핑 확인 후 집무실에서<br>작업을 시작하시면 좋겠습니다.</p>
               </article>
               <div class="summary-row">
                 <article class="summary-card number-card">
@@ -109,21 +115,21 @@
             </div>
 
             <div class="room-grid">
-              <button class="room-card" type="button" data-action="집사 집무실 이동"><span class="object-slot desk"></span><strong>집사 집무실</strong><small>오늘 작업 4건</small></button>
-              <button class="room-card" type="button" data-action="오늘의 브리핑 열기"><span class="object-slot briefing"></span><strong>오늘의 브리핑</strong><small>브리핑 도착</small></button>
-              <button class="room-card" type="button" data-action="Belle Étage 이동"><span class="object-slot etage"></span><strong>Belle Étage</strong><small>기록 및 아카이브</small></button>
-              <button class="room-card" type="button" data-action="파우더룸 이동"><span class="object-slot powder"></span><strong>파우더룸</strong><small>오늘 피부 루틴 준비됨</small></button>
-              <button class="room-card" type="button" data-action="드레스룸 이동"><span class="object-slot dress"></span><strong>드레스룸</strong><small>오늘 추천 코디 있음</small></button>
-              <button class="room-card" type="button" data-action="위시룸 이동"><span class="object-slot wish"></span><strong>위시룸</strong><small>제안 · 알림 2건</small></button>
-              <button class="room-card" type="button" data-action="나이트 체임버 이동"><span class="object-slot night"></span><strong>나이트 체임버</strong><small>수면 준비 대기</small></button>
-              <button class="room-card" type="button" data-action="입욕 · 회복실 이동"><span class="object-slot bath"></span><strong>입욕 · 회복실</strong><small>따뜻한 회복이 필요해요</small></button>
-              <button class="room-card" type="button" data-action="운동 · 식단 관리실 이동"><span class="object-slot fitness"></span><strong>운동 · 식단 관리실</strong><small>오늘 루틴 남음</small></button>
-              <button class="room-card" type="button" data-action="영감 보관실 이동"><span class="object-slot archive"></span><strong>영감 보관실</strong><small>새로운 메모 3건</small></button>
-              <button class="room-card" type="button" data-action="뮤직룸 이동"><span class="object-slot music"></span><strong>뮤직룸</strong><small>새로운 곡 추천</small></button>
-              <button class="room-card" type="button" data-action="티룸 이동"><span class="object-slot tea"></span><strong>티룸</strong><small>티타임 준비 완료</small></button>
-              <button class="room-card" type="button" data-action="Library 이동"><span class="object-slot library"></span><strong>Library</strong><small>읽을 책 추천</small></button>
-              <button class="room-card" type="button" data-action="Study 이동"><span class="object-slot study"></span><strong>Study</strong><small>집중 모드 준비</small></button>
-              <button class="room-card" type="button" data-action="회의실 이동"><span class="object-slot meeting"></span><strong>회의실</strong><small>오늘 안건 3건</small></button>
+              <button class="room-card" type="button" data-action="집사 집무실 이동"><span class="object-slot desk"><img src="assets/rose-hall/room-icons/butler-office.webp" alt="" loading="lazy" decoding="async"></span><strong>집사 집무실</strong><small>오늘 작업 4건</small></button>
+              <button class="room-card" type="button" data-action="오늘의 브리핑 열기"><span class="object-slot briefing"><img src="assets/rose-hall/room-icons/briefing.webp" alt="" loading="lazy" decoding="async"></span><strong>오늘의 브리핑</strong><small>브리핑 도착</small></button>
+              <button class="room-card" type="button" data-action="Belle Étage 이동"><span class="object-slot etage"><img src="assets/rose-hall/room-icons/belle-etage.webp" alt="" loading="lazy" decoding="async"></span><strong>Belle Étage</strong><small>기록 및 아카이브</small></button>
+              <button class="room-card" type="button" data-action="파우더룸 이동"><span class="object-slot powder"><img src="assets/rose-hall/room-icons/powder-room.webp" alt="" loading="lazy" decoding="async"></span><strong>파우더룸</strong><small>오늘 피부 루틴 준비됨</small></button>
+              <button class="room-card" type="button" data-action="드레스룸 이동"><span class="object-slot dress"><img src="assets/rose-hall/room-icons/dress-room.webp" alt="" loading="lazy" decoding="async"></span><strong>드레스룸</strong><small>오늘 추천 코디 있음</small></button>
+              <button class="room-card" type="button" data-action="위시룸 이동"><span class="object-slot wish"><img src="assets/rose-hall/room-icons/wish-room.webp" alt="" loading="lazy" decoding="async"></span><strong>위시룸</strong><small>제안 · 알림 2건</small></button>
+              <button class="room-card" type="button" data-action="나이트 체임버 이동"><span class="object-slot night"><img src="assets/rose-hall/room-icons/night-chamber.webp" alt="" loading="lazy" decoding="async"></span><strong>나이트 체임버</strong><small>수면 준비 대기</small></button>
+              <button class="room-card" type="button" data-action="입욕 · 회복실 이동"><span class="object-slot bath"><img src="assets/rose-hall/room-icons/bath-chamber.webp" alt="" loading="lazy" decoding="async"></span><strong>입욕 · 회복실</strong><small>따뜻한 회복이 필요해요</small></button>
+              <button class="room-card" type="button" data-action="운동 · 식단 관리실 이동"><span class="object-slot fitness"><img src="assets/rose-hall/room-icons/health-room.webp" alt="" loading="lazy" decoding="async"></span><strong>운동 · 식단 관리실</strong><small>오늘 루틴 남음</small></button>
+              <button class="room-card" type="button" data-action="영감 보관실 이동"><span class="object-slot archive"><img src="assets/rose-hall/room-icons/lumi-archive.webp" alt="" loading="lazy" decoding="async"></span><strong>영감 보관실</strong><small>새로운 메모 3건</small></button>
+              <button class="room-card" type="button" data-action="뮤직룸 이동"><span class="object-slot music"><img src="assets/rose-hall/room-icons/music-room.webp" alt="" loading="lazy" decoding="async"></span><strong>뮤직룸</strong><small>새로운 곡 추천</small></button>
+              <button class="room-card" type="button" data-action="티룸 이동"><span class="object-slot tea"><img src="assets/rose-hall/room-icons/tea-room.webp" alt="" loading="lazy" decoding="async"></span><strong>티룸</strong><small>티타임 준비 완료</small></button>
+              <button class="room-card" type="button" data-action="Library 이동"><span class="object-slot library"><img src="assets/rose-hall/room-icons/library.webp" alt="" loading="lazy" decoding="async"></span><strong>Library</strong><small>읽을 책 추천</small></button>
+              <button class="room-card" type="button" data-action="Study 이동"><span class="object-slot study"><img src="assets/rose-hall/room-icons/study.webp" alt="" loading="lazy" decoding="async"></span><strong>Study</strong><small>집중 모드 준비</small></button>
+              <button class="room-card" type="button" data-action="회의실 이동"><span class="object-slot meeting"><img src="assets/rose-hall/room-icons/meeting-room.webp" alt="" loading="lazy" decoding="async"></span><strong>회의실</strong><small>오늘 안건 3건</small></button>
             </div>
           </section>
         </section>
@@ -136,10 +142,12 @@
               <span></span>
             </div>
             <div class="butler-content">
-              <div class="portrait-slot" aria-hidden="true">B</div>
-              <p>공주님, 오늘은 브리핑을 확인하신 뒤 집무실에서 작업을 시작하시면 좋겠습니다.</p>
+              <div class="butler-text">
+                <p>공주님, 오늘은 브리핑을 확인하신 뒤 집무실에서 작업을 시작하시면 좋겠습니다.</p>
+                <button class="soft-button" type="button" data-action="집무실로 이동">집무실로 이동 ›</button>
+              </div>
+              <div class="portrait-slot" aria-hidden="true"><img src="assets/rose-hall/butler/butler-lucian-portrait.webp" alt="총괄집사 루시안"></div>
             </div>
-            <button class="soft-button" type="button" data-action="집무실로 이동">집무실로 이동</button>
           </section>
 
           <section class="guide-card route-card">
@@ -149,11 +157,20 @@
               <span></span>
             </div>
             <div class="route-line">
-              <span>브리핑 확인</span>
+              <div class="route-step">
+                <img src="assets/rose-hall/room-icons/briefing.webp" alt="브리핑 확인">
+                <span>브리핑 확인</span>
+              </div>
               <b></b>
-              <span>집무실 작업</span>
+              <div class="route-step">
+                <img src="assets/rose-hall/room-icons/butler-office.webp" alt="집무실 작업">
+                <span>집무실 작업</span>
+              </div>
               <b></b>
-              <span>드레스룸</span>
+              <div class="route-step">
+                <img src="assets/rose-hall/room-icons/dress-room.webp" alt="드레스룸">
+                <span>드레스룸</span>
+              </div>
             </div>
           </section>
 
@@ -180,7 +197,7 @@
             <dl>
               <div><dt>새로운 우편</dt><dd>2</dd></div>
               <div><dt>작업 완료 보고</dt><dd>3</dd></div>
-              <div><dt>게임고 알림</dt><dd>2</dd></div>
+              <div><dt>재입고 알림</dt><dd>2</dd></div>
             </dl>
           </section>
         </aside>
@@ -189,12 +206,12 @@
   </div>
 
   <nav class="bottom-actions" aria-label="Quick actions">
-    <button type="button" class="primary-action" data-action="오늘 브리핑 보기">오늘 브리핑 보기</button>
-    <button type="button" data-action="집사 집무실로 이동">집사 집무실로 이동</button>
-    <button type="button" data-action="일정 캘린더 열기">일정 캘린더 열기</button>
-    <button type="button" data-action="메이드 상담 열기">메이드 상담 열기</button>
-    <button type="button" data-action="알림센터 열기">알림센터 열기</button>
-    <button type="button" data-action="Belle Étage 기록 보기">Belle Étage 기록 보기</button>
+    <button type="button" class="primary-action" data-action="오늘 브리핑 보기"><span class="action-icon" aria-hidden="true"><img src="assets/rose-hall/action-icons/briefing.webp" alt=""></span><span class="action-label">오늘 브리핑 보기</span></button>
+    <button type="button" data-action="집사 집무실로 이동"><span class="action-icon" aria-hidden="true"><img src="assets/rose-hall/action-icons/butler-office.webp" alt=""></span><span class="action-label">집사 집무실로 이동</span></button>
+    <button type="button" data-action="일정 캘린더 열기"><span class="action-icon" aria-hidden="true"><img src="assets/rose-hall/action-icons/calendar.webp" alt=""></span><span class="action-label">일정 캘린더 열기</span></button>
+    <button type="button" data-action="메이드 상담 열기"><span class="action-icon" aria-hidden="true"><img src="assets/rose-hall/action-icons/maid-consult.webp" alt=""></span><span class="action-label">메이드 상담 열기</span></button>
+    <button type="button" data-action="알림센터 열기"><span class="action-icon" aria-hidden="true"><img src="assets/rose-hall/action-icons/notification.webp" alt=""></span><span class="action-label">알림센터 열기</span></button>
+    <button type="button" data-action="Belle Étage 기록 보기"><span class="action-icon" aria-hidden="true"><img src="assets/rose-hall/action-icons/belle-etage.webp" alt=""></span><span class="action-label">Belle Étage 기록 보기</span></button>
   </nav>
 
   <div class="toast" role="status" aria-live="polite"></div>
