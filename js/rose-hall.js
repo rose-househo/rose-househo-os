@@ -117,4 +117,18 @@
       showToast(currentAction || "이동");
     });
   });
+
+  // ── TODO 카드 체크 토글 ───────────────────────────────
+  document.querySelectorAll(".todo-card li").forEach(function (item) {
+    item.setAttribute("tabindex", "0");
+    item.addEventListener("click", function () {
+      item.classList.toggle("done");
+    });
+    item.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        item.classList.toggle("done");
+      }
+    });
+  });
 }());
