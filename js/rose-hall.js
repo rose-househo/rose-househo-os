@@ -10,6 +10,7 @@
     "회의실 이동": "meeting-room",
     "Belle Étage 이동": "belle-etage",
     "Belle Étage 기록 보기": "belle-etage",
+    "오늘의 브리핑 열기": "belle-etage",
     "파우더룸 이동": "powder-room",
     "드레스룸 이동": "dress-room",
     "위시룸 이동": "wish-room",
@@ -20,7 +21,10 @@
     "뮤직룸 이동": "music-room",
     "티룸 이동": "tea-room",
     "Library 이동": "library",
-    "Study 이동": "study"
+    "Study 이동": "study",
+    "장부실 이동": "royal-ledger",
+    "로즈 도서관 이동": "rose-library",
+    "기억창고 이동": "lumi-archive"
   };
 
   function isInsideRooms() {
@@ -48,6 +52,49 @@
     }, 1600);
   }
 
+  // ── Menu Pagination ──────────────────────────────────
+  var currentNavPage = 1;
+  var totalNavPages = 2;
+
+  var page1El = document.getElementById("nav-page-1");
+  var page2El = document.getElementById("nav-page-2");
+  var labelEl = document.getElementById("nav-page-label");
+  var prevBtn = document.getElementById("nav-prev");
+  var nextBtn = document.getElementById("nav-next");
+
+  function showNavPage(n) {
+    currentNavPage = n;
+    if (page1El) page1El.classList.toggle("nav-page--hidden", n !== 1);
+    if (page2El) page2El.classList.toggle("nav-page--hidden", n !== 2);
+    if (labelEl) labelEl.textContent = "୨୧ " + n + " / " + totalNavPages + " ୨୧";
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener("click", function () {
+      if (currentNavPage > 1) showNavPage(currentNavPage - 1);
+    });
+  }
+  if (nextBtn) {
+    nextBtn.addEventListener("click", function () {
+      if (currentNavPage < totalNavPages) showNavPage(currentNavPage + 1);
+    });
+  }
+
+  document.addEventListener("keydown", function (e) {
+    var tag = document.activeElement && document.activeElement.tagName.toLowerCase();
+    var ce = document.activeElement && document.activeElement.getAttribute("contenteditable");
+    if (tag === "input" || tag === "textarea" || tag === "select" || ce === "true" || ce === "") return;
+
+    if (e.key === "ArrowLeft") {
+      if (currentNavPage > 1) showNavPage(currentNavPage - 1);
+    } else if (e.key === "ArrowRight") {
+      if (currentNavPage < totalNavPages) showNavPage(currentNavPage + 1);
+    }
+  });
+
+  showNavPage(1);
+
+  // ── Room link data-action handler ───────────────────
   document.querySelectorAll("[data-action]").forEach(function (target) {
     const action = target.getAttribute("data-action") || "이동";
     const slug = ROOM_LINKS[action];

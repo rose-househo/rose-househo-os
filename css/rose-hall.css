@@ -170,6 +170,7 @@ button {
 .room-nav .ornate-rule.nav-rule-bottom {
   margin-top: 4px;
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .room-nav {
@@ -1197,4 +1198,53 @@ button {
   border-color: transparent;
   box-shadow: none;
   outline: none;
+}
+
+/* ── Nav Pagination ────────────────────────────────── */
+.nav-page--hidden {
+  display: none;
+}
+
+.nav-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 4px 0 2px;
+  margin-top: -6px;
+}
+
+.nav-page-btn {
+  background: none;
+  border: none;
+  color: var(--rose-blush, #c9849a);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 2px 6px;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.nav-page-btn:hover {
+  color: var(--rose-deep, #8c3a52);
+}
+
+.nav-page-label {
+  font-size: 0.7rem;
+  color: var(--rose-blush, #c9849a);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+/* ── Locked/unavailable nav items ───────────────────── */
+.nav-item.is-locked {
+  opacity: 0.45;
+  cursor: default;
+  pointer-events: none;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
 }

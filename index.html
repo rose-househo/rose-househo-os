@@ -22,25 +22,50 @@
         <div class="ornate-rule" aria-hidden="true"><span>✦</span><i></i><span>✦</span></div>
       </div>
 
-      <nav class="room-nav">
-        <a class="nav-item active" href="#" data-action="Rose Hall 열기"><span class="nav-mark">RH</span><span>Rose Hall</span></a>
-        <a class="nav-item" href="#" data-action="집사 집무실 이동"><span class="nav-mark">BO</span><span>집사 집무실</span></a>
-        <a class="nav-item" href="#" data-action="오늘의 브리핑 열기"><span class="nav-mark">BR</span><span>오늘의 브리핑</span></a>
-        <a class="nav-item" href="#" data-action="Belle Étage 이동"><span class="nav-mark">BE</span><span>Belle Étage</span></a>
-        <a class="nav-item" href="#" data-action="파우더룸 이동"><span class="nav-mark">PR</span><span>파우더룸</span></a>
-        <a class="nav-item" href="#" data-action="드레스룸 이동"><span class="nav-mark">DR</span><span>드레스룸</span></a>
-        <a class="nav-item" href="#" data-action="위시룸 이동"><span class="nav-mark">WR</span><span>위시룸</span></a>
-        <a class="nav-item" href="#" data-action="나이트 체임버 이동"><span class="nav-mark">NC</span><span>나이트 체임버</span></a>
-        <a class="nav-item" href="#" data-action="입욕 · 회복실 이동"><span class="nav-mark">BA</span><span>입욕 · 회복실</span></a>
-        <a class="nav-item" href="#" data-action="운동 · 식단 관리실 이동"><span class="nav-mark">FT</span><span>운동 · 식단 관리실</span></a>
-        <a class="nav-item" href="#" data-action="영감 보관실 이동"><span class="nav-mark">IN</span><span>영감 보관실</span></a>
-        <a class="nav-item" href="#" data-action="뮤직룸 이동"><span class="nav-mark">MU</span><span>뮤직룸</span></a>
-        <a class="nav-item" href="#" data-action="티룸 이동"><span class="nav-mark">TR</span><span>티룸</span></a>
-        <div class="ornate-rule nav-rule" aria-hidden="true"><span>✦</span><i></i><span>✦</span></div>
-        <a class="nav-item separated" href="#" data-action="Library 이동"><span class="nav-mark">LB</span><span>Library</span></a>
-        <a class="nav-item" href="#" data-action="Study 이동"><span class="nav-mark">ST</span><span>Study</span></a>
-        <div class="ornate-rule nav-rule nav-rule-bottom" aria-hidden="true"><span>✦</span><i></i><span>✦</span></div>
+      <nav class="room-nav" id="room-nav">
+        <!-- Page 1 -->
+        <div class="nav-page" id="nav-page-1">
+          <a class="nav-item active" href="./" data-action="Rose Hall 열기"><span class="nav-mark">RH</span><span>Rose Hall</span></a>
+          <a class="nav-item" href="rooms/butler-office/" data-action="집사 집무실 이동"><span class="nav-mark">BO</span><span>집사 집무실</span></a>
+          <a class="nav-item" href="rooms/belle-etage/" data-action="오늘의 브리핑 열기"><span class="nav-mark">BR</span><span>오늘의 브리핑</span></a>
+          <a class="nav-item" href="rooms/belle-etage/" data-action="Belle Étage 이동"><span class="nav-mark">BE</span><span>Belle Étage</span></a>
+          <a class="nav-item" href="rooms/powder-room/" data-action="파우더룸 이동"><span class="nav-mark">PR</span><span>파우더룸</span></a>
+          <a class="nav-item" href="rooms/dress-room/" data-action="드레스룸 이동"><span class="nav-mark">DR</span><span>드레스룸</span></a>
+          <a class="nav-item" href="rooms/wish-room/" data-action="위시룸 이동"><span class="nav-mark">WR</span><span>위시룸</span></a>
+          <a class="nav-item" href="rooms/royal-ledger/" data-action="장부실 이동"><span class="nav-mark">LG</span><span>장부실</span></a>
+          <a class="nav-item" href="rooms/night-chamber/" data-action="나이트 체임버 이동"><span class="nav-mark">NC</span><span>나이트 체임버</span></a>
+          <a class="nav-item" href="rooms/bath-chamber/" data-action="입욕 · 회복실 이동"><span class="nav-mark">BA</span><span>입욕 · 회복실</span></a>
+          <a class="nav-item" href="rooms/health-room/" data-action="운동 · 식단 관리실 이동"><span class="nav-mark">FT</span><span>운동 · 식단 관리실</span></a>
+          <a class="nav-item" href="rooms/lumi-archive/" data-action="영감 보관실 이동"><span class="nav-mark">IN</span><span>영감 보관실</span></a>
+          <a class="nav-item" href="rooms/music-room/" data-action="뮤직룸 이동"><span class="nav-mark">MU</span><span>뮤직룸</span></a>
+          <a class="nav-item" href="rooms/tea-room/" data-action="티룸 이동"><span class="nav-mark">TR</span><span>티룸</span></a>
+          <div class="ornate-rule nav-rule" aria-hidden="true"><span>✦</span><i></i><span>✦</span></div>
+          <a class="nav-item separated" href="rooms/library/" data-action="Library 이동"><span class="nav-mark">LB</span><span>Library</span></a>
+          <a class="nav-item" href="rooms/study/" data-action="Study 이동"><span class="nav-mark">ST</span><span>Study</span></a>
+          <div class="ornate-rule nav-rule nav-rule-bottom" aria-hidden="true"><span>✦</span><i></i><span>✦</span></div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="nav-page nav-page--hidden" id="nav-page-2">
+          <a class="nav-item" href="rooms/meeting-room/" data-action="회의실 이동"><span class="nav-mark">MT</span><span>회의실</span></a>
+          <a class="nav-item" href="rooms/rose-library/" data-action="로즈 도서관 이동"><span class="nav-mark">RD</span><span>로즈 도서관</span></a>
+          <a class="nav-item" href="rooms/lumi-archive/" data-action="기억창고 이동"><span class="nav-mark">AR</span><span>기억창고</span></a>
+          <a class="nav-item" href="#" data-action="연무장 이동"><span class="nav-mark">YM</span><span>연무장</span></a>
+          <a class="nav-item" href="#" data-action="서신함 이동"><span class="nav-mark">ML</span><span>서신함</span></a>
+          <a class="nav-item" href="#" data-action="정원 이동"><span class="nav-mark">GD</span><span>정원</span></a>
+          <a class="nav-item" href="#" data-action="무도회장 이동"><span class="nav-mark">BH</span><span>무도회장</span></a>
+          <a class="nav-item" href="#" data-action="설정 이동"><span class="nav-mark">CF</span><span>설정</span></a>
+          <div class="ornate-rule nav-rule nav-rule-bottom" aria-hidden="true"><span>✦</span><i></i><span>✦</span></div>
+        </div>
+
       </nav>
+
+      <!-- Pagination -->
+      <div class="nav-pagination" id="nav-pagination">
+        <button class="nav-page-btn" id="nav-prev" type="button" aria-label="이전 페이지">‹</button>
+        <span class="nav-page-label" id="nav-page-label">୨୧ 1 / 2 ୨୧</span>
+        <button class="nav-page-btn" id="nav-next" type="button" aria-label="다음 페이지">›</button>
+      </div>
 
       <div class="side-note">
         <p>이곳은 공주님의 하루가</p>
